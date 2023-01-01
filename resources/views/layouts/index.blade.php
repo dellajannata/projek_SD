@@ -16,8 +16,8 @@
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
-										<h2><strong>SmartEDU </strong> education College</h2>
-										<p class="lead">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p>
+										<h2><strong>SD Negeri </strong> 108 Gresik</h2>
+										<p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -35,8 +35,8 @@
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-left">
 									<div class="big-tagline">
-										<h2 data-animation="animated zoomInRight">SmartEDU <strong>education school</strong></h2>
-										<p class="lead" data-animation="animated fadeInLeft">With Landigoo responsive landing page template, you can promote your all hosting, domain and email services. </p>
+										<h2 data-animation="animated zoomInRight">UPT SD Negeri <strong>108 Gresik</strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
