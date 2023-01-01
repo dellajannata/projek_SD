@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Site Metas -->
-<title>SDN .....</title>
+<title>UPT SD Negeri 108 Gresik</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">

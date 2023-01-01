@@ -41,9 +41,9 @@
                     </div>
 
                     <ul class="footer-links">
-                        <li><a href="mailto:#">info@yoursite.com</a></li>
-                        <li><a href="#">www.yoursite.com</a></li>
-                        <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
+                        <li><a href="mailto:#">sdnegeri108gresik@gmail.com</a></li>
+                        <li><a href="#">www.sdnegeri108gresik.com</a></li>
+                        <li>Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</li>
                         <li>+61 3 8376 6284</li>
                     </ul><!-- end links -->
                 </div><!-- end clearfix -->
@@ -57,7 +57,7 @@
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-center">                   
-                <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">SmartEDU</a> Design By : <a href="https://html.design/">html design</a></p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">UPT SD Negeri 108 Gresik</a> Design By : <a href="https://html.design/">html design</a></p>
             </div>
         </div>
     </div><!-- end container -->

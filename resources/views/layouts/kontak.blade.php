@@ -2,7 +2,7 @@
 @section('layouts.content')
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>Contact<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+			<h1>Kontak<span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
 		</div>
 	</div>
 	
