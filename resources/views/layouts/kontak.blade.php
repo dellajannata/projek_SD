@@ -9,7 +9,8 @@
     <div id="contact" class="section wb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Apakah Anda Butuh Bantuan? </h3>
+                <h3>Need Help? Sure we are Online!</h3>
+                <p class="lead">Let us give you more details about the special offer website you want us. Please fill out the form below. <br>We have million of website owners who happy to work with us!</p>
             </div><!-- end title -->
 
             <div class="row">
@@ -49,7 +50,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	{{--  <div class="parallax section dbcolor">
+	<div class="parallax section dbcolor">
         <div class="container">
             <div class="row logos">
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
@@ -72,5 +73,5 @@
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
-    </div><!-- end section -->  --}}
+    </div><!-- end section -->
     @endsection

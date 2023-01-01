@@ -113,16 +113,7 @@
 								<a class="dropdown-item" href="kelas6">Kelas 6</a>
 							</div>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Sarana Prasarana </a>
-							<div class="dropdown-menu" aria-labelledby="dropdown-a">
-								<a class="dropdown-item" href="ruang_kelas">Ruang Kelas</a>
-								<a class="dropdown-item" href="perpustakaan">Perpustakaan</a>
-								<a class="dropdown-item" href="ruang_uks">Ruang UKS</a>
-								<a class="dropdown-item" href="lab">LAB</a>
-								<a class="dropdown-item" href="lapangan">Lapangan Olahraga</a>
-							</div>
-						</li>
+						<li class="nav-item"><a class="nav-link" href="sarana">Sarana Dan Prasarana</a></li>
 						<li class="nav-item"><a class="nav-link" href="guru">Guru</a></li>
 						<li class="nav-item"><a class="nav-link" href="album">Album</a></li>
 						<li class="nav-item"><a class="nav-link" href="kontak">Kontak</a></li>
