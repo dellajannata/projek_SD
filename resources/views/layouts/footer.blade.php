@@ -4,10 +4,10 @@
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="widget clearfix">
                     <div class="widget-title">
-                        <h3>About US</h3>
+                        <h3>Tentang Kami</h3>
                     </div>
-                    <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>   
-                    <div class="footer-right">
+                    <p>Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p>   
+                    {{--  <div class="footer-right">
                         <ul class="footer-links-soi">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-github"></i></a></li>
@@ -15,7 +15,7 @@
                             <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         </ul><!-- end links -->
-                    </div>						
+                    </div>						  --}}
                 </div><!-- end clearfix -->
             </div><!-- end col -->
 
@@ -25,11 +25,13 @@
                         <h3>Information Link</h3>
                     </div>
                     <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="beranda">BERANDA</a></li>
+                        <li><a href="tentang">TENTANG KAMI</a></li>
+                        <li><a href="#">KELAS</a></li>
+                        <li><a href="#">SARANA PRASARANA</a></li>
+                        <li><a href="guru">GURU</a></li>
+                        <li><a href="album">ALBUM</a></li>
+                        <li><a href="kontak">KONTAK</a></li>
                     </ul><!-- end links -->
                 </div><!-- end clearfix -->
             </div><!-- end col -->
@@ -57,7 +59,7 @@
     <div class="container">
         <div class="footer-distributed">
             <div class="footer-center">                   
-                <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">UPT SD Negeri 108 Gresik</a> Design By : <a href="https://html.design/">html design</a></p>
+                <p class="footer-company-name">All Rights Reserved. &copy; 2022 <a href="#">UPT SD Negeri 108 Gresik</p>
             </div>
         </div>
     </div><!-- end container -->
