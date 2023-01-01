@@ -2,7 +2,7 @@
 @section('layouts.content')
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>About Us<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+			<h1>Tentang Kami<span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
 		</div>
 	</div>
 	
@@ -10,17 +10,18 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <h3>About</h3>
-                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
+                    <h3>UPT SD Negeri 108 Gresik</h3>
+                    <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
+                    </p>
                 </div>
             </div><!-- end title -->
         
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
-                        <h4>2018 BEST SmartEDU education school</h4>
-                        <h2>Awards Winner Support Center</h2>
-                        <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                        <h4>Peringatan Hari Besar Nasional 2022</h4>
+                        <h2>HUT RI TAHUN 2022</h2>
+                        <p>Gresik, 17 Agustus 2022. HUT RI Tahun 2022 ini diselenggarakan di UPT SD Negeri 108 Gresik dan diikuti oleh seluruh civitas akademika yang dipimpin oleh Kepala Sekolah</p>
 
                         <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
 
@@ -30,20 +31,20 @@
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="images/hut.jpg" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
 			</div>
 			<div class="row align-items-center">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="images/tik.jpg" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
-                        <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+                        <h2>EKSTRAKURIKULER TIK</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                         <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum.</p>
@@ -62,19 +63,22 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="inner-hmv">
 						<div class="icon-box-hmv"><i class="flaticon-achievement"></i></div>
-						<h3>Mission</h3>
+						<h3>Misi</h3>
 						<div class="tr-pa">M</div>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eligendi expedita, provident cupiditate in excepturi.</p>
+						<p>1. Menerapkan pembelajaran yang menyenangkan dan bermakna yang mampu memotivasi peserta didik untuk selalu belajar dan menemukan pembelajaran. <br>
+                        2. Meningkatkan akhlak mulia peserta didik melalui kegiatan intrakurikuler, kokurikuler, dan ekstra kurikuker yang berakar pada agama, budaya, norma susila, dan tata krama yang berlaku di masyarakat.<br>
+                        3. Meningkatkan prestasi belajar peserta didik pada dimensi sikap, pengetahuan, dan keterampilan melalui kegiatan pembelajaran yang bermakna.<br> 
+                        4. Mengembangkan pendidikan kecakapan hidup melalui kegiatan pembiasaan/budaya sekolah.<br>
+                        5. Menerapkan pendidikan yang berwawasan lingkungan.
+                            </p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="inner-hmv">
 						<div class="icon-box-hmv"><i class="flaticon-eye"></i></div>
-						<h3>Vision</h3>
+						<h3>Visi</h3>
 						<div class="tr-pa">V</div>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eligendi expedita, provident cupiditate in excepturi.</p>
+						<p>Terwujudnya pembelajar sepanjang hayat yang berakhlak mulia, berprestasi, terampil, dan berwawasan lingkungan.</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-12">
@@ -93,8 +97,7 @@
     <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Testimonials</h3>
-                <p>Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <h3>Teachers</h3>
             </div><!-- end title -->
 
             <div class="row">
@@ -102,21 +105,8 @@
                     <div class="testi-carousel owl-carousel owl-theme">
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_01.png" alt="" class="img-fluid">
-                                <h4>James Fernando </h4>
-                            </div>
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-							<div class="testi-meta">
-                                <img src="images/testi_02.png" alt="" class="img-fluid">
-                                <h4>Jacques Philips </h4>
+                                <img src="images/khoiri.jpg" alt="" class="img-fluid">
+                                <h4>Mochamad Khoiri</h4>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
@@ -128,8 +118,8 @@
 
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_03.png" alt="" class="img-fluid ">
-                                <h4>Venanda Mercy </h4>
+                                <img src="images/lilik afnani.jpg" alt="" class="img-fluid ">
+                                <h4>Lilik Afnani</h4>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
@@ -140,8 +130,8 @@
                         <!-- end testimonial -->
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_01.png" alt="" class="img-fluid">
-                                <h4>James Fernando </h4>
+                                <img src="images/novitasari.jpg" alt="" class="img-fluid">
+                                <h4>Novitasari</h4>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
@@ -153,8 +143,8 @@
 
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_02.png" alt="" class="img-fluid">
-                                <h4>Jacques Philips </h4>
+                                <img src="images/SITI NAIMAH.jpg" alt="" class="img-fluid">
+                                <h4>Siti Naimah</h4>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
@@ -166,8 +156,8 @@
 
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_03.png" alt="" class="img-fluid">
-                                <h4>Venanda Mercy </h4>
+                                <img src="images/SIYAMU UMARO.jpg" alt="" class="img-fluid">
+                                <h4>Siyamu Umaro</h4>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
@@ -181,7 +171,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <div class="parallax section dbcolor">
+    {{--  <div class="parallax section dbcolor">
         <div class="container">
             <div class="row logos">
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
@@ -204,5 +194,5 @@
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
-    </div><!-- end section -->
+    </div><!-- end section -->  --}}
     @endsection
