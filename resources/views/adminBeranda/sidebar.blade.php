@@ -28,10 +28,20 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="menu-title">Sarana Dan Prasarana</span>
+                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                  <span class="menu-title">Sarana Prasarana</span>
+                  <i class="menu-arrow"></i>
                   <i class="mdi mdi-city menu-icon"></i>
                 </a>
+                <div class="collapse" id="general-pages">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Ruang Kelas </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Perpustakaan </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Ruang UKS </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> LAB </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Lapangan Olahraga </a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
