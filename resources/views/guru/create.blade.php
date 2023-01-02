@@ -41,7 +41,6 @@
                                     </div>
                                 @enderror
                             </div>
-
                             <div class="form-group">
                                 <label class="font-weight-bold">NAMA</label>
                                 <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{ old('nama') }}" placeholder="Masukkan Nama">
@@ -53,7 +52,6 @@
                                     </div>
                                 @enderror
                             </div>
-
                             <div class="form-group">
                                 <label class="font-weight-bold">JK</label>
                                 <input type="text" class="form-control @error('jk') is-invalid @enderror" name="jk" value="{{ old('jk') }}" placeholder="Pilih Jenis Kelamin">
