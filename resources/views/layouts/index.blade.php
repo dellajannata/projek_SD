@@ -16,11 +16,11 @@
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-right">
 									<div class="big-tagline">
-										<h2><strong>UPT SD Negeri </strong> 108 Gresik</h2>
+										<h2><strong>SD Negeri </strong> 108 Gresik</h2>
 										<p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="tentang" class="hover-btn-new"><span>Read More</span></a>
+											<a href="#" class="hover-btn-new"><span>Read More</span></a>
 									</div>
 								</div>
 							</div><!-- end row -->            
@@ -54,8 +54,10 @@
 							<div class="row">
 								<div class="col-md-12 col-sm-12 text-center">
 									<div class="big-tagline">
-										<h2 data-animation="animated zoomInRight"><strong>UPT SD Negeri</strong> 108 Gresik</h2>
-										<p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
+										<h2 data-animation="animated zoomInRight"><strong>VPS Servers</strong> Company</h2>
+										<p class="lead" data-animation="animated fadeInLeft">1 IP included with each server 
+											Your Choice of any OS (CentOS, Windows, Debian, Fedora)
+											FREE Reboots</p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 											<a href="#" class="hover-btn-new"><span>Read More</span></a>
@@ -84,8 +86,8 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <h3>Tentang</h3>
-                    <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p>
+                    <h3>About</h3>
+                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
                 </div>
             </div><!-- end title -->
         
@@ -472,7 +474,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    {{--  <div class="parallax section dbcolor">
+    <div class="parallax section dbcolor">
         <div class="container">
             <div class="row logos">
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
@@ -495,5 +497,5 @@
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
-    </div><!-- end section -->  --}}
+    </div><!-- end section -->
     @endsection

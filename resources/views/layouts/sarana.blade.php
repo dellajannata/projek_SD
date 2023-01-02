@@ -156,7 +156,7 @@
 	</div><!-- end container -->
 </div><!-- end section -->
 
-{{--  <div class="parallax section dbcolor">
+<div class="parallax section dbcolor">
 	<div class="container">
 		<div class="row logos">
 			<div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
@@ -179,5 +179,5 @@
 			</div>
 		</div><!-- end row -->
 	</div><!-- end container -->
-</div><!-- end section -->  --}}
+</div><!-- end section -->
     @endsection
