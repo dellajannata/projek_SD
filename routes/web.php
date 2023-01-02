@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminGuruController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\TentangController;
@@ -36,4 +37,7 @@ Route::get('/adminBeranda', [AdminBerandaController::class, 'index']);
 
 //adminGuru
 Route::get('/adminGuru', [AdminGuruController::class, 'index']);
+
+
+Route::resource('crudguru', CRUDGuruController::class);
 
