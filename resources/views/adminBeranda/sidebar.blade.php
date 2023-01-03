@@ -34,6 +34,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="pembiasaan">
+                  <span class="menu-title">Kegiatan Pembiasaan</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
                   <span class="menu-title">Sarana Prasarana</span>
                   <i class="menu-arrow"></i>

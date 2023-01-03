@@ -20,7 +20,7 @@
 										<p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
 											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
 											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="tentang" class="hover-btn-new"><span>Read More</span></a>
+											<a href="pembiasaan" class="hover-btn-new"><span>Read More</span></a>
 									</div>
 								</div>
 							</div><!-- end row -->            
@@ -84,7 +84,7 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <h3>Tentang</h3>
+                    <h3>pembiasaan</h3>
                     <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p>
                 </div>
             </div><!-- end title -->

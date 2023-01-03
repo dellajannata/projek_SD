@@ -8,7 +8,7 @@ use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
-use App\Http\Controllers\TentangController;
+use App\Http\Controllers\pembiasaanController;
 use App\Http\Controllers\SaranaController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,7 +29,7 @@ Route::get('/beranda', [BerandaController::class, 'index']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
-Route::get('/tentang', [TentangController::class, 'index']);
+Route::get('/pembiasaan', [PembiasaanController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
 
 //adminBeranda
@@ -40,4 +40,5 @@ Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 
 
 Route::resource('crudguru', CRUDGuruController::class);
+Route::resource('pembiasaan', PembiasaanController::class);
 
