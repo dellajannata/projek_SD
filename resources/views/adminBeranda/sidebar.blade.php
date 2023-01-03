@@ -22,6 +22,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="tentangkami">
+                  <span class="menu-title">Tentang Kami</span>
+                  <i class="mdi mdi-home menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="adminGuru">
                   <span class="menu-title">xxxx</span>
                   <i class="mdi mdi-account-multiple menu-icon"></i>

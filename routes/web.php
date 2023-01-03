@@ -10,6 +10,8 @@ use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\pembiasaanController;
 use App\Http\Controllers\SaranaController;
+use App\Http\Controllers\TentangKamiController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -41,4 +43,6 @@ Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 
 Route::resource('crudguru', CRUDGuruController::class);
 Route::resource('pembiasaan', PembiasaanController::class);
+
+Route::resource('tentangkami', TentangKamiController::class);
 
