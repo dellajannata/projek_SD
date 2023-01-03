@@ -4,7 +4,7 @@ use App\Http\Controllers\AdminBerandaController;
 use App\Http\Controllers\AdminGuruController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\GuruController;
+use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\CRUDKelasController;
 use App\Http\Controllers\CRUDKelas2Controller;
@@ -14,8 +14,10 @@ use App\Http\Controllers\CRUDKelas5Controller;
 use App\Http\Controllers\CRUDKelas6Controller;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
-use App\Http\Controllers\TentangController;
+use App\Http\Controllers\pembiasaanController;
 use App\Http\Controllers\SaranaController;
+use App\Http\Controllers\TentangKamiController;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -32,10 +34,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/album', [AlbumController::class, 'index']);
 Route::get('/beranda', [BerandaController::class, 'index']);
-Route::get('/guru', [GuruController::class, 'index']);
+Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
-Route::get('/tentang', [TentangController::class, 'index']);
+Route::get('/pembiasaan', [PembiasaanController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
 
 //adminBeranda
@@ -46,6 +48,9 @@ Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 
 //adminGuru
 Route::resource('crudguru', CRUDGuruController::class);
+Route::resource('pembiasaan', PembiasaanController::class);
+
+Route::resource('tentangkami', TentangKamiController::class);
 
 //adminKelas
 Route::resource('crudkelas', CRUDKelasController::class);

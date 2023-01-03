@@ -1,6 +1,7 @@
 @extends('adminBeranda.main')
 @section('adminBeranda.content')
-    {{-- <!DOCTYPE html>
+
+{{-- <!DOCTYPE html>
     <html lang="en"> --}}
 
     {{-- <head>
@@ -19,35 +20,26 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH GURU</a>
+                            <a href="{{ route('tentangkami.create') }}" class="btn btn-md btn-success mb-3">TAMBAH TENTANG KAMI</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">No.</th>
-                                        <th scope="col">FOTO</th>
-                                        <th scope="col">NAMA</th>
-                                        <th scope="col">JENIS PTK</th>
-                                        <th scope="col">AKSI</th>
+                                        <th scope="col">Judul</th>
+                                        <th scope="col">Deskripsi</th>
+                                        <th scope="col">Gambar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $no=1 ?>
-                                    @forelse ($guru as $gr)
+                                    @forelse ($tentangkami as $tk)
                                         <tr>
-                                            <td>{{$no++}}</td>
-                                            <td class="text-center">
-                                                <img src="{{ asset('storage/guru/' . $gr->image) }}" class="rounded"
-                                                    style="width: 250px; height:200px" >
-                                            </td>
-                                            <td>{{ $gr->nama }}</td>
-                                            <td>{{ $gr->jenisPTK }}</td>
+                                            <td>{{ $tk->judul }}</td>
+                                            <td>{{ $tk->deskripsi }}</td>
+                                            <td><img width="100px" height="100px" src="{{ asset('images/'. $tk->gambar) }}"></td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                    action="{{ route('crudguru.destroy', $gr->id) }}" method="POST">
-                                                    <a href="{{ route('crudguru.edit', $gr->id) }}"
-                                                        class="btn btn-sm btn-warning">EDIT</a>
-                                                        <a href="{{ route('crudguru.show', $gr->id) }}"
-                                                            class="btn btn-sm btn-info">Details</a>
+                                                    action="{{ route('tentangkami.destroy', $tk->id) }}" method="POST">
+                                                    <a href="{{ route('tentangkami.edit', $tk->id) }}"
+                                                        class="btn btn-sm btn-primary">EDIT</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
@@ -56,12 +48,12 @@
                                         </tr>
                                     @empty
                                         <div class="alert alert-danger">
-                                            Data Guru belum Tersedia.
+                                            Data Tentang Kami belum Tersedia.
                                         </div>
                                     @endforelse
                                 </tbody>
                             </table>
-                            {{ $guru->links() }}
+                            {{ $tentangkami->links() }}
                         </div>
                     </div>
                 </div>
