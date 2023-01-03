@@ -9,6 +9,7 @@
     <div id="overviews" class="section lb">
         <div class="container">
             <div class="section-title row text-center">
+                @foreach ($tentangkami as $tk)
                 <div class="col-md-8 offset-md-2">
                     <h3>UPT SD Negeri 108 Gresik</h3>
                     <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
@@ -19,12 +20,8 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
-                        <h4>Peringatan Hari Besar Nasional 2022</h4>
-                        <h2>HUT RI TAHUN 2022</h2>
-                        <p>Gresik, 17 Agustus 2022. HUT RI Tahun 2022 ini diselenggarakan di UPT SD Negeri 108 Gresik dan diikuti oleh seluruh civitas akademika yang dipimpin oleh Kepala Sekolah</p>
-
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque. </p>
-
+                        <h4 class="title">{{ $tk->judul }}</h4>
+                        <p class="post">{{ $tk->deskripsi }}</p>
                         <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -43,18 +40,17 @@
                 </div><!-- end col -->
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    @endforeach
                     <div class="message-box">
-                        <h2>EKSTRAKURIKULER TIK</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum.</p>
-
+                        <h2class="title">{{ $tk->judul }}</h2>
+                        <p class="post">{{ $tk->deskripsi }}</p>
                         <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 				
             </div><!-- end row -->
         </div><!-- end container -->
+        {{ $tentangkami->links() }}
     </div><!-- end section -->
 	
 	<div class="hmv-box">
