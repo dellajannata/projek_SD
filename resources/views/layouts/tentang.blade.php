@@ -2,7 +2,7 @@
 @section('layouts.content')
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>pembiasaan Kami<span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
+			<h1>Tentang Kami<span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
 		</div>
 	</div>
 	
@@ -66,9 +66,9 @@
 						<h3>Misi</h3>
 						<div class="tr-pa">M</div>
 						<p>1. Menerapkan pembelajaran yang menyenangkan dan bermakna yang mampu memotivasi peserta didik untuk selalu belajar dan menemukan pembelajaran. <br>
-                        2. Meningkatkan akhlak mulia peserta didik melalui pembiasaan intrakurikuler, kokurikuler, dan ekstra kurikuker yang berakar pada agama, budaya, norma susila, dan tata krama yang berlaku di masyarakat.<br>
-                        3. Meningkatkan prestasi belajar peserta didik pada dimensi sikap, pengetahuan, dan keterampilan melalui pembiasaan pembelajaran yang bermakna.<br> 
-                        4. Mengembangkan pendidikan kecakapan hidup melalui pembiasaan pembiasaan/budaya sekolah.<br>
+                        2. Meningkatkan akhlak mulia peserta didik melalui tentang intrakurikuler, kokurikuler, dan ekstra kurikuker yang berakar pada agama, budaya, norma susila, dan tata krama yang berlaku di masyarakat.<br>
+                        3. Meningkatkan prestasi belajar peserta didik pada dimensi sikap, pengetahuan, dan keterampilan melalui tentang pembelajaran yang bermakna.<br> 
+                        4. Mengembangkan pendidikan kecakapan hidup melalui tentang pembiasaan/budaya sekolah.<br>
                         5. Menerapkan pendidikan yang berwawasan lingkungan.
                             </p>
 					</div>

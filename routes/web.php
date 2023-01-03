@@ -11,7 +11,7 @@ use App\Http\Controllers\KelasController;
 use App\Http\Controllers\pembiasaanController;
 use App\Http\Controllers\SaranaController;
 use App\Http\Controllers\TentangKamiController;
-
+use App\Http\Controllers\TentangController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -31,7 +31,7 @@ Route::get('/beranda', [BerandaController::class, 'index']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
-Route::get('/pembiasaan', [PembiasaanController::class, 'index']);
+Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
 
 //adminBeranda
