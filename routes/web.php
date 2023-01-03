@@ -4,7 +4,7 @@ use App\Http\Controllers\AdminBerandaController;
 use App\Http\Controllers\AdminGuruController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\GuruController;
+use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/album', [AlbumController::class, 'index']);
 Route::get('/beranda', [BerandaController::class, 'index']);
-Route::get('/guru', [GuruController::class, 'index']);
+Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);

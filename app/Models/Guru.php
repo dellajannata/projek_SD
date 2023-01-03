@@ -9,6 +9,9 @@ class Guru extends Model
 {
     use HasFactory;
 
+    protected $table = 'guru';
+    protected $primaryKey = 'id';
+
     protected $fillable = [
         'image', 
         'nik',
