@@ -23,17 +23,10 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-<<<<<<< HEAD
-                                        <th scope="col">No.</th>
-                                        <th scope="col">JUDUL</th>
-                                        <th scope="col">DESKRIPSI</th>
-                                        <th scope="col">GAMBAR</th>
-=======
                                         <th scope="col">Judul</th>
                                         <th scope="col">Deskripsi</th>
                                         <th scope="col">Gambar</th>
                                         <th scope="col">Aksi</th>
->>>>>>> 2df70d385e0ad0430a6531a3bd1683da04fd6ee3
                                     </tr>
                                 </thead>
                                 <tbody>
