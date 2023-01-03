@@ -1,7 +1,6 @@
 @extends('adminBeranda.main')
 @section('adminBeranda.content')
-
-{{-- <!DOCTYPE html>
+    {{-- <!DOCTYPE html>
     <html lang="en"> --}}
 
     {{-- <head>
@@ -20,26 +19,34 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('tentangkami.create') }}" class="btn btn-md btn-success mb-3">TAMBAH TENTANG KAMI</a>
+                            <a href="{{ route('tentangkami.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH TENTANG KAMI</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Judul</th>
-                                        <th scope="col">Deskripsi</th>
-                                        <th scope="col">Gambar</th>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">JUDUL</th>
+                                        <th scope="col">DESKRIPSI</th>
+                                        <th scope="col">GAMBAR</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $no=1 ?>
                                     @forelse ($tentangkami as $tk)
                                         <tr>
+                                            <td>{{$no++}}</td>
                                             <td>{{ $tk->judul }}</td>
                                             <td>{{ $tk->deskripsi }}</td>
-                                            <td><img width="100px" height="100px" src="{{ asset('images/'. $tk->gambar) }}"></td>
+                                            <td class="text-center">
+                                                <img src="{{ asset('storage/tentangkami/' . $tk->gambar) }}" class="rounded"
+                                                    style="width: 250px; height:200px" >
+                                            </td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('tentangkami.destroy', $tk->id) }}" method="POST">
                                                     <a href="{{ route('tentangkami.edit', $tk->id) }}"
-                                                        class="btn btn-sm btn-primary">EDIT</a>
+                                                        class="btn btn-sm btn-warning">EDIT</a>
+                                                        <a href="{{ route('tentangkami.show', $tk->id) }}"
+                                                            class="btn btn-sm btn-info">Details</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>

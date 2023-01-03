@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-header">
-                        <Center>TAMBAH DATA TENTANG KAMI</Center>
+                        <Center>EDIT DATA TENTANG KAMI</Center>
                     </div>
                     <div class="card-body">
                         @if ($errors->any())
@@ -20,13 +20,13 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('tentangkami.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('tentangkami.update' , $tentangkami->id) }}" method="POST" enctype="multipart/form-data">
                         
-                            @csrf
-
+                            @csrf 
+                            @method('PUT')
                             <div class="form-group">
-                                <label class="font-weight-bold">Judul</label>
-                                <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Masukkan Judul">
+                                <label class="font-weight-bold">JUDUL</label>
+                                <input type="text" value="{{$tentangkami->judul}}" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Masukkan Judul">
                             
                                 <!-- error message untuk title -->
                                 @error('judul')
@@ -37,8 +37,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">Deskripsi</label>
-                                <input type="text" class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" value="{{ old('deskripsi') }}" placeholder="Masukkan Deskripsi">
+                                <label class="font-weight-bold">DESKRIPSI</label>
+                                <input type="text" value="{{$tentangkami->deskripsi}}" class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" value="{{ old('deskripsi') }}" placeholder="Masukkan Deskripsi">
                             
                                 <!-- error message untuk title -->
                                 @error('deskripsi')
@@ -49,8 +49,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">GAMBAR</label>
-                                <input type="file" class="form-control @error('gambar') is-invalid @enderror" name="gambar">
+                                <label class="font-weight-bold">Gambar</label>
+                                <input type="file" value="{{$tentangkami->gambar}}" class="form-control @error('gambar') is-invalid @enderror" name="gambar">
                             
                                 <!-- error message untuk title -->
                                 @error('gambar')
@@ -61,8 +61,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
-                            <button type="reset" class="btn btn-md btn-warning">RESET</button>
-
+                            <a class="btn btn-md btn-warning" href="{{ route('tentangkami.index') }}" class="">Kembali</a>
                         </form> 
                     </div>
                 </div>
