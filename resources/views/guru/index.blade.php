@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH BLOG</a>
+                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH GURU</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -56,7 +56,7 @@
                                         </tr>
                                     @empty
                                         <div class="alert alert-danger">
-                                            Data Blog belum Tersedia.
+                                            Data Guru belum Tersedia.
                                         </div>
                                     @endforelse
                                 </tbody>
