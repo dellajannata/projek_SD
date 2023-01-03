@@ -27,6 +27,7 @@
                                         <th scope="col">Judul</th>
                                         <th scope="col">Deskripsi</th>
                                         <th scope="col">Gambar</th>
+                                        <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
