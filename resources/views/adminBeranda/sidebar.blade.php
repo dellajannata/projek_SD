@@ -40,20 +40,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <a class="nav-link" href="sarana">
                   <span class="menu-title">Sarana Prasarana</span>
-                  <i class="menu-arrow"></i>
-                  <i class="mdi mdi-city menu-icon"></i>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
                 </a>
-                <div class="collapse" id="general-pages">
-                  <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Ruang Kelas </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Perpustakaan </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Ruang UKS </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> LAB </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Lapangan Olahraga </a></li>
-                  </ul>
-                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
@@ -63,12 +53,12 @@
                 </a>
                 <div class="collapse" id="general-pages">
                   <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Kelas 1 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Kelas 2 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Kelas 3 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Kelas 4 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Kelas 5 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Kelas 6 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas"> Kelas 1 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas2"> Kelas 2 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas3"> Kelas 3 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas4"> Kelas 4 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas5"> Kelas 5 </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="crudkelas6"> Kelas 6 </a></li>
                   </ul>
                 </div>
               </li>

@@ -66,9 +66,9 @@
 						<h3>Misi</h3>
 						<div class="tr-pa">M</div>
 						<p>1. Menerapkan pembelajaran yang menyenangkan dan bermakna yang mampu memotivasi peserta didik untuk selalu belajar dan menemukan pembelajaran. <br>
-                        2. Meningkatkan akhlak mulia peserta didik melalui kegiatan intrakurikuler, kokurikuler, dan ekstra kurikuker yang berakar pada agama, budaya, norma susila, dan tata krama yang berlaku di masyarakat.<br>
-                        3. Meningkatkan prestasi belajar peserta didik pada dimensi sikap, pengetahuan, dan keterampilan melalui kegiatan pembelajaran yang bermakna.<br> 
-                        4. Mengembangkan pendidikan kecakapan hidup melalui kegiatan pembiasaan/budaya sekolah.<br>
+                        2. Meningkatkan akhlak mulia peserta didik melalui tentang intrakurikuler, kokurikuler, dan ekstra kurikuker yang berakar pada agama, budaya, norma susila, dan tata krama yang berlaku di masyarakat.<br>
+                        3. Meningkatkan prestasi belajar peserta didik pada dimensi sikap, pengetahuan, dan keterampilan melalui tentang pembelajaran yang bermakna.<br> 
+                        4. Mengembangkan pendidikan kecakapan hidup melalui tentang pembiasaan/budaya sekolah.<br>
                         5. Menerapkan pendidikan yang berwawasan lingkungan.
                             </p>
 					</div>
