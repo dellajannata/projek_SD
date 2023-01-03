@@ -13,12 +13,12 @@ class CreateGurusTable extends Migration
      */
     public function up()
     {
-        Schema::create('gurus', function (Blueprint $table) {
+        Schema::create('guru', function (Blueprint $table) {
             $table->id();
             $table->string('image');
             $table->string('nik')->unique();
             $table->string('nama');
-            $table->string('jk');
+            $table->enum('jk',['p','l']);
             $table->date('tglLahir');
             $table->string('nuptk')->unique();
             $table->string('nip')->unique();
@@ -40,6 +40,6 @@ class CreateGurusTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gurus');
+        Schema::dropIfExists('guru');
     }
 }

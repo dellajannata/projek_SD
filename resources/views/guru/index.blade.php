@@ -19,51 +19,35 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudguru.create') }}" class="btn btn-md btn-success mb-3">TAMBAH BLOG</a>
+                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH BLOG</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th scope="col">GAMBAR</th>
-                                        <th scope="col">NIK</th>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">FOTO</th>
                                         <th scope="col">NAMA</th>
-                                        <th scope="col">JK</th>
-                                        <th scope="col">TANGGAL LAHIR</th>
-                                        <th scope="col">NUPTK</th>
-                                        <th scope="col">NIP</th>
-                                        <th scope="col">PANGKAT/GOL</th>
                                         <th scope="col">JENIS PTK</th>
-                                        <th scope="col">PENDIDIKAN TERAKHIR</th>
-                                        <th scope="col">JURUSAN</th>
-                                        <th scope="col">TMT GTK</th>
-                                        <th scope="col">TMT GTK INDUK</th>
                                         <th scope="col">AKSI</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $no=1 ?>
                                     @forelse ($guru as $gr)
                                         <tr>
+                                            <td>{{$no++}}</td>
                                             <td class="text-center">
-                                                <img src="{{ Storage::url('public/guru/') . $gr->image }}" class="rounded"
-                                                    style="width: 150px">
+                                                <img src="{{ asset('storage/guru/' . $gr->image) }}" class="rounded"
+                                                    style="width: 250px; height:200px" >
                                             </td>
-                                            <td>{{ $gr->nik }}</td>
                                             <td>{{ $gr->nama }}</td>
-                                            <td>{{ $gr->jk }}</td>
-                                            <td>{{ $gr->tglLahir}}</td>
-                                            <td>{{ $gr->nuptk }}</td>
-                                            <td>{{ $gr->nip }}</td>
-                                            <td>{{ $gr->gol }}</td>
-                                            <td>{{ $gr->status }}</td>
                                             <td>{{ $gr->jenisPTK }}</td>
-                                            <td>{{ $gr->pendidikanTerakhir }}</td>
-                                            <td>{{ $gr->jurusan }}</td>
-                                            <td>{{ $gr->tmt_gtk }}</td>
-                                            <td>{{ $gr->tmt_gtk_induk }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudguru.destroy', $gr->id) }}" method="POST">
                                                     <a href="{{ route('crudguru.edit', $gr->id) }}"
-                                                        class="btn btn-sm btn-primary">EDIT</a>
+                                                        class="btn btn-sm btn-warning">EDIT</a>
+                                                        <a href="{{ route('crudguru.show', $gr->id) }}"
+                                                            class="btn btn-sm btn-info">Details</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>

@@ -23,6 +23,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="adminGuru">
+                  <span class="menu-title">xxxx</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crudguru">
                   <span class="menu-title">Guru</span>
                   <i class="mdi mdi-account-multiple menu-icon"></i>
                 </a>
