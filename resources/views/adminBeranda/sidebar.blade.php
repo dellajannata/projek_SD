@@ -63,6 +63,19 @@
                 </div>
               </li>
               <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                  <span class="menu-title">Informasi</span>
+                  <i class="menu-arrow"></i>
+                  <i class="mdi mdi-home menu-icon"></i>
+                </a>
+                <div class="collapse" id="general-pages">
+                  <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="informasisd"> SDN 108 Gresik </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="informasiLomba"> Lomba </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="pages/tables/basic-table.html">
                   <span class="menu-title">Album</span>
                   <i class="mdi mdi-folder-image menu-icon"></i>

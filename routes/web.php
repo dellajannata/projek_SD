@@ -18,6 +18,9 @@ use App\Http\Controllers\pembiasaanController;
 use App\Http\Controllers\SaranaController;
 use App\Http\Controllers\TentangKamiController;
 use App\Http\Controllers\TentangController;
+use App\Http\Controllers\InformasiController;
+use App\Http\Controllers\TampilanBerandaController;
+use App\Http\Controllers\InformasiLombaController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -33,7 +36,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/album', [AlbumController::class, 'index']);
-Route::get('/beranda', [BerandaController::class, 'index']);
+Route::get('/beranda', [TampilanBerandaController::class, 'index']);
+// Route::get('/berandaLomba', [TampilanBerandaController::class, 'indexLomba']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
@@ -49,6 +53,10 @@ Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 //adminGuru
 Route::resource('crudguru', CRUDGuruController::class);
 Route::resource('pembiasaan', PembiasaanController::class);
+
+//INFORMASI
+Route::resource('informasisd', InformasiController::class);
+Route::resource('informasiLomba', InformasiLombaController::class);
 
 Route::resource('tentangkami', TentangKamiController::class);
 
