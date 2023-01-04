@@ -2,7 +2,7 @@
 @section('layouts.content')
 <div class="all-title-box">
     <div class="container text-center">
-        <h1>Teachers<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+        <h1>Teachers <span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
     </div>
 </div>
 <div id="teachers" class="section wb">
@@ -12,7 +12,7 @@
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="our-team">
                     <div class="team-img">
-                        <img src="{{ asset('storage/guru/' . $gr->image) }}">
+                        <img src="{{ asset('storage/guru/' . $gr->image) }}" style="max-width:260px;max-height:300px;float:left;"  >
                     </div>
                     <div class="team-content">
                         <h3 class="title">{{ $gr->nama }}</h3>

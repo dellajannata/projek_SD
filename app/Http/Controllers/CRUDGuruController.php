@@ -41,7 +41,7 @@ class CRUDGuruController extends Controller
         //upload image
         $image = $request->file('image');
         $image->storeAs('public/guru', $image->hashName());
-
+        
         $guru = Guru::create([
             'image' => $image->hashName(),
             'nik' => $request->nik,
