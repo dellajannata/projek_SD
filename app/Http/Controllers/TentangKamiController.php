@@ -4,130 +4,108 @@ namespace App\Http\Controllers;
 
 use App\Models\Tentangkami;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TentangKamiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
-        $tentangkami = Tentangkami::paginate(3);
-        return view('tentang.index')
-            ->with('title', 'Tentang Kami')
-            ->with('tentangkami', $tentangkami);
+        $tentangkami = Tentangkami::orderBy('id', 'asc')->paginate(5);
+        return view('tentang.index', compact('tentangkami'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('tentang.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $request->validate([
-            'id' => 'required',
-            'judul' => 'required',
-            'deskripsi' => 'required',
-            'gambar' => 'required',
+            'judul'     => 'required',
+            'deskripsi'   => 'required',
+            'gambar'     => 'required|image|mimes:png,jpg,jpeg',
         ]);
 
-        $gambar = $request->file('gambar')->store('images','public');
+        //upload image
+        $gambar = $request->file('gambar');
+        $gambar->storeAs('public/tentangkami', $gambar->hashName());
 
-        Tentangkami::create([
-            'id' => $request->id,
+        $tentangkami = Tentangkami::create([
             'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'gambar' => $gambar,
+            'deskripsi'=> $request->deskripsi,
+            'gambar' => $gambar->hashName(),
         ]);
 
-        return redirect()->route('tentang.index')
-            ->with('success', 'Tentang Kami Berhasil Ditambahkan');
+        if ($tentangkami) {
+            //redirect dengan pesan sukses
+            return redirect()->route('tentangkami.index')->with(['success' => 'Data Berhasil Disimpan!']);
+        } else {
+            //redirect dengan pesan error
+            return redirect()->route('tentangkami.index')->with(['error' => 'Data Gagal Disimpan!']);
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function show(Request $request,$id)
     {
-        //Menampilkan detail data dengan menemukan/berdasarkan ID Tentang Kami
-        $tentangkami = Tentangkami::find($id);
+        $tentangkami = Tentangkami::where('id', $id)->first();
         return view('tentang.detail', compact('tentangkami'));
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $tentangkami = Tentangkami::find($id);
         return view('tentang.edit', compact('tentangkami'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'judul'     => 'required',
+            'deskripsi'   => 'required',
+            'gambar'     => 'required|image|mimes:png,jpg,jpeg',
+        ]);
+
+        //get data tentangkami by ID
         $tentangkami = Tentangkami::findOrFail($id);
-        
-        //melakukan validasi data
-        $request->validate([
-            'id' => 'required',
-            'judul' => 'required',
-            'deskripsi' => 'required',
-            'gambar' => 'required',
-        ]);
 
-        $gambar = $request->file('gambar')->store('images','public');
+        if ($request->file('gambar') == "") {
 
-        $tentangkami->update([
-            'id' => $request->id,
-            'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'gambar' => $gambar,
-        ]);
-        $tentangkami->save();
+            $tentangkami->update([
+                'judul'     => $request->judul,
+                'deskripsi'   => $request->deskripsi,
+            ]);
+        } else {
 
-        //jika data berhasil diupdate, akan kembali ke halaman utama
-        return redirect()->route('tentang.index')
-            ->with('success', 'Tentang Kami Berhasil Diupdate');
+            //upload new image
+            $gambar = $request->file('gambar');
+            $gambar->storeAs('public/tentangkami', $gambar->hashName());
+
+            $tentangkami->update([
+                'gambar'     => $gambar->hashName(),
+                'judul'     => $request->judul,
+                'deskripsi'   => $request->deskripsi,
+            ]);
+        }
+        if ($tentangkami) {
+            //redirect dengan pesan sukses
+            return redirect()->route('tentang.index')->with(['success' => 'Data Berhasil Diupdate!']);
+        } else {
+            //redirect dengan pesan error
+            return redirect()->route('tentang.index')->with(['error' => 'Data Gagal Diupdate!']);
+        }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //fungsi eloquent untuk menghapus data 
-        Tentangkami::find($id)->delete();
-        return redirect()->route('tentang.index')
-            ->with('success', 'Tentang Kami Berhasil Dihapus');
+        $tentangkami = Tentangkami::findOrFail($id);
+        $tentangkami->delete();
+
+        if ($tentangkami) {
+            //redirect dengan pesan sukses
+            return redirect()->route('tentang.index')->with(['success' => 'Data Berhasil Dihapus!']);
+        } else {
+            //redirect dengan pesan error
+            return redirect()->route('tentang.index')->with(['error' => 'Data Gagal Dihapus!']);
+        }
     }
 }

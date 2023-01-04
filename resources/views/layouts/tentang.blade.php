@@ -9,7 +9,6 @@
     <div id="overviews" class="section lb">
         <div class="container">
             <div class="section-title row text-center">
-                @foreach ($tentangkami as $tk)
                 <div class="col-md-8 offset-md-2">
                     <h3>UPT SD Negeri 108 Gresik</h3>
                     <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
@@ -18,39 +17,41 @@
             </div><!-- end title -->
         
             <div class="row align-items-center">
+                @foreach ($tentang as $tentangkami)
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="message-box">
-                        <h4 class="title">{{ $tk->judul }}</h4>
-                        <p class="post">{{ $tk->deskripsi }}</p>
+                        <h4 class="title">{{ $tentangkami->judul }}</h4>
+                        <p class="post">{{ $tentangkami->deskripsi }}</p>
                         <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="images/hut.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
+                @endforeach
 			</div>
 			<div class="row align-items-center">
+                @foreach ($tentang as $tentangkami)
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="images/tik.jpg" alt="" class="img-fluid img-rounded">
+                        <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
 				
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    @endforeach
                     <div class="message-box">
-                        <h2class="title">{{ $tk->judul }}</h2>
-                        <p class="post">{{ $tk->deskripsi }}</p>
+                        <h2class="title">{{ $tentangkami->judul }}</h2>
+                        <p class="post">{{ $tentangkami->deskripsi }}</p>
                         <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
-				
+                @endforeach
             </div><!-- end row -->
         </div><!-- end container -->
-        {{ $tentangkami->links() }}
+        {{ $tentang->links() }}
     </div><!-- end section -->
 	
 	<div class="hmv-box">
