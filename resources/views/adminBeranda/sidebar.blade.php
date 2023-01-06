@@ -46,6 +46,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="crudwalikelas">
+                  <span class="menu-title">Wali Kelas</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
                   <span class="menu-title">Kelas</span>
                   <i class="menu-arrow"></i>
