@@ -19,8 +19,6 @@ class CreateKelas extends Migration
             $table->time('jm_mulai');
             $table->time('jm_akhir');
             $table->enum('hari',['senin','selasa','rabu','kamis','jumat','sabtu','minggu']);
-            $table->integer('guru_id')->unsigned()->nullable();
-            $table->foreign('guru_id')->references('id')->on('guru');
             $table->timestamps();
         });
     }
