@@ -34,29 +34,7 @@
                         </div><!-- end media -->
                     </div><!-- end col -->
                 @endforeach
-<<<<<<< HEAD
 			</div>
-=======
-            </div>
-            <div class="row align-items-center">
-                @foreach ($tentang as $tentangkami)
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="post-media wow fadeIn">
-                            <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
-                                class="img-fluid img-rounded">
-                        </div><!-- end media -->
-                    </div><!-- end col -->
-
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="message-box">
-                            <h2class="title">{{ $tentangkami->judul }}</h2>
-                                <p class="post">{{ $tentangkami->deskripsi }}</p>
-                                <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
-                        </div><!-- end messagebox -->
-                    </div><!-- end col -->
-                @endforeach
-            </div><!-- end row -->
->>>>>>> 1a277ea3aca7c7e6ee070a352747dd3fe47c918a
         </div><!-- end container -->
         {{ $tentang->links() }}
     </div><!-- end section -->
