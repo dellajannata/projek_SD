@@ -6,6 +6,7 @@ use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
+use App\Http\Controllers\CRUDWaliKelasController;
 use App\Http\Controllers\CRUDKelasController;
 use App\Http\Controllers\CRUDKelas2Controller;
 use App\Http\Controllers\CRUDKelas3Controller;
@@ -67,3 +68,6 @@ Route::resource('crudkelas3', CRUDKelas3Controller::class);
 Route::resource('crudkelas4', CRUDKelas4Controller::class);
 Route::resource('crudkelas5', CRUDKelas5Controller::class);
 Route::resource('crudkelas6', CRUDKelas6Controller::class);
+
+//adminWaliKelas
+Route::resource('crudwalikelas', CRUDWaliKelasController::class);

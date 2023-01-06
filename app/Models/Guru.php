@@ -28,4 +28,8 @@ class Guru extends Model
         'tmt_gtk',
         'tmt_gtk_induk'
     ];
+
+    public function guru(){
+        return $this->hasMany(WaliKelas::class);
+    }
 }
