@@ -40,6 +40,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="visimisi">
+                  <span class="menu-title">Visi & Misi</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="sarana">
                   <span class="menu-title">Sarana Prasarana</span>
                   <i class="mdi mdi-account-multiple menu-icon"></i>
