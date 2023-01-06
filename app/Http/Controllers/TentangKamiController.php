@@ -88,10 +88,10 @@ class TentangKamiController extends Controller
         }
         if ($tentangkami) {
             //redirect dengan pesan sukses
-            return redirect()->route('tentang.index')->with(['success' => 'Data Berhasil Diupdate!']);
+            return redirect()->route('tentangkami.index')->with(['success' => 'Data Berhasil Diupdate!']);
         } else {
             //redirect dengan pesan error
-            return redirect()->route('tentang.index')->with(['error' => 'Data Gagal Diupdate!']);
+            return redirect()->route('tentangkami.index')->with(['error' => 'Data Gagal Diupdate!']);
         }
     }
 
@@ -102,10 +102,10 @@ class TentangKamiController extends Controller
 
         if ($tentangkami) {
             //redirect dengan pesan sukses
-            return redirect()->route('tentang.index')->with(['success' => 'Data Berhasil Dihapus!']);
+            return redirect()->route('tentangkami.index')->with(['success' => 'Data Berhasil Dihapus!']);
         } else {
             //redirect dengan pesan error
-            return redirect()->route('tentang.index')->with(['error' => 'Data Gagal Dihapus!']);
+            return redirect()->route('tentangkami.index')->with(['error' => 'Data Gagal Dihapus!']);
         }
     }
 }
