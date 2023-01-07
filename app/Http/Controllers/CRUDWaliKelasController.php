@@ -52,8 +52,6 @@ class CRUDWaliKelasController extends Controller
      */
     public function edit($id)
     {
-        //menampilkan detail data dengan menemukan berdasarkan Nim Menu untuk diedit
-        
         $wk = WaliKelas::find($id);
         $nama = Guru::all();
         return view('waliKelas.edit', compact('wk','nama'));

@@ -45,16 +45,15 @@
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">Nama Wali Kelas</label>
-                                <select name="nama"
-                                id="nama" class="form-control">
-                                <option value="">   Pilih Nama Guru   </option>
-                                @foreach ($nama as $w)
-                                    <option value="{{ $w->id }}" {{ $wk->nama ==  $w->nama ? 'selected' : '' }}>{{ $w->nama }}</option>
+                                <select name="guru_id"
+                                id="guru_id" class="form-control">
+                                @foreach ($nama as $nm)
+                                    <option value="{{ $nm->id }}" {{ $nm->nama ==  $nm->nama ? 'selected' : '' }}>{{ $nm->nama }}</option>
                                 @endforeach
                             </select>
                             
                                 <!-- error message untuk title -->
-                                @error('nama')
+                                @error('guru_id')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

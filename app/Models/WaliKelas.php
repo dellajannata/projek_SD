@@ -18,7 +18,7 @@ class WaliKelas extends Model
         'kelas',
     ];
 
-    public function walikelas(){
+    public function guru(){
         return $this->belongsTo(Guru::class,'guru_id', 'id');
     }
 }

@@ -24,7 +24,7 @@
                                     @forelse ($wk as $w)
                                         <tr>
                                             <td>{{ $no++ }}</td>
-                                            <td>{{ $w->walikelas->nama }}</td>
+                                            <td>{{ $w->guru->nama }}</td>
                                             <td>{{ $w->kelas }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
