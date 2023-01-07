@@ -9,7 +9,7 @@
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
                             <a href="{{ route('informasisd.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
-                                INFORMASI SDN 108 GRESIK</a>
+                                </a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -35,7 +35,7 @@
                                                     <a href="{{ route('informasisd.edit', $i->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
                                                     <a href="{{ route('informasisd.show', $i->id) }}"
-                                                        class="btn btn-sm btn-info">Details</a>
+                                                        class="btn btn-sm btn-info">DETAILS</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>

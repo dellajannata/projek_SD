@@ -9,7 +9,7 @@
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
                             <a href="{{ route('crudkelas3.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
-                                DATA</a>
+                                </a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>

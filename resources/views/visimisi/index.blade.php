@@ -9,7 +9,7 @@
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
                             <a href="{{ route('visimisi.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
-                                DATA</a>
+                                </a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -32,7 +32,7 @@
                                                     <a href="{{ route('visimisi.edit', $vm->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
                                                     <a href="{{ route('visimisi.show', $vm->id) }}"
-                                                        class="btn btn-sm btn-info">Details</a>
+                                                        class="btn btn-sm btn-info">DETAILS</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
