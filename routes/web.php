@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminBerandaController;
 use App\Http\Controllers\AdminGuruController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\CRUDAlbumController;
 use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\CRUDKelasController;
@@ -60,6 +61,7 @@ Route::resource('visimisi', VisimisiController::class);
 Route::resource('informasisd', InformasiController::class);
 Route::resource('informasiLomba', InformasiLombaController::class);
 
+//TENTANGKAMI
 Route::resource('tentangkami', TentangKamiController::class);
 
 //adminKelas
@@ -69,3 +71,6 @@ Route::resource('crudkelas3', CRUDKelas3Controller::class);
 Route::resource('crudkelas4', CRUDKelas4Controller::class);
 Route::resource('crudkelas5', CRUDKelas5Controller::class);
 Route::resource('crudkelas6', CRUDKelas6Controller::class);
+
+//ALBUM
+Route::resource('crudalbum', CRUDAlbumController::class);

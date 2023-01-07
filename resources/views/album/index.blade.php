@@ -19,35 +19,32 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH GURU</a>
+                            <a href="{{ route('crudalbum.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH ALBUM</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">No.</th>
                                         <th scope="col">FOTO</th>
-                                        <th scope="col">NAMA</th>
-                                        <th scope="col">JENIS PTK</th>
-                                        <th scope="col">AKSI</th>
+                                        <th scope="col">NAMA KEGIATAN</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php $no=1 ?>
-                                    @forelse ($guru as $gr)
+                                    @forelse ($album as $ab)
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td class="text-center">
-                                                <img src="{{ asset('storage/guru/' . $gr->image) }}" class="rounded"
+                                                <img src="{{ asset('storage/album/' . $ab->image) }}" class="rounded"
                                                     style="width: 250px; height:200px" >
                                             </td>
-                                            <td>{{ $gr->nama }}</td>
-                                            <td>{{ $gr->jenisPTK }}</td>
+                                            <td>{{ $ab->judul }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                    action="{{ route('crudguru.destroy', $gr->id) }}" method="POST">
-                                                    <a href="{{ route('crudguru.edit', $gr->id) }}"
+                                                    action="{{ route('crudalbum.destroy', $ab->id) }}" method="POST">
+                                                    <a href="{{ route('crudalbum.edit', $ab->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
-                                                        <a href="{{ route('crudguru.show', $gr->id) }}"
-                                                            class="btn btn-sm btn-info">DETAILS</a>
+                                                        <a href="{{ route('crudalbum.show', $ab->id) }}"
+                                                            class="btn btn-sm btn-info">Details</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
@@ -56,12 +53,12 @@
                                         </tr>
                                     @empty
                                         <div class="alert alert-danger">
-                                            Data Guru belum Tersedia.
+                                            Data Album belum Tersedia.
                                         </div>
                                     @endforelse
                                 </tbody>
                             </table>
-                            {{ $guru->links() }}
+                            {{ $album->links() }}
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-header">
-                        <Center>TAMBAH DATA KARYAWAN</Center>
+                        <Center>TAMBAH DATA GURU</Center>
                     </div>
                     <div class="card-body">
                         @if ($errors->any())
