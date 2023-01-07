@@ -23,6 +23,7 @@ use App\Http\Controllers\InformasiController;
 use App\Http\Controllers\TampilanBerandaController;
 use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
+use App\Http\Controllers\SaranaPrasaranaController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -56,6 +57,7 @@ Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 Route::resource('crudguru', CRUDGuruController::class);
 Route::resource('pembiasaan', PembiasaanController::class);
 Route::resource('visimisi', VisimisiController::class);
+Route::resource('saranaPrasarana', SaranaPrasaranaController::class);
 
 //INFORMASI
 Route::resource('informasisd', InformasiController::class);
