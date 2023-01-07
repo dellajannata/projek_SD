@@ -16,6 +16,5 @@ class Kelas3 extends Model
         'jm_mulai',
         'jm_akhir',
         'hari',
-        'guru_id',
     ];
 }
