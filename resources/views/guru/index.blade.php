@@ -19,7 +19,7 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH GURU</a>
+                            <a href="{{ route('crudguru.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>

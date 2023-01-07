@@ -8,32 +8,28 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudkelas3.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
-                                </a>
+                            <a href="{{ route('crudwalikelas.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
+                            </a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">No.</th>
-                                        <th scope="col">Hari</th>
-                                        <th scope="col">Mata Pelajaran</th>
-                                        <th scope="col">Jam Mulai</th>
-                                        <th scope="col">Jam Berakhir</th>
+                                        <th scope="col">Kelas</th>
+                                        <th scope="col">Nama Wali Kelas</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php $no = 1; ?>
-                                    @forelse ($kelas3 as $k)
+                                    @forelse ($wk as $w)
                                         <tr>
                                             <td>{{ $no++ }}</td>
-                                            <td>{{ $k->hari }}</td>
-                                            <td>{{ $k->mapel }}</td>
-                                            <td>{{ $k->jm_mulai }}</td>
-                                            <td>{{ $k->jm_akhir }}</td>
+                                            <td>{{ $w->guru->nama }}</td>
+                                            <td>{{ $w->kelas }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                    action="{{ route('crudkelas3.destroy', $k->id) }}" method="POST">
-                                                    <a href="{{ route('crudkelas3.edit', $k->id) }}"
+                                                    action="{{ route('crudwalikelas.destroy', $w->id) }}" method="POST">
+                                                    <a href="{{ route('crudwalikelas.edit', $w->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
                                                     @csrf
                                                     @method('DELETE')
@@ -48,7 +44,7 @@
                                     @endforelse
                                 </tbody>
                             </table>
-                            {{ $kelas3->links() }}
+                            {{ $wk->links() }}
                         </div>
                     </div>
                 </div>

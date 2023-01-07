@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKelas extends Migration
+class CreateSaranaPrasaranasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateKelas extends Migration
      */
     public function up()
     {
-        Schema::create('kelas', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('mapel');
-            $table->time('jm_mulai');
-            $table->time('jm_akhir');
-            $table->enum('hari',['senin','selasa','rabu','kamis','jumat','sabtu','minggu']);
+        Schema::create('sarana_prasarana', function (Blueprint $table) {
+            $table->id();
+            $table->string('image');
+            $table->string('namaSarana');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateKelas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kelas');
+        Schema::dropIfExists('sarana_prasarana');
     }
 }

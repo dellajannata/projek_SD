@@ -15,10 +15,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card border-0 shadow rounded">
-                <div class="card-header">
-                    <Center>DETAIL DATA INFORMASI SDN 108 GRESIK</Center>
-                </div>
-                <div class="card-body">
+                    <div class="card-header">
+                        <Center>DETAIL DATA SARANA PRASARANA</Center>
+                    </div>
+                    <div class="card-body">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -35,24 +35,24 @@
                                                 FOTO
                                             </td>
                                             <td>
-                                                <img src="{{ asset('storage/informasi/' . $informasi->image) }}" class="rounded"
+                                                <img src="{{ asset('storage/saranaPrasarana/' . $saranaPrasarana->image) }}" class="rounded"
                                                     style="width: 250px; height:200px" >
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>
-                                                Deskripsi
+                                                Sarana Prasarana
                                             </td>
                                             <td>
-                                                {{$informasi->deskripsi}}
+                                                {{$saranaPrasarana->namaSarana}}
                                             </td>
                                         </tr>
                                     
                                 </tbody>
                             </table>
                             <br>
-                            <a class="btn btn-md btn-primary" href="{{ route('informasisd.index') }}" class="">KEMBALI</a>
+                            <a class="btn btn-md btn-primary" href="{{ route('saranaPrasarana.index') }}" class="">KEMBALI</a>
                         </div>
                     </div>
                 </div>

@@ -34,6 +34,7 @@
                         </div><!-- end media -->
                     </div><!-- end col -->
                 @endforeach
+<<<<<<< HEAD
             </div>
             <div class="row align-items-center">
                 @foreach ($tentang as $tentangkami)
@@ -53,6 +54,9 @@
                     </div><!-- end col -->
                 @endforeach
             </div><!-- end row -->
+=======
+			</div>
+>>>>>>> 922902cfe6bfffdf81027192fb8c38abb3e5c940
         </div><!-- end container -->
         {{ $tentang->links() }}
     </div><!-- end section -->

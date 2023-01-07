@@ -167,24 +167,33 @@
                         <h3>Kegiatan Pembiasaan</h3>
                     </div>
                 </div><!-- end title -->
+
                 <div class="row">
                     @foreach ($pembiasaan as $p)
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="our-team">
-                                <div class="team-img">
-                                    <img src="{{ asset('storage/pembiasaan/' . $p->image) }}">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="blog-item">
+                                <div class="image-blog">
+                                    <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
+                                        class="img-fluid">
                                 </div>
-                                <div class="team-content">
-                                    <h3 class="title">{{ $p->namaKegiatan }}</h3>
-                                    <p class="post">{{ $p->deskripsi }}</p>
+                                <div class="blog-title">
+                                    <h2><a href="#" title="">{{ $p->namaKegiatan }}</a></h2>
+                                </div>
+                                <div class="blog-desc">
+                                    <p>{{ $p->deskripsi }}</p>
+                                </div>
+                                <div class="blog-button">
+                                    <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- end col -->
                     @endforeach
-                </div>
+                </div><!-- end row -->
+
+
             </div>
         </section><!-- end section -->
-        
+
         <div class="section cl">
             <div class="container">
                 <div class="row text-left stat-wrap">

@@ -15,10 +15,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card border-0 shadow rounded">
-                <div class="card-header">
-                    <Center>TAMBAH DATA TENTANG KAMI</Center>
-                </div>
-                <div class="card-body">
+                    <div class="card-header">
+                        <Center>EDIT DATA SARANA PRASARANA</Center>
+                    </div>
+                    <div class="card-body">
                         @if ($errors->any())
                             <div class="alert alert-danger"> <strong>Whoops!</strong> There were some problems with your
                                 input.<br><br>
@@ -29,16 +29,17 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('tentangkami.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('saranaPrasarana.update' , $saranaPrasarana->id) }}" method="POST" enctype="multipart/form-data">
                         
-                            @csrf
+                            @csrf 
+                            @method('PUT')
 
                             <div class="form-group">
-                                <label class="font-weight-bold">Judul</label>
-                                <input type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Masukkan Judul">
+                                <label class="font-weight-bold">Foto</label>
+                                <input type="file" value="{{$saranaPrasarana->image}}" class="form-control @error('image') is-invalid @enderror" name="image">
                             
                                 <!-- error message untuk title -->
-                                @error('judul')
+                                @error('image')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>
@@ -46,32 +47,18 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">Deskripsi</label>
-                                <input type="text" class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" value="{{ old('deskripsi') }}" placeholder="Masukkan Deskripsi">
+                                <label class="font-weight-bold">SARANA PRASARANA</label>
+                                <input type="text" value="{{$saranaPrasarana->namaSarana}}" class="form-control @error('namaSarana') is-invalid @enderror" name="namaSarana" value="{{ old('namaSarana') }}" placeholder="Masukkan Sarana Prasarana">
                             
                                 <!-- error message untuk title -->
-                                @error('deskripsi')
+                                @error('namaSarana')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
-
-                            <div class="form-group">
-                                <label class="font-weight-bold">GAMBAR</label>
-                                <input type="file" class="form-control @error('gambar') is-invalid @enderror" name="gambar">
-                            
-                                <!-- error message untuk title -->
-                                @error('gambar')
-                                    <div class="alert alert-danger mt-2">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-
                             <button type="submit" class="btn btn-md btn-success">SIMPAN</button>
-                            <a class="btn btn-md btn-primary" href="{{ route('tentangkami.index') }}" class="">KEMBALI</a>
-
+                            <a class="btn btn-md btn-primary" href="{{ route('saranaPrasarana.index') }}" class="">KEMBALI</a>
                         </form> 
                     </div>
                 </div>

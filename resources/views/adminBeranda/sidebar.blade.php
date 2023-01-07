@@ -46,8 +46,14 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sarana">
+                <a class="nav-link" href="saranaPrasarana">
                   <span class="menu-title">Sarana Prasarana</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="crudwalikelas">
+                  <span class="menu-title">Wali Kelas</span>
                   <i class="mdi mdi-account-multiple menu-icon"></i>
                 </a>
               </li>
