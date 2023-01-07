@@ -8,163 +8,25 @@
 
 <div id="overviews" class="section wb">
     <div class="container">
-        
         <hr class="invis"> 
-
         <div class="row"> 
-            <div class="col-lg-4 col-md-6 col-12">
+            @foreach ($album as $ab)
+            <div class="col-lg-4 col-md-6 col-12" >
                 <div class="blog-item">
                     <div class="image-blog">
-                        <img src="{{ asset('storage/album/' . $album->image) }}" alt="" class="img-fluid">
+                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="max-width:300px;max-height:200px;float:left;" alt="" class="img-fluid">
                     </div>
                     <div class="blog-title">
-                        <h2><a>{{ $album->judul }}</a></h2>
+                        <h2><a>{{ $ab->judul }}</a></h2>
                     </div>
                     <div class="blog-button">
                         <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
                     </div>
                 </div>
             </div><!-- end col -->
-
-            {{--  <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-item">
-                    <div class="image-blog">
-                        <img src="images/blog_2.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="meta-info-blog">
-                        <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
-                        <span><i class="fa fa-tag"></i>  <a href="#">News</a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
-                    <div class="blog-title">
-                        <h2><a href="#" title="">perferendis doloribus asperiores.</a></h2>
-                    </div>
-                    <div class="blog-desc">
-                        <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
-                    </div>
-                    <div class="blog-button">
-                        <a class="hover-btn-new orange" href="#"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-item">
-                    <div class="image-blog">
-                        <img src="images/blog_3.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="meta-info-blog">
-                        <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
-                        <span><i class="fa fa-tag"></i>  <a href="#">News</a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
-                    <div class="blog-title">
-                        <h2><a href="#" title="">perferendis doloribus asperiores.</a></h2>
-                    </div>
-                    <div class="blog-desc">
-                        <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
-                    </div>
-                    <div class="blog-button">
-                        <a class="hover-btn-new orange" href="#"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div><!-- end col -->  --}}
+            @endforeach
         </div><!-- end row -->
-
-        {{--  <hr class="hr3">   --}}
-
-        {{--  <div class="row"> 
-            <div class="col-lg-4 col-md-6 col-12">
-               <div class="blog-item">
-                    <div class="image-blog">
-                        <img src="images/blog_4.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="meta-info-blog">
-                        <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
-                        <span><i class="fa fa-tag"></i>  <a href="#">News</a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
-                    <div class="blog-title">
-                        <h2><a href="#" title="">perferendis doloribus asperiores.</a></h2>
-                    </div>
-                    <div class="blog-desc">
-                        <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
-                    </div>
-                    <div class="blog-button">
-                        <a class="hover-btn-new orange" href="#"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-item">
-                    <div class="image-blog">
-                        <img src="images/blog_5.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="meta-info-blog">
-                        <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
-                        <span><i class="fa fa-tag"></i>  <a href="#">News</a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
-                    <div class="blog-title">
-                        <h2><a href="#" title="">perferendis doloribus asperiores.</a></h2>
-                    </div>
-                    <div class="blog-desc">
-                        <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
-                    </div>
-                    <div class="blog-button">
-                        <a class="hover-btn-new orange" href="#"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div><!-- end col -->
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-item">
-                    <div class="image-blog">
-                        <img src="images/blog_6.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="meta-info-blog">
-                        <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
-                        <span><i class="fa fa-tag"></i>  <a href="#">News</a> </span>
-                        <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                    </div>
-                    <div class="blog-title">
-                        <h2><a href="#" title="">perferendis doloribus asperiores.</a></h2>
-                    </div>
-                    <div class="blog-desc">
-                        <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
-                    </div>
-                    <div class="blog-button">
-                        <a class="hover-btn-new orange" href="#"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div><!-- end col -->
-        </div><!-- end row -->  --}}
     </div><!-- end container -->
+    {{ $album->links() }}
 </div><!-- end section -->
-
-{{--  <div class="parallax section dbcolor">
-    <div class="container">
-        <div class="row logos">
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
-            </div>
-            <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
-            </div>
-        </div><!-- end row -->
-    </div><!-- end container -->
-</div><!-- end section -->  --}}
 @endsection

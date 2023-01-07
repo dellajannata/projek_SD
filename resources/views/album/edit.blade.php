@@ -26,11 +26,11 @@
                             @method('PUT')
 
                             <div class="form-group">
-                                <label class="font-weight-bold">GAMBAR</label>
-                                <input type="file" value="{{$album->iamge}}" class="form-control @error('image') is-invalid @enderror" name="image">
+                                <label class="font-weight-bold">NAMA KEGIATAN</label>
+                                <input type="text" value="{{$album->judul}}" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Masukkan Nama Kegiatan">
                             
                                 <!-- error message untuk title -->
-                                @error('image')
+                                @error('judul')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>
@@ -38,11 +38,11 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">NAMA KEGIATAN</label>
-                                <input type="text" value="{{$album->judul}}" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" placeholder="Masukkan Nama Kegiatan">
+                                <label class="font-weight-bold">GAMBAR</label>
+                                <input type="file" value="{{$album->iamge}}" class="form-control @error('image') is-invalid @enderror" name="image">
                             
                                 <!-- error message untuk title -->
-                                @error('judul')
+                                @error('image')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

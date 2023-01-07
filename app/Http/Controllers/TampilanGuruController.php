@@ -10,7 +10,7 @@ class TampilanGuruController extends Controller
 {
     public function index()
     {
-        $guru = Guru::orderBy('id', 'asc')->paginate(8);
+        $guru = Guru::orderBy('id', 'asc')->paginate(32);
         return view('layouts.guru', compact('guru'));
     }
 }

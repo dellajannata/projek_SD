@@ -26,6 +26,7 @@
                                         <th scope="col">No.</th>
                                         <th scope="col">FOTO</th>
                                         <th scope="col">NAMA KEGIATAN</th>
+                                        <th scope="col">AKSI</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -44,7 +45,7 @@
                                                     <a href="{{ route('crudalbum.edit', $ab->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
                                                         <a href="{{ route('crudalbum.show', $ab->id) }}"
-                                                            class="btn btn-sm btn-info">Details</a>
+                                                            class="btn btn-sm btn-info">DETAILS</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>

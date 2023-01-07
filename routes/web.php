@@ -75,10 +75,9 @@ Route::resource('crudkelas4', CRUDKelas4Controller::class);
 Route::resource('crudkelas5', CRUDKelas5Controller::class);
 Route::resource('crudkelas6', CRUDKelas6Controller::class);
 
-<<<<<<< HEAD
 //ALBUM
 Route::resource('crudalbum', CRUDAlbumController::class);
-=======
+
 //adminWaliKelas
 Route::resource('crudwalikelas', CRUDWaliKelasController::class);
->>>>>>> 922902cfe6bfffdf81027192fb8c38abb3e5c940
+

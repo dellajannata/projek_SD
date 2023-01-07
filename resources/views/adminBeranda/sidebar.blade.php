@@ -88,7 +88,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/tables/basic-table.html">
+                <a class="nav-link" href="crudalbum">
                   <span class="menu-title">Album</span>
                   <i class="mdi mdi-folder-image menu-icon"></i>
                 </a>
