@@ -87,7 +87,7 @@ class CRUDKelas5Controller extends Controller
         $kelas5 = Kelas5::findOrFail($id);
         $kelas5->delete();
 
-        if ($kelas) {
+        if ($kelas5) {
             //redirect dengan pesan sukses
             return redirect()->route('crudkelas5.index')->with(['success' => 'Data Berhasil Dihapus!']);
         } else {
