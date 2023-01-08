@@ -30,7 +30,7 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $vm->judul }}</td>
-                                            <td>{{ $vm->deskripsi }}</td>
+                                            <td>{!!$vm->deskripsi!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('visimisi.destroy', $vm->id) }}" method="POST">
