@@ -59,7 +59,7 @@
                                         <img src="{{ asset('storage/informasi/' . $i->image) }}" class="rounded"
                                             style="width: 550px; height:300px">
                                     </div>
-                                    <div>{{ Illuminate\Support\Str::of($i->deskripsi)->words(6) }} </div>
+                                    <div>{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!} </div>
                                 </div>
                         </div>
                     @empty
