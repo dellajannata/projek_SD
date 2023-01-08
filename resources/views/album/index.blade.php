@@ -19,7 +19,8 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudalbum.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH ALBUM</a>
+                            <a href="{{ route('crudalbum.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
+                                ALBUM</a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -30,13 +31,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $no=1 ?>
+                                    <?php $no = 1; ?>
                                     @forelse ($album as $ab)
                                         <tr>
-                                            <td>{{$no++}}</td>
+                                            <td>{{ $no++ }}</td>
                                             <td class="text-center">
                                                 <img src="{{ asset('storage/album/' . $ab->image) }}" class="rounded"
-                                                    style="width: 250px; height:200px" >
+                                                    style="width: 250px; height:200px">
                                             </td>
                                             <td>{{ $ab->judul }}</td>
                                             <td class="text-center">
@@ -44,8 +45,8 @@
                                                     action="{{ route('crudalbum.destroy', $ab->id) }}" method="POST">
                                                     <a href="{{ route('crudalbum.edit', $ab->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
-                                                        <a href="{{ route('crudalbum.show', $ab->id) }}"
-                                                            class="btn btn-sm btn-info">DETAILS</a>
+                                                    <a href="{{ route('crudalbum.show', $ab->id) }}"
+                                                        class="btn btn-sm btn-info">DETAILS</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
@@ -80,7 +81,7 @@
             @endif
         </script>
 
-    {{-- </body>
+        {{-- </body>
 
     </html> --}}
-@endsection
+    @endsection

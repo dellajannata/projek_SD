@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Guru;
 use Illuminate\Http\Request;
+
 
 class AdminBerandaController extends Controller
 {
@@ -18,6 +20,7 @@ class AdminBerandaController extends Controller
      */
     public function index()
     {
-        return view('adminBeranda.index');
+        $guru = Guru::all()->count();
+        return view('adminBeranda.index',compact('guru'));
     }
 }
