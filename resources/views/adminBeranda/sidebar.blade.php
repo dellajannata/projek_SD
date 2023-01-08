@@ -64,6 +64,12 @@
                 </div>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="pembiasaan">
+                  <span class="menu-title">Pembiasaan</span>
+                  <i class="mdi mdi-account-multiple menu-icon"></i>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="saranaPrasarana">
                   <span class="menu-title">Sarana Prasarana</span>
                   <i class="mdi mdi-account-multiple menu-icon"></i>

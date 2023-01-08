@@ -10,6 +10,11 @@
                         <div class="card-body">
                             <a href="{{ route('crudkelas.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
                                 </a>
+                                @if ($message = Session::get('success'))
+                                <div class="alert alert-success">
+                                    <p>{{ $message }}</p>
+                                </div>
+                            @endif
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>

@@ -21,9 +21,7 @@
                                             <h2><strong>UPT SD Negeri </strong> 108 Gresik</h2>
                                             <p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten
                                                 Gresik, Jawa Timur 61172</p>
-                                            <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <a href="tentang" class="hover-btn-new"><span>Read More</span></a>
+                                            <a href="tentang" class="hover-btn-new"><span>Selengkapnya</span></a>
                                         </div>
                                     </div>
                                 </div><!-- end row -->
@@ -42,9 +40,6 @@
                                                     Gresik</strong></h2>
                                             <p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok,
                                                 Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
-                                            <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <a href="#" class="hover-btn-new"><span>Read More</span></a>
                                         </div>
                                     </div>
                                 </div><!-- end row -->
@@ -63,9 +58,6 @@
                                                 Gresik</h2>
                                             <p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok,
                                                 Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
-                                            <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <a href="#" class="hover-btn-new"><span>Read More</span></a>
                                         </div>
                                     </div>
                                 </div><!-- end row -->

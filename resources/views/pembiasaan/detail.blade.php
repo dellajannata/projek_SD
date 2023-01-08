@@ -50,7 +50,7 @@
                                 </tbody>
                             </table>
                             <br>
-                            <a class="btn btn-sm btn-primary" href="{{ route('pembiasaan.index') }}" class="">Kembali</a>
+                            <a class="btn btn-md btn-primary" href="{{ route('pembiasaan.index') }}" class="">KEMBALI</a>
                         </div>
                     </div>
                 </div>

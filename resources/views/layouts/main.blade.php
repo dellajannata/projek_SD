@@ -10,6 +10,7 @@
 
 <!-- Site Metas -->
 <title>UPT SD Negeri 108 Gresik</title>
+<link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
