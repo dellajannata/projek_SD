@@ -9,7 +9,7 @@
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
                             <a href="{{ route('visimisi.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
-                                </a>
+                            </a>
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -25,7 +25,7 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $vm->judul }}</td>
-                                            <td>{{ $vm->deskripsi }}</td>
+                                            <td>{!!$vm->deskripsi!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('visimisi.destroy', $vm->id) }}" method="POST">

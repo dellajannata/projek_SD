@@ -132,7 +132,13 @@
                                             </div>
                                         </div>
                                     @endforeach
+
                                 </div><!-- end row -->
+                                <hr class="invis">
+
+                                <div class="row ">
+                                    {{ $informasisd->links() }}
+                                </div>
                             </div><!-- end pane -->
 
                             <div class="tab-pane fade" id="tab2">
@@ -153,9 +159,15 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
+                                <hr class="invis">
+
+                                <div class="row ">
+                                    {{ $informasiLomba->links() }}
+                                </div>
                             </div><!-- end pane -->
                         </div><!-- end content -->
                     </div><!-- end col -->
+
                 </div><!-- end row -->
             </div>
         </div>
@@ -182,15 +194,20 @@
                                 <div class="blog-desc">
                                     <p>{{ $p->deskripsi }}</p>
                                 </div>
-                                <div class="blog-button">
+                                {{-- <div class="blog-button">
                                     <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div><!-- end col -->
                     @endforeach
                 </div><!-- end row -->
 
 
+            </div>
+            <hr class="invis">
+
+            <div class="row ">
+                {{ $pembiasaan->links() }}
             </div>
         </section><!-- end section -->
 
