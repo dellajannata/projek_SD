@@ -22,7 +22,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
                             <h4 class="title">{{ $tentangkami->judul }}</h4>
-                            <p class="post">{{ $tentangkami->deskripsi }}</p>
+                            <p class="post">{!! $tentangkami->deskripsi !!}</p>
                             <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
@@ -47,7 +47,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
                             <h2 class="title">{{ $tentangkami->judul }}</h2>
-                                <p class="post">{{ $tentangkami->deskripsi }}</p>
+                                <p class="post">{!! $tentangkami->deskripsi !!}</p>
                                 <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
@@ -66,7 +66,7 @@
                     <div class="inner-hmv">
                         {{-- <div class="icon-box-hmv"><i class="flaticon-achievement"></i></div> --}}
                         <h3 class="title">{{ $vm->judul }}</h3>
-                        <span class="post">{{ $vm->deskripsi }}</span>
+                        <span class="post">{!! $vm->deskripsi !!}</span>
                     </div>
                 </div>
                 @endforeach

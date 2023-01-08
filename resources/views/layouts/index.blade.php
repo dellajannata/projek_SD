@@ -119,7 +119,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{{ $i->deskripsi }}</h3>
+                                                    <h3 class="title">{!!$i->deskripsi !!}</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{{ $i->deskripsi }}</h3>
+                                                    <h3 class="title">{!! $i->deskripsi !!}</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,7 +184,7 @@
                                     <h2><a href="#" title="">{{ $p->namaKegiatan }}</a></h2>
                                 </div>
                                 <div class="blog-desc">
-                                    <p>{{ $p->deskripsi }}</p>
+                                    <p>{!! $p->deskripsi !!}</p>
                                 </div>
                                 {{-- <div class="blog-button">
                                     <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
