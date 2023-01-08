@@ -1,7 +1,24 @@
-@extends('adminBeranda.main')
-@section('adminBeranda.content')
+<!DOCTYPE html>
+<html lang="en">
 
-    <body style="background: lightgray">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UPT SD Negeri 108 Gresik</title>
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+</head>
+
+<body style="background: lightgray">
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">
@@ -20,15 +37,17 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('pembiasaan.update' , $pembiasaan->id) }}" method="POST" enctype="multipart/form-data">
-                        
-                            @csrf 
+                        <form action="{{ route('pembiasaan.update', $pembiasaan->id) }}" method="POST"
+                            enctype="multipart/form-data">
+
+                            @csrf
                             @method('PUT')
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Foto</label>
-                                <input type="file" value="{{$pembiasaan->image}}" class="form-control @error('image') is-invalid @enderror" name="image">
-                            
+                                <input type="file" value="{{ $pembiasaan->image }}"
+                                    class="form-control @error('image') is-invalid @enderror" name="image">
+
                                 <!-- error message untuk title -->
                                 @error('image')
                                     <div class="alert alert-danger mt-2">
@@ -39,8 +58,10 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">Nama Kegiatan</label>
-                                <input type="text" value="{{$pembiasaan->namaKegiatan}}" class="form-control @error('namaKegiatan') is-invalid @enderror" name="namaKegiatan" value="{{ old('namaKegiatan') }}" placeholder="Masukkan Nama Kegiatan">
-                            
+                                <input type="text" value="{{ $pembiasaan->namaKegiatan }}"
+                                    class="form-control @error('namaKegiatan') is-invalid @enderror" name="namaKegiatan"
+                                    value="{{ old('namaKegiatan') }}" placeholder="Masukkan Nama Kegiatan">
+
                                 <!-- error message untuk title -->
                                 @error('namaKegiatan')
                                     <div class="alert alert-danger mt-2">
@@ -51,8 +72,9 @@
 
                             <div class="form-group">
                                 <label class="font-weight-bold">DESKRIPSI</label>
-                                <textarea class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" rows="5" placeholder="Masukkan Deskripsi">{{ old('deskripsi', $pembiasaan->deskripsi) }}</textarea>
-                            
+                                <textarea class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" id="summernote" rows="5"
+                                    placeholder="Masukkan Deskripsi">{{ old('deskripsi', $pembiasaan->deskripsi) }}</textarea>
+
                                 <!-- error message untuk content -->
                                 @error('deskripsi')
                                     <div class="alert alert-danger mt-2">
@@ -61,12 +83,29 @@
                                 @enderror
                             </div>
                             <button type="submit" class="btn btn-md btn-success">SIMPAN</button>
-                            <a class="btn btn-md btn-primary" href="{{ route('pembiasaan.index') }}" class="">KEMBALI</a>
-                        </form> 
+                            <a class="btn btn-md btn-primary" href="{{ route('pembiasaan.index') }}"
+                                class="">KEMBALI</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-@endsection
+    <script>
+        $('#summernote').summernote({
+            placeholder: 'Masukkan Deskripsi',
+            tabsize: 2,
+            height: 120,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+    </script>
+</body>
+</html>

@@ -16,6 +16,7 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
+                                        <th scope="col">No</th>
                                         <th scope="col">Judul</th>
                                         <th scope="col">Deskripsi</th>
                                         <th scope="col">Gambar</th>
@@ -28,7 +29,7 @@
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>{{ $tk->judul }}</td>
-                                            <td>{{ $tk->deskripsi }}</td>
+                                            <td>{!! $tk->deskripsi !!}</td>
                                             <td class="text-center">
                                                 <img src="{{ asset('storage/tentangkami/' . $tk->gambar) }}" class="rounded"
                                                     style="width: 250px; height:200px" >

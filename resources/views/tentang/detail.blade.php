@@ -44,7 +44,7 @@
                                             Deskripsi
                                         </td>
                                         <td>
-                                            {{$tentangkami->deskripsi}}
+                                            {!!$tentangkami->deskripsi!!}
                                         </td>
                                     </tr>
 

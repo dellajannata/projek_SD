@@ -33,7 +33,7 @@
                                                 <img src="{{ asset('storage/informasiLomba/' . $i->image) }}" class="rounded"
                                                     style="width: 250px; height:200px">
                                             </td>
-                                            <td>{{ Illuminate\Support\Str::of($i->deskripsi)->words(6) }}</td>
+                                            <td>{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('informasiLomba.destroy', $i->id) }}" method="POST">
