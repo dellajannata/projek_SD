@@ -17,6 +17,7 @@ class CreateAlbumTable extends Migration
             $table->id();
             $table->string('image');
             $table->string('judul');
+            $table->date('tanggal');
             $table->timestamps();
         });
     }

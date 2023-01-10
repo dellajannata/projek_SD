@@ -1,9 +1,6 @@
 @extends('layouts.main')
 @section('layouts.content')
     <div class="all-title-box">
-        <div class="container text-center">
-            <h1>Tentang Kami<span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
-        </div>
     </div>
 
     <div id="overviews" class="section lb">

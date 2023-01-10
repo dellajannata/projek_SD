@@ -15,5 +15,6 @@ class Album extends Model
     protected $fillable = [
         'image', 
         'judul',
+        'tanggal',
     ];
 }

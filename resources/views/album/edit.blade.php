@@ -48,6 +48,18 @@
                             </div>
 
                             <div class="form-group">
+                                <label class="font-weight-bold">TANGGAL KEGIATAN</label>
+                                <input type="date" value="{{$album->tanggal}}" class="form-control @error('tanggal') is-invalid @enderror" name="tanggal" value="{{ old('tanggal') }}" placeholder="Masukkan Tanggal Kegiatan">
+                            
+                                <!-- error message untuk title -->
+                                @error('tanggal')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
                                 <label class="font-weight-bold">GAMBAR</label>
                                 <input type="file" value="{{$album->iamge}}" class="form-control @error('image') is-invalid @enderror" name="image">
                             

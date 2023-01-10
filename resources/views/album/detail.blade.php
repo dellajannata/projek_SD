@@ -50,6 +50,15 @@
                                                 {{$album->judul}}
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>{{$no++}}</td>
+                                            <td>
+                                                Tanggal Kegiatan
+                                            </td>
+                                            <td>
+                                                {{$album->tanggal}}
+                                            </td>
+                                        </tr>
                                 </tbody>
                             </table>
                             <br>

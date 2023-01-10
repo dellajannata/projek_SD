@@ -1,13 +1,14 @@
 @extends('layouts.main')
 @section('layouts.content')
 <div class="all-title-box">
-    <div class="container text-center">
-        <h1>GURU <span class="m_1">UPT SD Negeri 108 Gresik</span></h1>
-    </div>
 </div>
 <br><br><br>
 <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('img/fotbar.jpg');">
     <div class="container">
+        <div class="section-title text-center">
+            <h3>GURU</h3>
+            <p>UPT SD Negeri 108 Gresik</p>
+        </div>
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 

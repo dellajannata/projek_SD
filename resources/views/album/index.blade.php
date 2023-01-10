@@ -21,6 +21,7 @@
                                         <th scope="col">No.</th>
                                         <th scope="col">FOTO</th>
                                         <th scope="col">NAMA KEGIATAN</th>
+                                        <th scope="col">TANGGAL KEGIATAN</th>
                                         <th scope="col">AKSI</th>
                                     </tr>
                                 </thead>
@@ -34,6 +35,7 @@
                                                     style="width: 250px; height:200px">
                                             </td>
                                             <td>{{ $ab->judul }}</td>
+                                            <td>{{ $ab->tanggal }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudalbum.destroy', $ab->id) }}" method="POST">

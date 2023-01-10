@@ -24,6 +24,7 @@ class CRUDAlbumController extends Controller
         $request->validate([
             'image'     => 'required|image|mimes:png,jpg,jpeg',
             'judul'     => 'required',
+            'tanggal'     => 'required',
         ]);
 
         //upload image
@@ -33,6 +34,7 @@ class CRUDAlbumController extends Controller
         $album = Album::create([
             'image' => $image->hashName(),
             'judul' => $request->judul,
+            'tanggal' => $request->tanggal,
         ]);
 
         if ($album) {
@@ -60,6 +62,7 @@ class CRUDAlbumController extends Controller
         $this->validate($request, [
             'image'     => 'required|image|mimes:png,jpg,jpeg',
             'judul'     => 'required',
+            'tanggal'     => 'required',
         ]);
 
         //get data Album by ID
@@ -79,6 +82,7 @@ class CRUDAlbumController extends Controller
             $album->update([
                 'image'     => $image->hashName(),
                 'judul'     => $request->judul,
+                'tanggal'     => $request->tanggal,
             ]);
         }
         if ($album) {
