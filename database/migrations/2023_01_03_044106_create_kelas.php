@@ -18,7 +18,7 @@ class CreateKelas extends Migration
             $table->string('mapel');
             $table->time('jm_mulai');
             $table->time('jm_akhir');
-            $table->enum('hari',['senin','selasa','rabu','kamis','jumat','sabtu','minggu']);
+            $table->enum('hari',['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']);
             $table->timestamps();
         });
     }
