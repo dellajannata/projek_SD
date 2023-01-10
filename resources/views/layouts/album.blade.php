@@ -25,7 +25,7 @@
                     </div>
                     <div class="course-br">
                         <div class="course-title">
-                            <h2><a href="#" title="">{{$ab->judul}}</a></h2>
+                            <h2>{{$ab->judul}}</h2>
                         </div>
                         <div class="course-desc">
                         </div>

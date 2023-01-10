@@ -140,7 +140,7 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasiLomba/' . $i->image) }}"
-                                                    style="width:260px;height:200px;;">
+                                                    style="width:260px;height:200px;">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
