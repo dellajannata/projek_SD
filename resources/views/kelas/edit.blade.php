@@ -39,13 +39,13 @@
                                 <label class="font-weight-bold">Hari</label>
                                 <select class="form-control" name="hari" id="hari">
                                     <option hidden>Pilih Hari</option>
-                                    <option value="senin" {{ $kelas->hari == 'senin' ? 'selected' : '' }}>Senin</option>
-                                    <option value="selasa" {{ $kelas->hari == 'selasa' ? 'selected' : '' }}>Selasa</option>
-                                    <option value="rabu" {{ $kelas->hari == 'rabu' ? 'selected' : '' }}>Rabu</option>
-                                    <option value="kamis" {{ $kelas->hari == 'kamis' ? 'selected' : '' }}>Kamis</option>
-                                    <option value="jumat" {{ $kelas->hari == 'jumat' ? 'selected' : '' }}>Jum'at</option>
-                                    <option value="sabtu" {{ $kelas->hari == 'sabtu' ? 'selected' : '' }}>Sabtu</option>
-                                    <option value="minggu" {{ $kelas->hari == 'minggu' ? 'selected' : '' }}>Minggu</option>
+                                    <option value="Senin" {{ $kelas->hari == 'Senin' ? 'selected' : '' }}>Senin</option>
+                                    <option value="Selasa" {{ $kelas->hari == 'Selasa' ? 'selected' : '' }}>Selasa</option>
+                                    <option value="Rabu" {{ $kelas->hari == 'Rabu' ? 'selected' : '' }}>Rabu</option>
+                                    <option value="Kamis" {{ $kelas->hari == 'Kamis' ? 'selected' : '' }}>Kamis</option>
+                                    <option value="Jumat" {{ $kelas->hari == 'Jumat' ? 'selected' : '' }}>Jum'at</option>
+                                    <option value="Sabtu" {{ $kelas->hari == 'Sabtu' ? 'selected' : '' }}>Sabtu</option>
+                                    <option value="Minggu" {{ $kelas->hari == 'Minggu' ? 'selected' : '' }}>Minggu</option>
                                 </select>
                             
                                 <!-- error message untuk title -->

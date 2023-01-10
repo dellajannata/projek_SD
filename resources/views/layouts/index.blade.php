@@ -114,12 +114,12 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                        style="width: 100%;
-                                                height: 100%;">
+                                                        style="width: 100%;height:100%
+                                                ">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{!!$i->deskripsi !!}</h3>
+                                                    <h3 class="title">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{!! $i->deskripsi !!}</h3>
+                                                    <h3 class="title">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</h3>
                                                 </div>
                                             </div>
                                         </div>

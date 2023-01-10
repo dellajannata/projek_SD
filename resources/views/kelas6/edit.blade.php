@@ -39,13 +39,13 @@
                                 <label class="font-weight-bold">Hari</label>
                                 <select class="form-control" name="hari" id="hari">
                                     <option hidden>Pilih Hari</option>
-                                    <option value="senin" {{ $kelas6->hari == 'senin' ? 'selected' : '' }}>Senin</option>
-                                    <option value="selasa" {{ $kelas6->hari == 'selasa' ? 'selected' : '' }}>Selasa</option>
-                                    <option value="rabu" {{ $kelas6->hari == 'rabu' ? 'selected' : '' }}>Rabu</option>
-                                    <option value="kamis" {{ $kelas6->hari == 'kamis' ? 'selected' : '' }}>Kamis</option>
-                                    <option value="jumat" {{ $kelas6->hari == 'jumat' ? 'selected' : '' }}>Jum'at</option>
-                                    <option value="sabtu" {{ $kelas6->hari == 'sabtu' ? 'selected' : '' }}>Sabtu</option>
-                                    <option value="minggu" {{ $kelas6->hari == 'minggu' ? 'selected' : '' }}>Minggu</option>
+                                    <option value="Senin" {{ $kelas6->hari == 'Senin' ? 'selected' : '' }}>Senin</option>
+                                    <option value="Selasa" {{ $kelas6->hari == 'Selasa' ? 'selected' : '' }}>Selasa</option>
+                                    <option value="Rabu" {{ $kelas6->hari == 'Rabu' ? 'selected' : '' }}>Rabu</option>
+                                    <option value="Kamis" {{ $kelas6->hari == 'Kamis' ? 'selected' : '' }}>Kamis</option>
+                                    <option value="Jumat" {{ $kelas6->hari == 'Jumat' ? 'selected' : '' }}>Jum'at</option>
+                                    <option value="Sabtu" {{ $kelas6->hari == 'Sabtu' ? 'selected' : '' }}>Sabtu</option>
+                                    <option value="Minggu" {{ $kelas6->hari == 'Minggu' ? 'selected' : '' }}>Minggu</option>
                                 </select>
                                 <!-- error message untuk title -->
                                 @error('hari')

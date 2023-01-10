@@ -38,13 +38,13 @@
                                 <label class="font-weight-bold">Hari</label>
                                 <select class="form-control" name="hari" id="hari">
                                     <option hidden>Pilih Hari</option>
-                                    <option value="senin">Senin</option>
-                                    <option value="selasa">Selasa</option>
-                                    <option value="rabu">Rabu</option>
-                                    <option value="kamis">Kamis</option>
-                                    <option value="jumat">Jum'at</option>
-                                    <option value="sabtu">Sabtu</option>
-                                    <option value="minggu">Minggu</option>
+                                    <option value="Senin">Senin</option>
+                                    <option value="Selasa">Selasa</option>
+                                    <option value="Rabu">Rabu</option>
+                                    <option value="Kamis">Kamis</option>
+                                    <option value="Jumat">Jum'at</option>
+                                    <option value="Sabtu">Sabtu</option>
+                                    <option value="Minggu">Minggu</option>
                                 </select>
                             
                                 <!-- error message untuk title -->

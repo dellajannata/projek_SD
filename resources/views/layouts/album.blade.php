@@ -23,6 +23,7 @@
                         <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
                     </div>
                 </div>
+                <br>
             </div><!-- end col -->
             @endforeach
         </div><!-- end row -->
