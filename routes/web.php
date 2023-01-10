@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\AdminBerandaController;
-use App\Http\Controllers\AdminGuruController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\CRUDAlbumController;
@@ -50,9 +49,6 @@ Route::get('/sarana', [SaranaController::class, 'index']);
 
 //adminBeranda
 Route::get('/adminBeranda', [AdminBerandaController::class, 'index']);
-
-//adminGuru
-Route::get('/adminGuru', [AdminGuruController::class, 'index']);
 
 //adminGuru
 Route::resource('crudguru', CRUDGuruController::class);
