@@ -57,9 +57,9 @@
                                 <div class="row mt-3">
                                     <div class="col-6 pe-1">
                                         <img src="{{ asset('storage/informasi/' . $i->image) }}" class="rounded"
-                                            style="width: 550px; height:300px">
+                                            style="width: 250px; height:220px">
                                     </div>
-                                    <div>{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!} </div>
+                                    <div>{!! Illuminate\Support\Str::of($i->deskripsi)->words(10) !!} </div>
                                 </div>
                         </div>
                     @empty
@@ -67,7 +67,9 @@
                             Informasi terbaru belum tersedia.
                         </div>
                         @endforelse
+                        <div class="row text-center" >
                         {{ $informasi->links() }}
+                        </div>
                     </div>
                 </div>
             </div>

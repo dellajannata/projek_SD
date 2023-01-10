@@ -25,6 +25,7 @@ use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 
 /*
@@ -37,7 +38,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::redirect('/', '/login');
 Route::get('/album', [AlbumController::class, 'index']);
 Route::get('/beranda', [TampilanBerandaController::class, 'index']);
 // Route::get('/berandaLomba', [TampilanBerandaController::class, 'indexLomba']);

@@ -33,7 +33,7 @@
             @yield('adminBeranda.content')
 
             <!--  footer -->
-            @include('adminBeranda.footer')
+            {{-- @include('adminBeranda.footer') --}}
             <!-- end footer -->
 
             <!-- container-scroller -->

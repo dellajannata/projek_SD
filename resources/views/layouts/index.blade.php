@@ -114,7 +114,7 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                        style="width: 100%;height:100%
+                                                    style="width:260px;height:300px;
                                                 ">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
@@ -178,7 +178,7 @@
                             <div class="blog-item">
                                 <div class="image-blog">
                                     <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
-                                        class="img-fluid">
+                                        class="img-fluid" style="width:260px;height:300px;">
                                 </div>
                                 <div class="blog-title">
                                     <h2><a href="#" title="">{{ $p->namaKegiatan }}</a></h2>
