@@ -13,9 +13,8 @@
                     </p>
                 </div>
             </div><!-- end title -->
-
+            @foreach ($tentang as $tentangkami)
             <div class="row align-items-center">
-                @foreach ($tentang as $tentangkami)
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
                             <h4 class="title">{{ $tentangkami->judul }}</h4>
@@ -23,24 +22,20 @@
                             <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
-
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="post-media wow fadeIn">
                             <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
                                 class="img-fluid img-rounded">
                         </div><!-- end media -->
                     </div><!-- end col -->
-                @endforeach
             </div>
             <div class="row align-items-center">
-                @foreach ($tentang as $tentangkami)
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="post-media wow fadeIn">
                             <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
                                 class="img-fluid img-rounded">
                         </div><!-- end media -->
                     </div><!-- end col -->
- 
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
                             <h2 class="title">{{ $tentangkami->judul }}</h2>
@@ -48,8 +43,9 @@
                                 <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
-                @endforeach
+                
             </div><!-- end row -->
+            @endforeach
 			</div>
         </div><!-- end container -->
         {{ $tentang->links() }}
@@ -152,29 +148,4 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-
-    {{--  <div class="parallax section dbcolor">
-        <div class="container">
-            <div class="row logos">
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
-                </div>
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->  --}}
 @endsection
