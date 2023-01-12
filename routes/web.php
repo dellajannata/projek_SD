@@ -61,6 +61,10 @@ Route::resource('saranaPrasarana', SaranaPrasaranaController::class);
 Route::resource('informasisd', InformasiController::class);
 Route::resource('informasiLomba', InformasiLombaController::class);
 
+//DETAIL INFORMASI
+Route::get('detailinformasi', [TampilanBerandaController::class, 'detail']);
+Route::post('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
+
 //TENTANGKAMI
 Route::resource('tentangkami', TentangKamiController::class);
 

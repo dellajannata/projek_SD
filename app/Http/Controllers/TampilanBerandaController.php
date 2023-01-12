@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Informasi;
 use App\Models\informasiLomba;
 use App\Models\Pembiasaan;
+use App\Models\Guru;
 
 class TampilanBerandaController extends Controller
 {
@@ -15,5 +16,12 @@ class TampilanBerandaController extends Controller
         $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(3);
         $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(8);
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
+    }
+
+    public function detail()
+    {
+        $detailinformasi = Informasi::orderBy('id', 'asc')->paginate(1);
+        $guru = Guru::orderBy('id', 'asc')->paginate(32);
+        return view('layouts.detailinformasi', compact('detailinformasi','guru'));
     }
 }
