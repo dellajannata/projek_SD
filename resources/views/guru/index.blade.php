@@ -30,7 +30,7 @@
                                             <td>{{$no++}}</td>
                                             <td class="text-center">
                                                 <img src="{{ asset('storage/guru/' . $gr->image) }}" class="rounded"
-                                                    style="width: 250px; height:200px" >
+                                                    style="width: 200px; height:240px" >
                                             </td>
                                             <td>{{ $gr->nama }}</td>
                                             <td>{{ $gr->jenisPTK }}</td>

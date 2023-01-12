@@ -43,10 +43,8 @@
                                 <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
-                
             </div><!-- end row -->
             @endforeach
-			</div>
         </div><!-- end container -->
         {{ $tentang->links() }}
     </div><!-- end section -->
@@ -67,82 +65,30 @@
         </div>
     </div>
 
-    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('img/fotbar.jpg');">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Teachers</h3>
+                <h3>GURU</h3>
+                <p>UPT SD Negeri 108 Gresik</p>
             </div><!-- end title -->
 
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="testi-carousel owl-carousel owl-theme">
+                        @foreach ($guru as $gr)
                         <div class="testimonial clearfix">
                             <div class="testi-meta">
-                                <img src="images/khoiri.jpg" alt="" class="img-fluid">
-                                <h4>Mochamad Khoiri</h4>
+                                <img src="{{ asset('storage/guru/' . $gr->image) }}" alt="" class="img-fluid" style="max-width:160px;max-height:200px;"
+                                >
+                                <h4>{{ $gr->nama }}</h4>
                             </div>
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
-                                    praising pain was born and I will give you completed.</p>
+                                <h3><i class="fa fa-quote-left"></i>{{$gr->jenisPTK}}</h3>
                             </div>
                             <!-- end testi-meta -->
                         </div>
+                        @endforeach
                         <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="testi-meta">
-                                <img src="images/lilik afnani.jpg" alt="" class="img-fluid ">
-                                <h4>Lilik Afnani</h4>
-                            </div>
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
-                                    pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-                        <div class="testimonial clearfix">
-                            <div class="testi-meta">
-                                <img src="images/novitasari.jpg" alt="" class="img-fluid">
-                                <h4>Novitasari</h4>
-                            </div>
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly
-                                    skilled, and experienced & professional team.</p>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="testi-meta">
-                                <img src="images/SITI NAIMAH.jpg" alt="" class="img-fluid">
-                                <h4>Siti Naimah</h4>
-                            </div>
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
-                                    praising pain was born and I will give you completed.</p>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-
-                        <div class="testimonial clearfix">
-                            <div class="testi-meta">
-                                <img src="images/SIYAMU UMARO.jpg" alt="" class="img-fluid">
-                                <h4>Siyamu Umaro</h4>
-                            </div>
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
-                                    pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
                     </div><!-- end carousel -->
                 </div><!-- end col -->
             </div><!-- end row -->

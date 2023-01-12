@@ -11,7 +11,6 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12">
-                
                 <div class="testi-carousel owl-carousel owl-theme">
                     @foreach ($guru as $gr)
                     <div class="testimonial clearfix">
@@ -28,9 +27,7 @@
                     @endforeach
                     <!-- end testimonial -->
                 </div><!-- end carousel -->
-                
             </div><!-- end col -->
-            
         </div><!-- end row -->
     </div><!-- end container -->
 </div><!-- end section -->

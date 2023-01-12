@@ -102,8 +102,6 @@
                 </div>
 
                 <hr class="invis">
-
-
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tab-content">
@@ -119,7 +117,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</h3>
+                                                    <h3 class="title"><a href="detailinformasi" title="">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -180,7 +178,7 @@
                                         class="img-fluid" style="width:260px;height:200px;">
                                 </div>
                                 <div class="blog-title">
-                                    <h2><a href="#" title="">{{ $p->namaKegiatan }}</a></h2>
+                                    <h2>{{ $p->namaKegiatan }}</h2>
                                 </div>
                                 <div class="blog-desc">
                                     <p>{!! $p->deskripsi !!}</p>
