@@ -16,7 +16,7 @@
                     <div class="post-content">
                         <div class="blog-desc">
                             <br>
-                            <h3 class="title">{{ $i->deskripsi }}</h3>
+                            <h3 class="title">{!! $i->deskripsi !!}</h3>
                         </div>
                     </div>
                 </div>
