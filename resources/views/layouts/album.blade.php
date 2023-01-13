@@ -21,7 +21,7 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="course-item">
                     <div class="image-blog">
-                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:800px;height:300px;" alt="" class="img-fluid">
+                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:800px;height:400px;" alt="" class="img-fluid">
                     </div>
                     <div class="course-br">
                         <div class="course-title">

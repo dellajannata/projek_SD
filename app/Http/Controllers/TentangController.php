@@ -11,9 +11,10 @@ class TentangController extends Controller
 {
     public function index()
     {
-        $tentang = Tentangkami::orderBy('id', 'asc')->paginate(8);
+        $tentang = Tentangkami::whereRaw('(id % 2) = 0')->orderBy('id', 'asc')->paginate(2);
+        $tentang1 = Tentangkami::whereRaw('(id % 2) = 1')->orderBy('id', 'asc')->paginate(2);
         $visimisi = visimisi::orderBy('id', 'asc')->paginate(3);
         $guru = Guru::orderBy('id', 'asc')->paginate(32);
-        return view('layouts.tentang', compact('tentang', 'visimisi', 'guru'));
+        return view('layouts.tentang', compact('tentang', 'visimisi', 'guru','tentang1'));
     }
 }

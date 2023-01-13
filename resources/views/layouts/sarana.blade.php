@@ -26,10 +26,11 @@
                                         @foreach ($saranaPrasarana as $sp)
                                             <div class="col-md-4">
                                                 <div class="pricing-table pricing-table-highlighted">
+                                                    <img src="{{ asset('storage/saranaPrasarana/' . $sp->image) }}"
+                                                    style="width: 250px;
+                                        height: 200px;">
                                                     <div class="pricing-table-features">
-                                                        <img src="{{ asset('storage/saranaPrasarana/' . $sp->image) }}"
-                                                            style="width: 100%;
-                                                height: 100%;">
+                                                       
                                                     </div>
                                                     <div class="pricing-table-space"></div>
                                                     <div class="pricing-table-header grd1">
