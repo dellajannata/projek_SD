@@ -1,7 +1,14 @@
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
           <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-              <img href="{{ asset('assets/images/logo.png') }}" />
+              <img src="assets/images/logo.png" style="width: 50px; height:50px;">
+                  <div class="nav-profile-text d-flex flex-column">
+                      <span class="font-weight-bold mb-2"> UPT SD Negeri</span>
+                      <span style="text-align:left" class="text-secondary text-small">108 Gresik</span>
+                  </div>
+                  <div>
+                  <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+                  </div>
           </div>
           <div class="navbar-menu-wrapper d-flex align-items-stretch">
               <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
