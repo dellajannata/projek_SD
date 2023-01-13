@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'level',
     ];
 
     /**
@@ -41,4 +42,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function hasRole($role) {
+        switch ($role) {
+            case 'admin': return \Auth::user()->isAdmin();
+        }
+        return false;
+    }
+    public function isAdmin()
+    {
+        if($this->level == 'admin')
+        { 
+            return true; 
+        } 
+        else 
+        { 
+            return false; 
+        }
+    }
 }

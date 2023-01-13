@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class PembiasaanController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(5);

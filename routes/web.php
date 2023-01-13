@@ -38,47 +38,58 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/login');
+Auth::routes();
+
+Route::redirect('/', '/beranda');
+
 Route::get('/album', [AlbumController::class, 'index']);
 Route::get('/beranda', [TampilanBerandaController::class, 'index']);
-// Route::get('/berandaLomba', [TampilanBerandaController::class, 'indexLomba']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
 
-//adminBeranda
-Route::get('/adminBeranda', [AdminBerandaController::class, 'index']);
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    //adminBeranda
+    Route::get('/adminBeranda', [AdminBerandaController::class, 'index']);
 
-//adminGuru
-Route::resource('crudguru', CRUDGuruController::class);
-Route::resource('pembiasaan', PembiasaanController::class);
-Route::resource('visimisi', VisimisiController::class);
-Route::resource('saranaPrasarana', SaranaPrasaranaController::class);
+    //adminGuru
+    Route::resource('crudguru', CRUDGuruController::class);
+    
+    //pembiasaan
+    Route::resource('pembiasaan', PembiasaanController::class);
 
-//INFORMASI
-Route::resource('informasisd', InformasiController::class);
-Route::resource('informasiLomba', InformasiLombaController::class);
+    //visimisi
+    Route::resource('visimisi', VisimisiController::class);
 
-//DETAIL INFORMASI
-Route::get('detailinformasi', [TampilanBerandaController::class, 'detail']);
-Route::post('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
+    //saranaprasarana
+    Route::resource('saranaPrasarana', SaranaPrasaranaController::class);
 
-//TENTANGKAMI
-Route::resource('tentangkami', TentangKamiController::class);
+    //INFORMASI
+    Route::resource('informasisd', InformasiController::class);
+    Route::resource('informasiLomba', InformasiLombaController::class);
 
-//adminKelas
-Route::resource('crudkelas', CRUDKelasController::class);
-Route::resource('crudkelas2', CRUDKelas2Controller::class);
-Route::resource('crudkelas3', CRUDKelas3Controller::class);
-Route::resource('crudkelas4', CRUDKelas4Controller::class);
-Route::resource('crudkelas5', CRUDKelas5Controller::class);
-Route::resource('crudkelas6', CRUDKelas6Controller::class);
+    //DETAIL INFORMASI
+    Route::get('detailinformasi', [TampilanBerandaController::class, 'detail']);
+    Route::post('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
 
-//ALBUM
-Route::resource('crudalbum', CRUDAlbumController::class);
+    //TENTANGKAMI
+    Route::resource('tentangkami', TentangKamiController::class);
 
-//adminWaliKelas
-Route::resource('crudwalikelas', CRUDWaliKelasController::class);
+    //adminKelas
+    Route::resource('crudkelas', CRUDKelasController::class);
+    Route::resource('crudkelas2', CRUDKelas2Controller::class);
+    Route::resource('crudkelas3', CRUDKelas3Controller::class);
+    Route::resource('crudkelas4', CRUDKelas4Controller::class);
+    Route::resource('crudkelas5', CRUDKelas5Controller::class);
+    Route::resource('crudkelas6', CRUDKelas6Controller::class);
 
+    //ALBUM
+    Route::resource('crudalbum', CRUDAlbumController::class);
+
+    //adminWaliKelas
+    Route::resource('crudwalikelas', CRUDWaliKelasController::class);
+ 
+    //semua route dalam grup ini hanya bisa diakses oleh admin
+});

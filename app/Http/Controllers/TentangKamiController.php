@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Storage;
 
 class TentangKamiController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $tentangkami = Tentangkami::orderBy('id', 'asc')->paginate(5);

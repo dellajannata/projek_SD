@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class CRUDKelas6Controller extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $kelas6 = Kelas6::orderBy('id', 'asc')->paginate(5);

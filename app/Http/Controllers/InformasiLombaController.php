@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class InformasiLombaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $informasi = InformasiLomba::orderBy('id', 'asc')->paginate(5);

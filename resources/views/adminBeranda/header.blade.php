@@ -1,7 +1,7 @@
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
           <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <img  href="{{ asset('assets/images/logo.png') }}" />
+              <img href="{{ asset('assets/images/logo.png') }}" />
           </div>
           <div class="navbar-menu-wrapper d-flex align-items-stretch">
               <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -31,8 +31,15 @@
                           </div>
                       </a>
                       <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                          <a class="dropdown-item" href="#">
-                              <i class="mdi mdi-logout me-2 text-primary"></i> Keluar </a>
+
+                          <a class="dropdown-item" href="{{ url('beranda') }}"
+                              onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+                              {{ __('Keluar') }}
+                          </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                              @csrf
+                          </form>
                       </div>
                   </li>
                   <li class="nav-item d-none d-lg-block full-screen-link">

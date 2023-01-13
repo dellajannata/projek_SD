@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class VisimisiController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $visimisi = visimisi::orderBy('id', 'asc')->paginate(5);
