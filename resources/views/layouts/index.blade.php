@@ -112,12 +112,13 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                    style="width:260px;height:200px;
+                                                        style="width:260px;height:200px;
                                                 ">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="detailinformasi" title="">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</a></h3>
+                                                    <h3 class="title"><a href="detailinformasi"
+                                                            title="">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,11 +139,11 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasiLomba/' . $i->image) }}"
-                                                    style="width:260px;height:200px;">
+                                                        style="width:260px;height:200px;">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{!!Illuminate\Support\Str::of($i->deskripsi)->words(6)!!}</h3>
+                                                    <h3 class="title">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -237,5 +238,4 @@
                 </div><!-- end title -->
             </div><!-- end container -->
         </div><!-- end section -->
-
-@endsection
+    @endsection
