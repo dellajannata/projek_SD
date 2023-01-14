@@ -19,7 +19,7 @@
                         <div class="message-box">
                             <h4 class="title">{{ $tentangkami->judul }}</h4>
                             <p class="post">{!! $tentangkami->deskripsi !!}</p>
-                            <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                            <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -40,7 +40,7 @@
                         <div class="message-box">
                             <h2 class="title">{{ $tentangkami->judul }}</h2>
                                 <p class="post">{!! $tentangkami->deskripsi !!}</p>
-                                <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                                <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
             </div><!-- end row -->

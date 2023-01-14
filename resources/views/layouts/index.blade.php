@@ -117,8 +117,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="detailinformasi"
-                                                            title="">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</a></h3>
+                                                    <h3 class="title"><a href="detailinformasi">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,7 +142,7 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</h3>
+                                                    <h3 class="title"><a href="detailLomba">{!! Illuminate\Support\Str::of($i->deskripsi)->words(6) !!}</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -182,7 +181,8 @@
                                     <h2>{{ $p->namaKegiatan }}</h2>
                                 </div>
                                 <div class="blog-desc">
-                                    <p>{!! $p->deskripsi !!}</p>
+                                    <h3 class="title"><a href="detailPembiasaan">{!! Illuminate\Support\Str::of($p->deskripsi)->words(6) !!}</a></h3>
+
                                 </div>
                                 {{-- <div class="blog-button">
                                     <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
