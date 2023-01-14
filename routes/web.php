@@ -75,10 +75,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('informasisd', InformasiController::class);
     Route::resource('informasiLomba', InformasiLombaController::class);
 
-    //DETAIL INFORMASI
-    Route::get('detailinformasi', [TampilanBerandaController::class, 'detail']);
-    Route::get('detailLomba', [TampilanBerandaController::class, 'detailLomba']);
-    Route::get('detailPembiasaan', [TampilanBerandaController::class, 'detailPembiasaan']);
+    
 
     //TENTANGKAMI
     Route::resource('tentangkami', TentangKamiController::class);
@@ -99,3 +96,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
  
     //semua route dalam grup ini hanya bisa diakses oleh admin
 });
+//DETAIL INFORMASI
+Route::get('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
+Route::get('detailLomba/{id}', [TampilanBerandaController::class, 'detailLomba']);
+Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPembiasaan']);

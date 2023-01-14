@@ -109,6 +109,7 @@
                                 <div class="row text-center">
                                     @foreach ($informasisd as $i)
                                         <div class="col-md-4">
+                                            <a href="{{ url('detailinformasi') }}/{{ $i->id }}">
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasi/' . $i->image) }}"
@@ -117,11 +118,13 @@
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="detailinformasi">{!! Illuminate\Support\Str::of($i->deskripsi)->words(3) !!}</a></h3>
+                                                    <h3 class="title"><a href="{{ url('detailinformasi') }}/{{ $i->id }}">{!! Illuminate\Support\Str::of($i->deskripsi)->words(3) !!}</a></h3>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     @endforeach
+                                    
 
                                 </div><!-- end row -->
                                 <hr class="invis">
@@ -133,18 +136,20 @@
 
                             <div class="tab-pane fade" id="tab2">
                                 <div class="row text-center">
-                                    @foreach ($informasiLomba as $i)
+                                    @foreach ($informasiLomba as $il)
                                         <div class="col-md-4">
+                                            <a href="{{ url('detailLomba') }}/{{ $il->id }}">
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
-                                                    <img src="{{ asset('storage/informasiLomba/' . $i->image) }}"
+                                                    <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
                                                         style="width:260px;height:200px;">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="detailLomba">{!! Illuminate\Support\Str::of($i->deskripsi)->words(3) !!}</a></h3>
+                                                    <h3 class="title"><a href="detailLomba">{!! Illuminate\Support\Str::of($il->deskripsi)->words(3) !!}</a></h3>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
@@ -172,6 +177,7 @@
                 <div class="row">
                     @foreach ($pembiasaan as $p)
                         <div class="col-lg-4 col-md-6 col-12">
+                            <a href="{{ url('detailPembiasaan') }}/{{ $p->id }}">
                             <div class="blog-item">
                                 <div class="image-blog">
                                     <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
@@ -182,12 +188,9 @@
                                 </div>
                                 <div class="blog-desc">
                                     <h3 class="title"><a href="detailPembiasaan">{!! Illuminate\Support\Str::of($p->deskripsi)->words(3) !!}</a></h3>
-
                                 </div>
-                                {{-- <div class="blog-button">
-                                    <a class="hover-btn-new orange" href="#"><span>Read More<span></a>
-                                </div> --}}
                             </div>
+                            </a>
                         </div><!-- end col -->
                     @endforeach
                 </div><!-- end row -->

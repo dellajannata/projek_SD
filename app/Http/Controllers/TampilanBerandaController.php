@@ -18,24 +18,21 @@ class TampilanBerandaController extends Controller
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
     }
 
-    public function detail()
+    public function detail(Request $request,$id)
     {
-        $detailinformasi = Informasi::orderBy('id', 'asc')->paginate(1);
-        $guru = Guru::orderBy('id', 'asc')->paginate(32);
-        return view('layouts.detailinformasi', compact('detailinformasi','guru'));
+        $detailinformasi = Informasi::where('id', $id)->orderBy('id', 'asc')->paginate(1);
+        return view('layouts.detailinformasi', compact('detailinformasi'));
     }
 
-    public function detailLomba()
+    public function detailLomba(Request $request,$id)
     {
-        $detailLomba = InformasiLomba::orderBy('id', 'asc')->paginate(1);
-        $guru = Guru::orderBy('id', 'asc')->paginate(32);
-        return view('layouts.detaillomba', compact('detailLomba','guru'));
+        $detailLomba = InformasiLomba::where('id', $id)->orderBy('id', 'asc')->paginate(1);
+        return view('layouts.detaillomba', compact('detailLomba'));
     }
 
-    public function detailPembiasaan()
+    public function detailPembiasaan(Request $request,$id)
     {
-        $detailPembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(1);
-        $guru = Guru::orderBy('id', 'asc')->paginate(32);
-        return view('layouts.detailpembiasaan', compact('detailPembiasaan','guru'));
+        $detailPembiasaan = Pembiasaan::where('id', $id)->orderBy('id', 'asc')->paginate(1);
+        return view('layouts.detailpembiasaan', compact('detailPembiasaan'));
     }
 }
