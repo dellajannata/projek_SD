@@ -14,6 +14,7 @@
                 </div>
             </div><!-- end title -->
             @foreach ($tentang as $tentangkami)
+            
             <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
@@ -29,7 +30,7 @@
                         </div><!-- end media -->
                     </div><!-- end col -->
             </div>
-            @endforeach
+           
             @foreach ($tentang1 as $tentangkami1)
             <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -46,6 +47,7 @@
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
             </div><!-- end row -->
+            @endforeach
             @endforeach
         </div><!-- end container -->
         {{ $tentang->links() }}

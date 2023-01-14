@@ -3,7 +3,7 @@
 
     <body style="background: lightgray">
 
-        <div class="container mt-5">
+        <div class="container mt-3">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
@@ -15,6 +15,7 @@
                                   <p>{{ $message }}</p>
                               </div>
                           @endif
+                          <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -55,6 +56,7 @@
                                 </tbody>
                             </table>
                             {{ $saranaPrasarana->links() }}
+                        </div>
                         </div>
                     </div>
                 </div>
