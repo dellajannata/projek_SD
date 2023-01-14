@@ -9,7 +9,7 @@
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
                         <h3>Jadwal Pelajaran</h3>
-                        <p>Kelas 1</p>
+                        <p>Kelas 6</p>
                     </div>
                 </div><!-- end title -->
             </div><!-- end title -->
@@ -33,7 +33,7 @@
                                     </thead>
                                     <tbody>
                                         <?php $no = 1; ?>
-                                        @forelse ($kelas as $k)
+                                        @forelse ($kelas6 as $k)
                                             <tr>
                                                 <td>{{ $no++ }}</td>
                                                 <td>{{ $k->hari }}</td>
@@ -48,7 +48,7 @@
                                         @endforelse
                                     </tbody>
                                 </table>
-                                {{ $kelas->links() }}
+                                {{ $kelas6->links() }}
                             </div>
                         </div>
                     </div>

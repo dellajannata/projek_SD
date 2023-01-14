@@ -30,7 +30,7 @@
                          <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
                          </a>
                          <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                             <a class="dropdown-item" href="kelas1">Kelas 1</a>
+                             <a class="dropdown-item" href="kelas">Kelas 1</a>
                              <a class="dropdown-item" href="kelas2">Kelas 2</a>
                              <a class="dropdown-item" href="kelas3">Kelas 3</a>
                              <a class="dropdown-item" href="kelas4">Kelas 4</a>
