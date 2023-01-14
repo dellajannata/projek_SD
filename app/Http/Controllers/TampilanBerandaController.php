@@ -24,4 +24,18 @@ class TampilanBerandaController extends Controller
         $guru = Guru::orderBy('id', 'asc')->paginate(32);
         return view('layouts.detailinformasi', compact('detailinformasi','guru'));
     }
+
+    public function detailLomba()
+    {
+        $detailLomba = InformasiLomba::orderBy('id', 'asc')->paginate(1);
+        $guru = Guru::orderBy('id', 'asc')->paginate(32);
+        return view('layouts.detaillomba', compact('detailLomba','guru'));
+    }
+
+    public function detailPembiasaan()
+    {
+        $detailPembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(1);
+        $guru = Guru::orderBy('id', 'asc')->paginate(32);
+        return view('layouts.detailpembiasaan', compact('detailPembiasaan','guru'));
+    }
 }

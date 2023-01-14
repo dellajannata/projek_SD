@@ -8,7 +8,7 @@ class SaranaController extends Controller
 {
     public function index()
     {
-        $saranaPrasarana = saranaPrasarana::orderBy('id', 'asc')->paginate(6);
+        $saranaPrasarana = saranaPrasarana::orderBy('id', 'asc')->paginate(18);
         return view('layouts.sarana', compact('saranaPrasarana'));
     }
 }
