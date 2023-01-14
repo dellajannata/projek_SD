@@ -44,4 +44,5 @@
     <br><br>
     {{ $album->links() }}
 </div><!-- end section -->
+</div>
 @endsection
