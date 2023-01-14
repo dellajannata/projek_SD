@@ -36,7 +36,7 @@
                                                     style="width: 250px; height:200px">
                                             </td>
                                             <td>{{ $p->namaKegiatan }}</td>
-                                            <td>{!!Illuminate\Support\Str::of($p->deskripsi)->words(2)!!}</td>
+                                            <td class="title">{!!Illuminate\Support\Str::of($p->deskripsi)->words(3)!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('pembiasaan.destroy', $p->id) }}" method="POST">

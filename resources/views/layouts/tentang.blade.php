@@ -14,13 +14,12 @@
                 </div>
             </div><!-- end title -->
             @foreach ($tentang as $tentangkami)
-            
             <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
                             <h4 class="title">{{ $tentangkami->judul }}</h4>
                             <p class="post">{!! $tentangkami->deskripsi !!}</p>
-                            <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                            <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -30,24 +29,21 @@
                         </div><!-- end media -->
                     </div><!-- end col -->
             </div>
-           
-            @foreach ($tentang1 as $tentangkami1)
             <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="post-media wow fadeIn">
-                            <img src="{{ asset('storage/tentangkami/' . $tentangkami1->gambar) }}" alt=""
+                            <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
                                 class="img-fluid img-rounded"style="width:800px;height:400px;" >
                         </div><!-- end media -->
                     </div><!-- end col -->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="message-box">
-                            <h2 class="title">{{ $tentangkami1->judul }}</h2>
-                                <p class="post">{!! $tentangkami1->deskripsi !!}</p>
-                                <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                            <h2 class="title">{{ $tentangkami->judul }}</h2>
+                                <p class="post">{!! $tentangkami->deskripsi !!}</p>
+                                <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
                         </div><!-- end messagebox -->
                     </div><!-- end col -->
             </div><!-- end row -->
-            @endforeach
             @endforeach
         </div><!-- end container -->
         {{ $tentang->links() }}

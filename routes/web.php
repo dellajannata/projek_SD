@@ -72,7 +72,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     //DETAIL INFORMASI
     Route::get('detailinformasi', [TampilanBerandaController::class, 'detail']);
-    Route::post('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
+    Route::get('detailLomba', [TampilanBerandaController::class, 'detailLomba']);
+    Route::get('detailPembiasaan', [TampilanBerandaController::class, 'detailPembiasaan']);
 
     //TENTANGKAMI
     Route::resource('tentangkami', TentangKamiController::class);
