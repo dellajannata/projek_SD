@@ -29,7 +29,7 @@
                                         <tr>
                                             <td>{{$no++}}</td>
                                             <td>{{ $tk->judul }}</td>
-                                            <td>{!! $tk->deskripsi !!}</td>
+                                            <td class="title">{!!Illuminate\Support\Str::of($tk->deskripsi)->words(3)!!}</td>
                                             <td class="text-center">
                                                 <img src="{{ asset('storage/tentangkami/' . $tk->gambar) }}" class="rounded"
                                                     style="width: 250px; height:200px" >
