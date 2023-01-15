@@ -47,7 +47,7 @@
                                     <i class="fa fa-envelope-o fa-3x contact-point-icon blue-text"></i>
                                     <div class="contact-point-detail-container">
                                         <b class="text-uppercase contact-point-title blue-text font-weight-700">Email</b>
-                                        <p class="contact-point-detail">mail@company.com</p>
+                                        <p class="contact-point-detail">sdnegeri108gresik@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
