@@ -84,8 +84,7 @@
                 ['style', ['style']],
                 ['font', ['bold', 'underline', 'clear']],
                 ['color', ['color']],
-                ['para', ['ul', 'ol', 'paragraph']],
-                ['table', ['table']],
+                ['para', ['ul', 'ol']],
                 // ['insert', ['link', 'picture', 'video']],
                 // ['view', ['fullscreen', 'codeview', 'help']]
             ]
