@@ -11,7 +11,7 @@ class TentangController extends Controller
 {
     public function index()
     {
-        $tentang = Tentangkami::whereRaw('(id % 2) = 0' OR '(id % 2) = 1')->orderBy('id', 'asc')->paginate(4);
+        $tentang = Tentangkami::orderBy('id', 'asc')->paginate(4);
         // $tentang = Tentangkami::whereRaw('(id % 2) = 1')->orderBy('id', 'asc')->paginate(2);
         $visimisi = visimisi::orderBy('id', 'asc')->paginate(3);
         $guru = Guru::orderBy('id', 'asc')->paginate(32);

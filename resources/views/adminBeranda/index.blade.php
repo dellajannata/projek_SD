@@ -26,12 +26,21 @@
                 <div class="col-md-4 stretch-card grid-margin">
                     <div class="card bg-gradient-info card-img-holder text-white">
                         <div class="card-body">
+                            <a href="crudwalikelas">
                             <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                            <h4 class="font-weight-normal mb-3">Weekly Orders <i
+                            <h4 class="font-weight-normal mb-3">Jumlah Siswa </a><i
                                     class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                             </h4>
-                            <h2 class="mb-5">45,6334</h2>
-                            <h6 class="card-text">Decreased by 10%</h6>
+                            {{-- @foreach($wk as $kategoris)
+    @php $arrayjumlah = array(); @endphp
+    @foreach($kategoris->informasi->where('jmlh_siswa',1) as $jumlah)
+        @php $arrayjumlah[] = $jumlah @endphp
+    @endforeach
+
+    @php $jum = count($arrayjumlah); @endphp
+    <span><a href="#"> {{ $kategoris->nm_kategori }} : {{ $jum }} </a></span>
+@endforeach --}}
+                 
                         </div>
                     </div>
                 </div>

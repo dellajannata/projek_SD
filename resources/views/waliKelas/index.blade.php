@@ -22,6 +22,7 @@
                                         <th scope="col">No.</th>
                                         <th scope="col">Kelas</th>
                                         <th scope="col">Nama Wali Kelas</th>
+                                        <th scope="col">Jumlah Siswa</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -32,6 +33,7 @@
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $w->guru->nama }}</td>
                                             <td>{{ $w->kelas }}</td>
+                                            <td>{{ $w->jmlh_siswa }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudwalikelas.destroy', $w->id) }}" method="POST">

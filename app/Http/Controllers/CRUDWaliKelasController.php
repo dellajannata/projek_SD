@@ -28,11 +28,13 @@ class CRUDWaliKelasController extends Controller
         $request->validate([
             'guru_id'     => 'required',
             'kelas'   => 'required',
+            'jmlh_siswa'   => 'required|numeric',
         ]);
 
         $wk = WaliKelas::create([
             'guru_id'=> $request->guru_id,
             'kelas' => $request->kelas,
+            'jmlh_siswa' => $request->jmlh_siswa,
         ]);
 
         if ($wk) {
@@ -70,9 +72,10 @@ class CRUDWaliKelasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
+        $request->validate([
             'guru_id'     => 'required',
             'kelas'   => 'required',
+            'jmlh_siswa'   => 'required|numeric',
         ]);
 
         //get data kelas by ID
@@ -80,6 +83,8 @@ class CRUDWaliKelasController extends Controller
         $wk->update([
             'guru_id'=> $request->guru_id,
             'kelas' => $request->kelas,
+            'jmlh_siswa' => $request->jmlh_siswa,
+
         ]);
         
         if ($wk) {

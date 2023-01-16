@@ -16,6 +16,7 @@ class CreateWaliKelas extends Migration
         Schema::create('wali_kelas', function (Blueprint $table) {
             $table->id();
             $table->enum('kelas',['Kelas 1','Kelas 2','Kelas 3','Kelas 4','Kelas 5','Kelas 6']);
+            $table->integer('jmlh_siswa');
             $table->integer('guru_id')->unsigned()->nullable();
             $table->foreign('guru_id')->references('id')->on('guru');
             $table->timestamps();
