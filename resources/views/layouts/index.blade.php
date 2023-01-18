@@ -113,7 +113,7 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                        style="width:260px;height:200px;
+                                                      class="rounded img-fluid "  style="max-width:70%;max-height:40%;
                                                 ">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
@@ -142,7 +142,7 @@
                                             <div class="pricing-table pricing-table-highlighted">
                                                 <div class="pricing-table-features">
                                                     <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
-                                                        style="width:260px;height:200px;">
+                                                        style="max-width:260px;max-height:200px;">
                                                 </div>
                                                 <div class="pricing-table-space"></div>
                                                 <div class="pricing-table-header grd1">
@@ -181,7 +181,7 @@
                             <div class="blog-item">
                                 <div class="image-blog">
                                     <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
-                                        class="img-fluid" style="width:260px;height:200px;">
+                                        class="img-fluid" style="max-width:260px;max-height:200px;">
                                 </div>
                                 <div class="blog-title">
                                     <h2>{{ $p->namaKegiatan }}</h2>
@@ -210,8 +210,8 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-study"></i></span>
-                        <p class="stat_count">12000</p>
-                        <h3>Students</h3>
+                        <p class="stat_count"></p>
+                        <h3>Guru</h3>
                     </div><!-- end col -->
 
                     <div class="col-md-4 col-sm-4 col-xs-12">

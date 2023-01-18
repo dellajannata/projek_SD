@@ -24,24 +24,24 @@
              </button>
              <div class="collapse navbar-collapse" id="navbars-host">
                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item"><a class="nav-link" href="beranda">Beranda</a></li>
-                     <li class="nav-item"><a class="nav-link" href="tentang">Tentang Kami</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/beranda')}}">Beranda</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/tentang')}}">Tentang Kami</a></li>
                      <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
                          </a>
                          <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                             <a class="dropdown-item" href="kelas">Kelas 1</a>
-                             <a class="dropdown-item" href="kelas2">Kelas 2</a>
-                             <a class="dropdown-item" href="kelas3">Kelas 3</a>
-                             <a class="dropdown-item" href="kelas4">Kelas 4</a>
-                             <a class="dropdown-item" href="kelas5">Kelas 5</a>
-                             <a class="dropdown-item" href="kelas6">Kelas 6</a>
+                             <a class="dropdown-item" href="{{url('/kelas')}}">Kelas 1</a>
+                             <a class="dropdown-item" href="{{url('/kelas2')}}">Kelas 2</a>
+                             <a class="dropdown-item" href="{{url('/kelas3')}}">Kelas 3</a>
+                             <a class="dropdown-item" href="{{url('/kelas4')}}">Kelas 4</a>
+                             <a class="dropdown-item" href="{{url('/kelas5')}}">Kelas 5</a>
+                             <a class="dropdown-item" href="{{url('/kelas6')}}">Kelas 6</a>
                          </div>
                      </li>
-                     <li class="nav-item"><a class="nav-link" href="sarana">Sarana Prasarana</a></li>
-                     <li class="nav-item"><a class="nav-link" href="guru">Guru</a></li>
-                     <li class="nav-item"><a class="nav-link" href="album">Album</a></li>
-                     <li class="nav-item"><a class="nav-link" href="kontak">Kontak</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/sarana')}}">Sarana Prasarana</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{ url('/guru') }}">Guru</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/album')}}">Album</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/kontak')}}">Kontak</a></li>
                  </ul>
                  <ul class="nav navbar-nav navbar-right">
                      <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"

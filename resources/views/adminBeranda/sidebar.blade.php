@@ -20,13 +20,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false"
-                        aria-controls="general-pages">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#informasi" aria-expanded="false"
+                        aria-controls="informasi">
                         <span class="menu-title">Informasi</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-information-variant menu-icon"></i>
                     </a>
-                    <div class="collapse" id="general-pages">
+                    <div class="collapse" id="informasi">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="informasisd"> SDN 108 Gresik </a></li>
                             <li class="nav-item"> <a class="nav-link" href="informasiLomba"> Lomba </a></li>
@@ -34,13 +34,13 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false"
-                        aria-controls="general-pages">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#kelas" aria-expanded="false"
+                        aria-controls="kelas">
                         <span class="menu-title">Kelas</span>
                         <i class="menu-arrow"></i>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
-                    <div class="collapse" id="general-pages">
+                    <div class="collapse" id="kelas">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="crudkelas"> Kelas 1 </a></li>
                             <li class="nav-item"> <a class="nav-link" href="crudkelas2"> Kelas 2 </a></li>

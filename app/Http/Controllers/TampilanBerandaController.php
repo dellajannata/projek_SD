@@ -35,4 +35,9 @@ class TampilanBerandaController extends Controller
         $detailPembiasaan = Pembiasaan::where('id', $id)->orderBy('id', 'asc')->paginate(1);
         return view('layouts.detailpembiasaan', compact('detailPembiasaan'));
     }
+    public function guru()
+    {
+        $guru = Guru::all()->count();
+        return view('layouts.index',compact('guru'));
+    }
 }
