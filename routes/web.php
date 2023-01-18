@@ -100,4 +100,3 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 Route::get('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
 Route::get('detailLomba/{id}', [TampilanBerandaController::class, 'detailLomba']);
 Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPembiasaan']);
-Route::get('/guru', [TampilanBerandaController::class, 'guru']);
