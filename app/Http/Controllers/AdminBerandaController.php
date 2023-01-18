@@ -24,7 +24,8 @@ class AdminBerandaController extends Controller
     {
         $guru = Guru::all()->count();
         $wk = WaliKelas::all();
+        $jmlSiswa = WaliKelas::all()->sum('jmlh_siswa');
         $informasi = Informasi::orderBy('id', 'asc')->paginate(1);
-        return view('adminBeranda.index',compact('guru','informasi','wk'));
+        return view('adminBeranda.index', compact('guru', 'informasi', 'wk', 'jmlSiswa'));
     }
 }
