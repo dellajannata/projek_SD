@@ -49,7 +49,9 @@
         @endif
         @endforeach
     </div><!-- end container -->
-    {{ $tentang->links() }}
+    <div class="d-flex justify-content-center">
+        {!! $tentang->links() !!}
+    </div>
 </div><!-- end section -->
  
 <div class="hmv-box">
@@ -64,6 +66,9 @@
                 </div>
             </div>
             @endforeach
+        </div>
+        <div class="d-flex justify-content-center">
+            {!! $visimisi->links() !!}
         </div>
     </div>
 </div>
