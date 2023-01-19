@@ -67,6 +67,9 @@
             </div>
             @endforeach
         </div>
+        <div class="d-flex justify-content-center">
+            {!! $visimisi->links() !!}
+        </div>
     </div>
 </div>
 @endsection
