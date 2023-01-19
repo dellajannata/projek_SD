@@ -105,63 +105,56 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tab-content">
-                            <div class="tab-pane active fade show" id="tab1">
-                                <div class="row text-center">
+                            <div class="tab-pane active fade show h-auto" id="tab1">
+                                <div class="row text-center h-auto">
                                     @foreach ($informasisd as $i)
                                         <div class="col-md-4">
                                             <a href="{{ url('detailinformasi') }}/{{ $i->id }}">
-                                            <div class="pricing-table pricing-table-highlighted">
-                                                <div class="pricing-table-features">
-                                                    <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                      class="rounded img-fluid "  style="max-width:70%;max-height:40%;
-                                                ">
+                                                <div class="pricing-table pricing-table-highlighted">
+                                                    <div class="pricing-table-features">
+                                                        <img src="{{ asset('storage/informasi/' . $i->image) }}"
+                                                            class="rounded img-fluid" style="height: 200px; width: 300px;">
+                                                    </div>
+                                                    <div class="pricing-table-header grd1">
+                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($i->deskripsi)->words(5) !!}
+                                                        </h3>
+                                                    </div>
                                                 </div>
-                                                <div class="pricing-table-space"></div>
-                                                <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="{{ url('detailinformasi') }}/{{ $i->id }}">{!! Illuminate\Support\Str::of($i->deskripsi)->words(3) !!}</a></h3>
-                                                </div>
-                                            </div>
                                             </a>
                                         </div>
                                     @endforeach
-                                    
-
                                 </div><!-- end row -->
-                                <hr class="invis">
-
-                                <div class="row ">
+                                <div class="row mt-3">
                                     {{ $informasisd->links() }}
                                 </div>
                             </div><!-- end pane -->
 
                             <div class="tab-pane fade" id="tab2">
-                                <div class="row text-center">
+                                <div class="row text-center h-auto">
                                     @foreach ($informasiLomba as $il)
                                         <div class="col-md-4">
                                             <a href="{{ url('detailLomba') }}/{{ $il->id }}">
-                                            <div class="pricing-table pricing-table-highlighted">
-                                                <div class="pricing-table-features">
-                                                    <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
-                                                        style="max-width:260px;max-height:200px;">
+                                                <div class="pricing-table pricing-table-highlighted">
+                                                    <div class="pricing-table-features">
+                                                        <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
+                                                            class="rounded img-fluid"
+                                                            style="height: 200px; width: 300px;">
+                                                    </div>
+                                                    <div class="pricing-table-header grd1">
+                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($il->deskripsi)->words(3) !!}
+                                                        </h3>
+                                                    </div>
                                                 </div>
-                                                <div class="pricing-table-space"></div>
-                                                <div class="pricing-table-header grd1">
-                                                    <h3 class="title"><a href="{{ url('detailLomba') }}/{{ $il->id }}">{!! Illuminate\Support\Str::of($il->deskripsi)->words(3) !!}</a></h3>
-                                                </div>
-                                            </div>
                                             </a>
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-                                <hr class="invis">
-
-                                <div class="row ">
+                                <div class="row mt-3">
                                     {{ $informasiLomba->links() }}
                                 </div>
                             </div><!-- end pane -->
                         </div><!-- end content -->
                     </div><!-- end col -->
-
                 </div><!-- end row -->
             </div>
         </div>
@@ -178,18 +171,20 @@
                     @foreach ($pembiasaan as $p)
                         <div class="col-lg-4 col-md-6 col-12">
                             <a href="{{ url('detailPembiasaan') }}/{{ $p->id }}">
-                            <div class="blog-item">
-                                <div class="image-blog">
-                                    <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
-                                        class="img-fluid" style="max-width:260px;max-height:200px;">
+                                <div class="blog-item">
+                                    <div class="image-blog">
+                                        <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
+                                            class="img-fluid" style="max-width:260px;max-height:200px;">
+                                    </div>
+                                    <div class="blog-title">
+                                        <h2>{{ $p->namaKegiatan }}</h2>
+                                    </div>
+                                    <div class="blog-desc">
+                                        <h3 class="title"><a
+                                                href="{{ url('detailPembiasaan') }}/{{ $p->id }}">{!! Illuminate\Support\Str::of($p->deskripsi)->words(3) !!}</a>
+                                        </h3>
+                                    </div>
                                 </div>
-                                <div class="blog-title">
-                                    <h2>{{ $p->namaKegiatan }}</h2>
-                                </div>
-                                <div class="blog-desc">
-                                    <h3 class="title"><a href="{{ url('detailPembiasaan') }}/{{ $p->id }}">{!! Illuminate\Support\Str::of($p->deskripsi)->words(3) !!}</a></h3>
-                                </div>
-                            </div>
                             </a>
                         </div><!-- end col -->
                     @endforeach

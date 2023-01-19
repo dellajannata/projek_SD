@@ -42,7 +42,7 @@
                     </a>
                     <div class="collapse" id="kelas">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="crudkelas"> Kelas 1 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudkelas1"> Kelas 1 </a></li>
                             <li class="nav-item"> <a class="nav-link" href="crudkelas2"> Kelas 2 </a></li>
                             <li class="nav-item"> <a class="nav-link" href="crudkelas3"> Kelas 3 </a></li>
                             <li class="nav-item"> <a class="nav-link" href="crudkelas4"> Kelas 4 </a></li>

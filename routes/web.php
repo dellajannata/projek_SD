@@ -81,7 +81,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('tentangkami', TentangKamiController::class);
 
     //adminKelas
-    Route::resource('crudkelas', CRUDKelasController::class);
+    Route::resource('crudkelas1', CRUDKelasController::class);
     Route::resource('crudkelas2', CRUDKelas2Controller::class);
     Route::resource('crudkelas3', CRUDKelas3Controller::class);
     Route::resource('crudkelas4', CRUDKelas4Controller::class);

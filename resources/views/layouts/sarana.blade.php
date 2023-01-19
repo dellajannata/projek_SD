@@ -13,33 +13,33 @@
                     </div>
                 </div><!-- end title -->
             </div><!-- end title -->
-
-            <hr class="invis">
-
             <div id="overviews" class="section wb">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="tab-content">
-                                <div class="tab-pane active fade show" id="tab1">
-                                    <div class="row text-center">
+                                <div class="tab-pane active fade show " id="tab1">
+                                    <div class="row text-center h-auto">
                                         @foreach ($saranaPrasarana as $sp)
                                             <div class="col-md-4">
-                                                <div class="pricing-table pricing-table-highlighted">
-                                                    <img src="{{ asset('storage/saranaPrasarana/' . $sp->image) }}"
-                                                    style="width: 250px;
-                                        height: 200px;">
-                                                    <div class="pricing-table-features">
-                                                       
+                                                {{-- <a href="{{ url('detailinformasi') }}/{{ $i->id }}"> --}}
+                                                    <div class="pricing-table pricing-table-highlighted">
+                                                        <div class="pricing-table-features">
+                                                            <img src="{{ asset('storage/saranaPrasarana/' . $sp->image) }}"
+                                                                class="rounded img-fluid" style="height: 200px; width: 300px;">
+                                                        </div>
+                                                        <div class="pricing-table-header grd1">
+                                                            <h3 class="title" style="height: 30px;">{{ $sp->namaSarana }}
+                                                            </h3>
+                                                        </div>
                                                     </div>
-                                                    <div class="pricing-table-space"></div>
-                                                    <div class="pricing-table-header grd1">
-                                                        <h3 class="title">{{ $sp->namaSarana }}</h3>
-                                                    </div>
-                                                </div>
+                                                </a>
                                             </div>
                                         @endforeach
                                     </div><!-- end row -->
+                                    <div class="row mt-3">
+                                        {{ $saranaPrasarana->links() }}
+                                    </div>
                                 </div><!-- end pane -->
                             </div><!-- end content -->
                         </div><!-- end col -->
