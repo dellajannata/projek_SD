@@ -124,13 +124,10 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-<<<<<<< HEAD
-                                <div class="row mt-3" >
-                                    {{ $informasisd->links() }}
-=======
+                                <br><br>
                                 <div class="d-flex justify-content-center">
                                     {!! $informasisd->links() !!}
->>>>>>> bb997844b717b9f9e96266ac82cc8e2c5e861ee6
+
                                 </div>
                             </div><!-- end pane -->
 
