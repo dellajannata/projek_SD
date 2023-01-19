@@ -7,6 +7,7 @@ use App\Models\Informasi;
 use App\Models\informasiLomba;
 use App\Models\Pembiasaan;
 use App\Models\Guru;
+use App\Models\WaliKelas;
 
 class TampilanBerandaController extends Controller
 {
@@ -15,7 +16,9 @@ class TampilanBerandaController extends Controller
         $informasisd = Informasi::orderBy('id', 'asc')->paginate(3);
         $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(3);
         $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(8);
-        return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
+        $guru = Guru::all()->count();
+        $jmlSiswa = WaliKelas::all()->sum('jmlh_siswa');
+        return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan','guru','jmlSiswa'));
     }
 
     public function detail(Request $request,$id)

@@ -124,7 +124,7 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-                                <div class="row mt-3">
+                                <div class="row mt-3" >
                                     {{ $informasisd->links() }}
                                 </div>
                             </div><!-- end pane -->
@@ -202,25 +202,18 @@
         <div class="section cl">
             <div class="container">
                 <div class="row text-left stat-wrap">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-study"></i></span>
-                        <p class="stat_count"></p>
+                        <p class="stat_count">{{$guru}}</p>
                         <h3>Guru</h3>
                     </div><!-- end col -->
 
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-online"></i></span>
-                        <p class="stat_count">240</p>
-                        <h3>Courses</h3>
-                    </div><!-- end col -->
-
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
-                                class="flaticon-years"></i></span>
-                        <p class="stat_count">55</p>
-                        <h3>Years Completed</h3>
+                        <p class="stat_count">{{$jmlSiswa}}</p>
+                        <h3>Jumlah Siswa</h3>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
