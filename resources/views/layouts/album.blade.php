@@ -40,10 +40,9 @@
             </div><!-- end col -->
             
             @endforeach
-            {{ $album->links() }}
+            
             </div>
     </div><!-- end container -->
-    <br><br>
 
     <div class="d-flex justify-content-center">
         {!! $album->links() !!}

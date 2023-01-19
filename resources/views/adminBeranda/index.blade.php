@@ -49,37 +49,13 @@
             <div class="col-md-4 stretch-card grid-margin">
                 <div class="card bg-gradient-success card-img-holder text-white">
                     <div class="card-body">
+                        <a href={{url('/informasisd')}}>
                         <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
-                        <h4 class="font-weight-normal mb-3">Visitors Online <i
+                        <h4 class="font-weight-normal mb-3">Jumlah Informasi Terbaru<i
                                 class="mdi mdi-diamond mdi-24px float-right"></i>
                         </h4>
-                        <h2 class="mb-5">95,5741</h2>
-                        <h6 class="card-text">Increased by 5%</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">INFORMASI TERBARU</h4>
-                        @forelse ($informasi as $i)
-                        <div class="row mt-3">
-                            <div class="col-6 pe-1">
-                                <img src="{{ asset('storage/informasi/' . $i->image) }}" class="rounded"
-                                    style="width: 250px; height:220px">
-                            </div>
-                            <div>{!! Illuminate\Support\Str::of($i->deskripsi)->words(10) !!} </div>
-                        </div>
-                    </div>
-                    @empty
-                    <div class="alert alert-danger">
-                        Informasi terbaru belum tersedia.
-                    </div>
-                    @endforelse
-                    <div class="row text-center">
-                        {{ $informasi->links() }}
+                    </a>
+                        <h2 class="mb-5">{{$jumlah}}</h2>
                     </div>
                 </div>
             </div>
