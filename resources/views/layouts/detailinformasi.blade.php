@@ -24,17 +24,6 @@
                 
                         </div><!-- end col -->
             <div class="col-lg-3 col-12 right-single">
-                <div class="widget-search">
-                    <div class="site-search-area">
-                        <form method="get" id="site-searchform" action="#">
-                            <div>
-                                <input class="input-text form-control" name="search-k" id="search-k"
-                                    placeholder="Search keywords..." type="text">
-                                <input id="searchsubmit" value="Search" type="submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
                 <div class="widget-categories">
                     <h3 class="widget-title">Informasi Link</h3>
                     <ul>
