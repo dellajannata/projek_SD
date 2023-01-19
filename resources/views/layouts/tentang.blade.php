@@ -2,7 +2,7 @@
 @section('layouts.content')
 <div class="all-title-box">
 </div>
- 
+
 <div id="overviews" class="section lb">
     <div class="container">
         <div class="section-title row text-center">
@@ -17,16 +17,18 @@
         @if ($tentangkami->id % 2 == 0)
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
                 <div class="message-box">
                     <h4 class="title">{{ $tentangkami->judul }}</h4>
                     <p class="post">{!! $tentangkami->deskripsi !!}</p>
-                    <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
+                    <a href="{{ url('detailTentang') }}/{{ $tentangkami->id }}" class="hover-btn-new orange"><span>Baca
+                            Selengkapnya</span></a>
                 </div><!-- end messagebox -->
             </div><!-- end col -->
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="post-media wow fadeIn">
-                    <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
-                        class="img-fluid img-rounded" style="width:800px;height:400px;">
+                    <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" class="rounded img-fluid"
+                        style="height: 300px; width: 500px;">
                 </div><!-- end media -->
             </div><!-- end col -->
         </div>
@@ -35,14 +37,15 @@
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="post-media wow fadeIn">
                     <img src="{{ asset('storage/tentangkami/' . $tentangkami->gambar) }}" alt=""
-                        class="img-fluid img-rounded" style="width:800px;height:400px;">
+                        class="img-fluid img-rounded" style="width:500px;height:300px;">
                 </div><!-- end media -->
             </div><!-- end col -->
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="message-box">
                     <h4 class="title">{{ $tentangkami->judul }}</h4>
                     <p class="post">{!! $tentangkami->deskripsi !!}</p>
-                    <a href="#" class="hover-btn-new orange"><span>Baca Selengkapnya</span></a>
+                    <a href="{{ url('detailTentang') }}/{{ $tentangkami->id }}" class="hover-btn-new orange"><span>Baca
+                            Selengkapnya</span></a>
                 </div><!-- end messagebox -->
             </div><!-- end col -->
         </div>
@@ -53,7 +56,7 @@
         {!! $tentang->links() !!}
     </div>
 </div><!-- end section -->
- 
+
 <div class="hmv-box">
     <div class="container">
         <div class="row">

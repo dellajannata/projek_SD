@@ -96,7 +96,11 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
  
     //semua route dalam grup ini hanya bisa diakses oleh admin
 });
-//DETAIL INFORMASI
+
+// DETAIL INFORMASI
 Route::get('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
 Route::get('detailLomba/{id}', [TampilanBerandaController::class, 'detailLomba']);
 Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPembiasaan']);
+
+// DETAIL INFORMASI
+Route::get('detailTentang/{id}', [TentangController::class, 'detailTentang']);
