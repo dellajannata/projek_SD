@@ -19,7 +19,7 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('crudkelas.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('crudkelas1.store') }}" method="POST" enctype="multipart/form-data">
                         
                             @csrf
 
@@ -80,7 +80,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-md btn-success">SIMPAN</button>
-                            <a class="btn btn-md btn-primary" href="{{ route('crudkelas.index') }}" class="">KEMBALI</a>
+                            <a class="btn btn-md btn-primary" href="{{ route('crudkelas1.index') }}" class="">KEMBALI</a>
                         </form> 
                     </div>
                 </div>

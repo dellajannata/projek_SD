@@ -8,7 +8,7 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudkelas.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
+                            <a href="{{ route('crudkelas1.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
                                 </a>
                                 @if ($message = Session::get('success'))
                                 <div class="alert alert-success">
@@ -38,8 +38,8 @@
                                             <td>{{ $k->jm_akhir }}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                    action="{{ route('crudkelas.destroy', $k->id) }}" method="POST">
-                                                    <a href="{{ route('crudkelas.edit', $k->id) }}"
+                                                    action="{{ route('crudkelas1.destroy', $k->id) }}" method="POST">
+                                                    <a href="{{ route('crudkelas1.edit', $k->id) }}"
                                                         class="btn btn-sm btn-warning">EDIT</a>
                                                     @csrf
                                                     @method('DELETE')

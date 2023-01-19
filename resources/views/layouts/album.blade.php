@@ -16,16 +16,16 @@
     </div>
     <div class="container">
         <hr class="invis"> 
-        <div class="row"> 
+        <div class="row " > 
             @foreach ($album as $ab)
-            <div class="col-lg-3 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12">
                 <div class="course-item">
                     <div class="image-blog">
-                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:600px;height:200px;" alt="" class="img-fluid">
+                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:620px;height:400px;" alt="" class="img-fluid">
                     </div>
                     <div class="course-br">
-                        <div class="course-title">
-                            <h2>{{$ab->judul}}</h2>
+                        <div class="course-title h-75">
+                            <h2 style="height: 30px;">{{$ab->judul}}</h2>
                         </div>
                         <div class="course-desc">
                         </div>
@@ -40,12 +40,18 @@
             </div><!-- end col -->
             
             @endforeach
+            {{ $album->links() }}
+            </div>
     </div><!-- end container -->
+<<<<<<< HEAD
     <br><br>
 
     <div class="d-flex justify-content-center">
         {!! $album->links() !!}
     </div>
+=======
+
+>>>>>>> 2050d80ffd3e59020249301c365105888c568d84
 </div><!-- end section -->
 </div>
 @endsection
