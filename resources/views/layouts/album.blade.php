@@ -42,7 +42,10 @@
             @endforeach
     </div><!-- end container -->
     <br><br>
-    {{ $album->links() }}
+
+    <div class="d-flex justify-content-center">
+        {!! $album->links() !!}
+    </div>
 </div><!-- end section -->
 </div>
 @endsection

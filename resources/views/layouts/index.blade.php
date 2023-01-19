@@ -127,10 +127,8 @@
                                     
 
                                 </div><!-- end row -->
-                                <hr class="invis">
-
-                                <div class="row ">
-                                    {{ $informasisd->links() }}
+                                <div class="d-flex justify-content-center">
+                                    {!! $informasisd->links() !!}
                                 </div>
                             </div><!-- end pane -->
 
@@ -153,10 +151,8 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-                                <hr class="invis">
-
-                                <div class="row ">
-                                    {{ $informasiLomba->links() }}
+                                <div class="d-flex justify-content-center">
+                                    {!! $informasiLomba->links() !!}
                                 </div>
                             </div><!-- end pane -->
                         </div><!-- end content -->

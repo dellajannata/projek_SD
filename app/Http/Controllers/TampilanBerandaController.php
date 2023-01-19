@@ -14,7 +14,7 @@ class TampilanBerandaController extends Controller
     {
         $informasisd = Informasi::orderBy('id', 'asc')->paginate(3);
         $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(3);
-        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(8);
+        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(6);
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
     }
 

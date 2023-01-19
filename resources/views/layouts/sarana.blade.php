@@ -40,6 +40,10 @@
                                             </div>
                                         @endforeach
                                     </div><!-- end row -->
+                                    <hr class="invis">
+                                    <div class="d-flex justify-content-center">
+                                        {!! $saranaPrasarana->links() !!}
+                                    </div>
                                 </div><!-- end pane -->
                             </div><!-- end content -->
                         </div><!-- end col -->
