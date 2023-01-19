@@ -59,14 +59,15 @@
         <div class="row">
             @foreach ($visimisi as $vm)
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="inner-hmv">
+                <div class="inner-hmv h-100" >
                     {{-- <div class="icon-box-hmv"><i class="flaticon-achievement"></i></div> --}}
                     <h3 class="title">{{ $vm->judul }}</h3>
-                    <span class="post">{!! $vm->deskripsi !!}</span>
+                    <span class="post"  style="height:700px">{!! $vm->deskripsi !!}</span>
                 </div>
             </div>
             @endforeach
         </div>
+        <br><br>
         <div class="d-flex justify-content-center">
             {!! $visimisi->links() !!}
         </div>
