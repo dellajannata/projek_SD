@@ -43,15 +43,11 @@
             {{ $album->links() }}
             </div>
     </div><!-- end container -->
-<<<<<<< HEAD
     <br><br>
 
     <div class="d-flex justify-content-center">
         {!! $album->links() !!}
     </div>
-=======
-
->>>>>>> 2050d80ffd3e59020249301c365105888c568d84
 </div><!-- end section -->
 </div>
 @endsection

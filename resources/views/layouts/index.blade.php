@@ -124,13 +124,8 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-<<<<<<< HEAD
                                 <div class="d-flex justify-content-center">
                                     {!! $informasisd->links() !!}
-=======
-                                <div class="row mt-3">
-                                    {{ $informasisd->links() }}
->>>>>>> 2050d80ffd3e59020249301c365105888c568d84
                                 </div>
                             </div><!-- end pane -->
 
@@ -154,13 +149,8 @@
                                         </div>
                                     @endforeach
                                 </div><!-- end row -->
-<<<<<<< HEAD
                                 <div class="d-flex justify-content-center">
                                     {!! $informasiLomba->links() !!}
-=======
-                                <div class="row mt-3">
-                                    {{ $informasiLomba->links() }}
->>>>>>> 2050d80ffd3e59020249301c365105888c568d84
                                 </div>
                             </div><!-- end pane -->
                         </div><!-- end content -->

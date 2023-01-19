@@ -37,14 +37,9 @@
                                             </div>
                                         @endforeach
                                     </div><!-- end row -->
-<<<<<<< HEAD
                                     <hr class="invis">
                                     <div class="d-flex justify-content-center">
                                         {!! $saranaPrasarana->links() !!}
-=======
-                                    <div class="row mt-3">
-                                        {{ $saranaPrasarana->links() }}
->>>>>>> 2050d80ffd3e59020249301c365105888c568d84
                                     </div>
                                 </div><!-- end pane -->
                             </div><!-- end content -->
