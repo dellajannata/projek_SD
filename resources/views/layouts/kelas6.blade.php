@@ -13,16 +13,14 @@
                     </div>
                 </div><!-- end title -->
             </div><!-- end title -->
-
-            <hr class="invis">
         <div class="container mt-3">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
                                         <tr>
                                             <th scope="col">No.</th>
                                             <th scope="col">Hari</th>
