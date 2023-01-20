@@ -23,20 +23,31 @@
                 @endforeach
                 
                         </div><!-- end col -->
-            <div class="col-lg-3 col-12 right-single">
-                <div class="widget-categories">
-                    <h3 class="widget-title">Informasi Link</h3>
-                    <ul>
-                        <li><a href="beranda">Beranda</a></li>
-                        <li><a href="tentang">Tentang Kami</a></li>
-                        <li><a href="kelas">Kelas</a></li>
-                        <li><a href="sarana">Sarana Prasarana</a></li>
-                        <li><a href="guru">Guru</a></li>
-                        <li><a href="album">Album</a></li>
-                        <li><a href="kontak">Kontak</a></li>
-                    </ul>
-                </div>
-            </div>
+                        <div class="col-lg-3 col-12 right-single">
+                            <div class="widget-categories">
+                                <h3 class="widget-title">Informasi Link</h3>
+                                <ul>
+                                    <li><a href="beranda">Beranda</a></li>
+                                    <li><a href="tentang">Tentang Kami</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                            <a class="dropdown-item" href="{{url('/kelas')}}">Kelas 1</a>
+                                            <a class="dropdown-item" href="{{url('/kelas2')}}">Kelas 2</a>
+                                            <a class="dropdown-item" href="{{url('/kelas3')}}">Kelas 3</a>
+                                            <a class="dropdown-item" href="{{url('/kelas4')}}">Kelas 4</a>
+                                            <a class="dropdown-item" href="{{url('/kelas5')}}">Kelas 5</a>
+                                            <a class="dropdown-item" href="{{url('/kelas6')}}">Kelas 6</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="sarana">Sarana Prasarana</a></li>
+                                    <li><a href="guru">Guru</a></li>
+                                    <li><a href="album">Album</a></li>
+                                    <li><a href="kontak">Kontak</a></li>
+                                </ul>
+                            </div>
+                        </div>
         </div><!-- end row -->
     </div><!-- end container -->
 </div><!-- end section -->
