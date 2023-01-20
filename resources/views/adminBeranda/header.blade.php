@@ -3,8 +3,8 @@
           <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
               <img src="assets/images/logo.png" style="width: 50px; height:50px;">
                   <div class="nav-profile-text d-flex flex-column">
-                      <span class="font-weight-bold mb-2"> UPT SD Negeri</span>
-                      <span style="text-align:left" class="text-secondary text-small">108 Gresik</span>
+                      <span class="font-weight-bold mb-2">SDN 108 Gresik</span>
+                      {{--  <span style="text-align:left" class="text-secondary text-small">108 Gresik</span>  --}}
                   </div>
                   <div>
                   <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
