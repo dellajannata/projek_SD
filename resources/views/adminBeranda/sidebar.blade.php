@@ -2,19 +2,19 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="adminBeranda">
+                    <a class="nav-link" href="{{ url('adminBeranda') }}">
                         <span class="menu-title">Dashboard</span>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="crudalbum">
+                    <a class="nav-link" href="{{ url('crudalbum') }}">
                         <span class="menu-title">Album</span>
                         <i class="mdi mdi-folder-image menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="crudguru">
+                    <a class="nav-link" href="{{ url('crudguru') }}">
                         <span class="menu-title">Guru</span>
                         <i class="mdi mdi-account-multiple menu-icon"></i>
                     </a>
@@ -28,8 +28,8 @@
                     </a>
                     <div class="collapse" id="informasi">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="informasisd"> SDN 108 Gresik </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="informasiLomba"> Lomba </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('informasisd') }}"> SDN 108 Gresik </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('informasiLomba') }}"> Lomba </a></li>
                         </ul>
                     </div>
                 </li>
@@ -52,25 +52,25 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="saranaPrasarana">
+                    <a class="nav-link" href="{{ url('saranaPrasarana') }}">
                         <span class="menu-title">Sarana Prasarana</span>
                         <i class="mdi mdi-account-multiple menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tentangkami">
+                    <a class="nav-link" href="{{ url('tentangkami') }}">
                         <span class="menu-title">Tentang Kami</span>
                         <i class="mdi mdi-home menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="visimisi">
+                    <a class="nav-link" href="{{ url('visimisi') }}">
                         <span class="menu-title">Visi & Misi</span>
                         <i class="mdi mdi-account-multiple menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pembiasaan">
+                    <a class="nav-link" href="{{ url('pembiasaan') }}">
                         <span class="menu-title">Kegiatan Pembiasaan</span>
                         <i class="mdi mdi-calendar-clock
                   \f1e6 menu-icon"></i>
@@ -78,7 +78,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="crudwalikelas">
+                    <a class="nav-link" href="{{ url('crudwalikelas') }}">
                         <span class="menu-title">Wali Kelas</span>
                         <i class="mdi mdi-account-multiple menu-icon"></i>
                     </a>

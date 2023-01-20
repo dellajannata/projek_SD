@@ -12,7 +12,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+                    <div id="home" class="first-section" style="background-image:url('images/depan.jpg');">
                         <div class="dtab">
                             <div class="container">
                                 <div class="row">
@@ -21,7 +21,7 @@
                                             <h2><strong>UPT SD Negeri </strong> 108 Gresik</h2>
                                             <p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten
                                                 Gresik, Jawa Timur 61172</p>
-                                            <a href="tentang" class="hover-btn-new"><span>Selengkapnya</span></a>
+                                            <a href="{{ url('tentang') }}" class="hover-btn-new"><span>Selengkapnya</span></a>
                                         </div>
                                     </div>
                                 </div><!-- end row -->
@@ -30,7 +30,7 @@
                     </div><!-- end section -->
                 </div>
                 <div class="carousel-item">
-                    <div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+                    <div id="home" class="first-section" style="background-image:url('img/fotbar.jpg');">
                         <div class="dtab">
                             <div class="container">
                                 <div class="row">
@@ -48,7 +48,7 @@
                     </div><!-- end section -->
                 </div>
                 <div class="carousel-item">
-                    <div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+                    <div id="home" class="first-section" style="background-image:url('images/gerbang.jpg');">
                         <div class="dtab">
                             <div class="container">
                                 <div class="row">

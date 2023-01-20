@@ -13,7 +13,7 @@
  <header class="top-navbar">
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <div class="container-fluid">
-             <a class="navbar-brand" href="beranda">
+             <a class="navbar-brand" href="{{ url('beranda') }}">
                  <img src="assets/images/logo.png" alt="" / style="max-width:70px;max-height:70px;float:left;">
              </a>
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"

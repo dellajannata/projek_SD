@@ -13,7 +13,7 @@
                 <div class="col-md-4 stretch-card grid-margin">
                     <div class="card bg-gradient-danger card-img-holder text-white">
                         <div class="card-body">
-                            <a href="crudguru">
+                            <a href="{{ url('crudguru') }}">
                                 <img src="assets/images/dashboard/circle.svg" class="card-img-absolute"
                                     alt="circle-image" />
                                 <h4 class="font-weight-normal mb-3">Jumlah Guru
