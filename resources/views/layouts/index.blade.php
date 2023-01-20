@@ -220,15 +220,5 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end section -->
-
-        <div id="plan" class="section lb">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h3>Choose Your Plan</h3>
-                    <p>Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore
-                        et
-                        dolore magna aliqua. </p>
-                </div><!-- end title -->
-            </div><!-- end container -->
-        </div><!-- end section -->
+        
     @endsection

@@ -9,7 +9,7 @@
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
                         <h3>Jadwal Pelajaran</h3>
-                        <p>Kelas 4</p>
+                        <p style="font-size: 30px">Kelas 4</p>
                     </div>
                 </div><!-- end title -->
             </div><!-- end title -->

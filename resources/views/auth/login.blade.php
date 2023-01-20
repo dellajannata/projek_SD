@@ -32,22 +32,26 @@
                                              <span class="invalid-feedback" role="alert">
                                                  <strong>Maaf Password yang Anda Masukkan Salah.</strong>
                                              </span>
-                                        @enderror
-                                         </div>
+                                         @enderror
                                      </div>
-                                     <div class="row">
-                                         <div class="col-sm-10">
-                                             <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
-                                                 Submit
-                                             </button>
-                                             {{-- <a class="for-pwd" href="javascript:;">Lupa password?</a> --}}
-                                         </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-sm-10">
+                                         <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                             Submit
+                                         </button>
+                                         @if (Route::has('password.request'))
+                                             <a href="{{ route('password.request') }}" style="font-size: 16px" >
+                                                 {{ __('Lupa Kata Sandi?') }}
+                                             </a>
+                                         @endif
                                      </div>
-                                 </form>
-                             </div>
+                                 </div>
+                             </form>
                          </div>
                      </div>
                  </div>
              </div>
          </div>
-     </form>
+     </div>
+ </form>
