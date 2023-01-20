@@ -28,8 +28,8 @@
                     <div class="widget-categories">
                         <h3 class="widget-title">Informasi Link</h3>
                         <ul>
-                            <li><a href="beranda">Beranda</a></li>
-                            <li><a href="tentang">Tentang Kami</a></li>
+                            <li><a href="{{ url('/beranda') }}">Beranda</a></li>
+                            <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
                                 </a>
@@ -42,10 +42,10 @@
                                     <a class="dropdown-item" href="{{ url('/kelas6') }}">Kelas 6</a>
                                 </div>
                             </li>
-                            <li><a href="sarana">Sarana Prasarana</a></li>
-                            <li><a href="guru">Guru</a></li>
-                            <li><a href="album">Album</a></li>
-                            <li><a href="kontak">Kontak</a></li>
+                            <li><a href="{{ url('/sarana') }}">Sarana Prasarana</a></li>
+                            <li><a href="{{ url('/guru') }}">Guru</a></li>
+                            <li><a href="{{ url('/album') }}">Album</a></li>
+                            <li><a href="{{ url('/kontak') }}">Kontak</a></li>
                         </ul>
                     </div>
                 </div>
