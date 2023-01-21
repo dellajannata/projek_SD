@@ -9,6 +9,7 @@
                         <Center>DETAIL DATA TENTANG KAMI</Center>
                     </div>
                     <div class="card-body">
+                        <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -50,6 +51,7 @@
                                         </tr>
                                 </tbody>
                             </table>
+                        </div>
                             <br>
                             <a class="btn btn-md btn-primary" href="{{ route('tentangkami.index') }}" class="">KEMBALI</a>
                         </div>

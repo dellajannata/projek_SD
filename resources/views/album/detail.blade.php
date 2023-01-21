@@ -8,8 +8,8 @@
                 <div class="card-header">
                     <Center>DETAIL DATA ALBUM</Center>
                 </div>
-                <div class="card-body">
                         <div class="card-body">
+                            <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -50,10 +50,10 @@
                                         </tr>
                                 </tbody>
                             </table>
+                            </div>
                             <br>
                             <a class="btn btn-MD btn-primary" href="{{ route('crudalbum.index') }}" class="">KEMBALI</a>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
