@@ -11,14 +11,14 @@
                         <div class="blog-item">
                             <div class="image-blog">
                                 <img src="{{ asset('storage/tentangkami/' . $t->gambar) }}"
-                                    style="width:770px;height:410px;
+                                    style="max-width:750px;max-height:450px;
                     ">
                             </div>
                             <div class="post-content">
                                 <div class="blog-desc">
                                     <br>
                                     <h3 class="title"><b>{!! $t->judul !!}</b></h3>
-                                    <h3 class="title">{!! $t->deskripsi !!}</h3>
+                                    <h3 class="title" style="text-align: justify">{!! $t->deskripsi !!}</h3>
                                 </div>
                             </div>
                         </div>

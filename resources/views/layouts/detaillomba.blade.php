@@ -11,13 +11,13 @@
                         <div class="blog-item">
                             <div class="image-blog">
                                 <img src="{{ asset('storage/informasiLomba/' . $i->image) }}"
-                                    style="width:770px;height:410px;
+                                    style="max-width:750px;max-height:450px;
                     ">
                             </div>
                             <div class="post-content">
                                 <div class="blog-desc">
                                     <br>
-                                    <h3 class="title">{!! $i->deskripsi !!}</h3>
+                                    <h3 class="title" style="text-align: justify">{!! $i->deskripsi !!}</h3>
                                 </div>
                             </div>
                         </div>
