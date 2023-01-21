@@ -13,13 +13,13 @@ class TampilanBerandaController extends Controller
 {
     public function index()
     {
-        $informasisd = Informasi::orderBy('id', 'asc')->paginate(3);
-        $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(3);
-        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(8);
+        $informasisd = Informasi::orderBy('id', 'asc')->paginate(12);
+        $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(12);
+        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(12);
         $guru = Guru::all()->count();
         $jmlSiswa = WaliKelas::all()->sum('jmlh_siswa');
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan','guru','jmlSiswa'));
-        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(6);
+        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(12);
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
     }
 
