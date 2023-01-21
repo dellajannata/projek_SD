@@ -65,7 +65,7 @@
                 <div class="inner-hmv h-100" >
                     {{-- <div class="icon-box-hmv"><i class="flaticon-achievement"></i></div> --}}
                     <h3 class="title">{{ $vm->judul }}</h3>
-                    <span class="post"  style="height:700px">{!! $vm->deskripsi !!}</span>
+                    <span class="post"  style="height:700px;text-align: justify;" >{!! $vm->deskripsi !!}</span>
                 </div>
             </div>
             @endforeach

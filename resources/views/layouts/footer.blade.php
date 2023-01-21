@@ -6,7 +6,7 @@
                     <div class="widget-title">
                         <h3>Tentang Kami</h3>
                     </div>
-                    <p>Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p>   
+                    <p style="text-align: justify">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p>   
                 </div><!-- end clearfix -->
             </div><!-- end col -->
 
@@ -18,7 +18,18 @@
                     <ul class="footer-links">
                         <li><a href="{{ url('beranda') }}">BERANDA</a></li>
                         <li><a href="{{ url('tentang') }}">TENTANG KAMI</a></li>
-                        <li><a href="{{ url('kelas') }}">KELAS</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="{{ url('/kelas') }}">Kelas 1</a>
+                                <a class="dropdown-item" href="{{ url('/kelas2') }}">Kelas 2</a>
+                                <a class="dropdown-item" href="{{ url('/kelas3') }}">Kelas 3</a>
+                                <a class="dropdown-item" href="{{ url('/kelas4') }}">Kelas 4</a>
+                                <a class="dropdown-item" href="{{ url('/kelas5') }}">Kelas 5</a>
+                                <a class="dropdown-item" href="{{ url('/kelas6') }}">Kelas 6</a>
+                            </div>
+                        </li>
                         <li><a href="{{ url('sarana') }}">SARANA PRASARANA</a></li>
                         <li><a href="{{ url('guru') }}">GURU</a></li>
                         <li><a href="{{ url('album') }}">ALBUM</a></li>
