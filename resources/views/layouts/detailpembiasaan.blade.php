@@ -10,9 +10,7 @@
                     @foreach ($detailPembiasaan as $p)
                         <div class="blog-item">
                             <div class="image-blog">
-                                <img src="{{ asset('storage/pembiasaan/' . $p->image) }}"
-                                    style="max-width:750px;max-height:450px;
-                    ">
+                                <img src="{{ asset('storage/pembiasaan/' . $p->image) }}">
                             </div>
                             <div class="post-content">
                                 <div class="blog-desc">

@@ -143,7 +143,7 @@
                                                             style="height: 200px; width: 300px;">
                                                     </div>
                                                     <div class="pricing-table-header grd1">
-                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($il->deskripsi)->words(3) !!}
+                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($il->deskripsi)->words(5) !!}
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="blog-desc">
                                         <h3 class="title"><a
-                                                href="{{ url('detailPembiasaan') }}/{{ $p->id }}">{!! Illuminate\Support\Str::of($p->deskripsi)->words(3) !!}</a>
+                                                href="{{ url('detailPembiasaan') }}/{{ $p->id }}">{!! Illuminate\Support\Str::of($p->deskripsi)->words(5) !!}</a>
                                         </h3>
                                     </div>
                                 </div>

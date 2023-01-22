@@ -10,9 +10,7 @@
                     @foreach ($detailTentang as $t)
                         <div class="blog-item">
                             <div class="image-blog">
-                                <img src="{{ asset('storage/tentangkami/' . $t->gambar) }}"
-                                    style="max-width:750px;max-height:450px;
-                    ">
+                                <img src="{{ asset('storage/tentangkami/' . $t->gambar) }}">
                             </div>
                             <div class="post-content">
                                 <div class="blog-desc">
