@@ -54,5 +54,211 @@
                 </div>
             </div>
         </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Mata Pelajaran</th>
+                                            <th scope="col">Jam Mulai</th>
+                                            <th scope="col">Jam Berakhir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($kelasSelasa as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->mapel }}</td>
+                                                <td>{{ $k->jm_mulai }}</td>
+                                                <td>{{ $k->jm_akhir }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data kelas belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $kelasSelasa->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Mata Pelajaran</th>
+                                            <th scope="col">Jam Mulai</th>
+                                            <th scope="col">Jam Berakhir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($kelasRabu as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->mapel }}</td>
+                                                <td>{{ $k->jm_mulai }}</td>
+                                                <td>{{ $k->jm_akhir }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data kelas belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $kelasRabu->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Mata Pelajaran</th>
+                                            <th scope="col">Jam Mulai</th>
+                                            <th scope="col">Jam Berakhir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($kelasKamis as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->mapel }}</td>
+                                                <td>{{ $k->jm_mulai }}</td>
+                                                <td>{{ $k->jm_akhir }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data kelas belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $kelasKamis->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Mata Pelajaran</th>
+                                            <th scope="col">Jam Mulai</th>
+                                            <th scope="col">Jam Berakhir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($kelasJumat as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->mapel }}</td>
+                                                <td>{{ $k->jm_mulai }}</td>
+                                                <td>{{ $k->jm_akhir }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data kelas belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $kelasJumat->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Mata Pelajaran</th>
+                                            <th scope="col">Jam Mulai</th>
+                                            <th scope="col">Jam Berakhir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($kelasSabtu as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->mapel }}</td>
+                                                <td>{{ $k->jm_mulai }}</td>
+                                                <td>{{ $k->jm_akhir }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data kelas belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $kelasSabtu->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
     @endsection
