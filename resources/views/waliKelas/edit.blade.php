@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">Jumlah Siswa</label>
-                                <input type="text" value="{{ $wk->jmlh_siswa }}"
+                                <input type="number" value="{{ $wk->jmlh_siswa }}"
                                     class="form-control @error('jmlh_siswa') is-invalid @enderror" name="jmlh_siswa">
 
                                 <!-- error message untuk title -->
