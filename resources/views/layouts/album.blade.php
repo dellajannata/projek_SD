@@ -25,7 +25,7 @@
                     </div>
                     <div class="course-br">
                         <div class="course-title h-75">
-                            <h2 style="height: 30px;">{{$ab->judul}}</h2>
+                            <h2 style="height: 25px;text-align: center;">{{$ab->judul}}</h2>
                         </div>
                         <div class="course-desc">
                         </div>
