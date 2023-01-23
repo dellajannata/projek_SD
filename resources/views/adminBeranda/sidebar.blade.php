@@ -36,9 +36,9 @@
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#kelas" aria-expanded="false"
                         aria-controls="kelas">
-                        <span class="menu-title">Kelas</span>
+                        <span class="menu-title">Jadwal Pelajaran</span>
                         <i class="menu-arrow"></i>
-                        <i class="mdi mdi-home menu-icon"></i>
+                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
                     </a>
                     <div class="collapse" id="kelas">
                         <ul class="nav flex-column sub-menu">
@@ -66,7 +66,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('visimisi') }}">
                         <span class="menu-title">Visi & Misi</span>
-                        <i class="mdi mdi-account-multiple menu-icon"></i>
+                        <i class="mdi mdi-application menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -80,7 +80,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('crudwalikelas') }}">
                         <span class="menu-title">Wali Kelas</span>
-                        <i class="mdi mdi-account-multiple menu-icon"></i>
+                        <i class="mdi mdi-account menu-icon"></i>
                     </a>
                 </li>
             </ul>

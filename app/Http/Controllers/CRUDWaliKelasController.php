@@ -28,7 +28,6 @@ class CRUDWaliKelasController extends Controller
         $request->validate([
             'guru_id'     => 'required',
             'kelas'   => 'required',
-            'jmlh_siswa'   => 'required|numeric',
         ]);
 
         $wk = WaliKelas::create([
@@ -75,7 +74,6 @@ class CRUDWaliKelasController extends Controller
         $request->validate([
             'guru_id'     => 'required',
             'kelas'   => 'required',
-            'jmlh_siswa'   => 'required|numeric',
         ]);
 
         //get data kelas by ID
