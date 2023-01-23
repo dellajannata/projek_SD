@@ -21,11 +21,11 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="course-item">
                     <div class="image-blog">
-                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:620px;height:400px;" alt="" class="img-fluid">
+                        <img src="{{ asset('storage/album/' . $ab->image) }}" style="width:620px;height:350px;" alt="" class="img-fluid">
                     </div>
                     <div class="course-br">
                         <div class="course-title h-75">
-                            <h2 style="height: 30px;">{{$ab->judul}}</h2>
+                            <h2 style="height: 25px;text-align: center;">{{$ab->judul}}</h2>
                         </div>
                         <div class="course-desc">
                         </div>

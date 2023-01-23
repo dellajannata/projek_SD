@@ -13,7 +13,7 @@ class CRUDKelas4Controller extends Controller
     }
     public function index(Request $request)
     {
-        $kelas4 = Kelas4::orderBy('id', 'asc')->paginate(5);
+        $kelas4 = Kelas4::orderBy('id', 'asc')->paginate(10);
         return view('kelas4.index', compact('kelas4'));
     }
 

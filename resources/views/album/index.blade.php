@@ -35,7 +35,7 @@
                                                     <img src="{{ asset('storage/album/' . $ab->image) }}" class="rounded"
                                                         style="width: 250px; height:200px">
                                                 </td>
-                                                <td>{{ $ab->judul }}</td>
+                                                <td>{!! Illuminate\Support\Str::of($ab->judul)->words(3) !!}</td>
                                                 <td>{{ $ab->tanggal }}</td>
                                                 <td class="text-center">
                                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
