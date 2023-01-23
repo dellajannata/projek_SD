@@ -44,7 +44,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="font-weight-bold">Jumlah Siswa</label>
-                                <input type="text" class="form-control @error('jmlh_siswa') is-invalid @enderror"
+                                <input type="number" class="form-control @error('jmlh_siswa') is-invalid @enderror"
                                     name="jmlh_siswa" value="{{ old('jmlh_siswa') }}" placeholder="Masukkan Jumlah Siswa">
 
                                 <!-- error message untuk title -->
