@@ -176,10 +176,11 @@
                                 <div class="blog-item">
                                     <div class="image-blog">
                                         <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" alt=""
-                                            class="img-fluid" style="max-width:260px;max-height:200px;">
+                                            class="img-fluid" style="max-width:260px;max-height:150px;">
                                     </div>
+                                    <br>
                                     <div class="blog-title">
-                                        <h2>{{ $p->namaKegiatan }}</h2>
+                                        <h3><b>{{ $p->namaKegiatan }}</b></h3>
                                     </div>
                                     <div class="blog-desc">
                                         <h3 class="title"><a

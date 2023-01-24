@@ -9,6 +9,7 @@
                     <Center>DETAIL DATA GURU</Center>
                 </div>
                 <div class="card-body">
+                    <div class="table-responsive">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -152,6 +153,7 @@
                                         </tr>
                                 </tbody>
                             </table>
+                    </div>
                             <br>
                             <a class="btn btn-md btn-primary" href="{{ route('crudguru.index') }}" class="">KEMBALI</a>
                         </div>

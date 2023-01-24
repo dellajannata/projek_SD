@@ -54,19 +54,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('saranaPrasarana') }}">
                         <span class="menu-title">Sarana Prasarana</span>
-                        <i class="mdi mdi-account-multiple menu-icon"></i>
+                        <i class="mdi mdi-home-modern menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('tentangkami') }}">
                         <span class="menu-title">Tentang Kami</span>
-                        <i class="mdi mdi-home menu-icon"></i>
+                        <i class="mdi mdi-alert-circle-outline menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('visimisi') }}">
                         <span class="menu-title">Visi & Misi</span>
-                        <i class="mdi mdi-application menu-icon"></i>
+                        <i class="mdi mdi-comment-alert-outline menu-icon"></i>
                     </a>
                 </li>
                 <li class="nav-item">

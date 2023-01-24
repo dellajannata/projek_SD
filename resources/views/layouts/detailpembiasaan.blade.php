@@ -12,9 +12,12 @@
                             <div class="image-blog">
                                 <img src="{{ asset('storage/pembiasaan/' . $p->image) }}">
                             </div>
+                            <br>
+                            <div class="blog-title">
+                                <h3><b>{{ $p->namaKegiatan }}</b></h3>
+                            </div>
                             <div class="post-content">
                                 <div class="blog-desc">
-                                    <br>
                                     <h3 class="title" style="text-align: justify">{!! $p->deskripsi !!}</h3>
                                 </div>
                             </div>

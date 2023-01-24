@@ -13,7 +13,6 @@
                     </div>
                 </div><!-- end title -->
             </div><!-- end title -->
-            <div id="overviews" class="section wb">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -46,7 +45,6 @@
                         </div><!-- end col -->
                     </div><!-- end row -->
                 </div>
-            </div>
 
             <br><br><br>
 

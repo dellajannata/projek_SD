@@ -73,4 +73,5 @@ class KelasController extends Controller
         $kelas6Sabtu = Kelas6::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
         return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu'));
     }
+    
 }

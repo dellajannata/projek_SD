@@ -51,6 +51,7 @@ Route::get('/kelas3', [KelasController::class, 'index3']);
 Route::get('/kelas4', [KelasController::class, 'index4']);
 Route::get('/kelas5', [KelasController::class, 'index5']);
 Route::get('/kelas6', [KelasController::class, 'index6']);
+Route::get('/dataKelas', [KelasController::class, 'dataKelas']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);

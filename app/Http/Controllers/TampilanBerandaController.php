@@ -15,7 +15,7 @@ class TampilanBerandaController extends Controller
     {
         $informasisd = Informasi::orderBy('id', 'asc')->paginate(12);
         $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(12);
-        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(12);
+        $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(9);
         $guru = Guru::all()->count();
         $jmlSiswa = WaliKelas::all()->sum('jmlh_siswa');
         return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan','guru','jmlSiswa'));
