@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
                 'name' => 'UPT SD Negeri 108 Gresik',
                 'email' => 'sdnegeri108gresik@gmail.com',
                 'level' => 'admin',
-                'password' =>bcrypt('12345678'),
+                'password' =>bcrypt('Sijago108'),
             ],
             
         ];
