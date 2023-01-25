@@ -22,7 +22,6 @@
                                         <th scope="col">No.</th>
                                         <th scope="col">FOTO</th>
                                         <th scope="col">NAMA KEGIATAN</th>
-                                        <th scope="col">DESKRIPSI</th>
                                         <th scope="col">AKSI</th>
                                     </tr>
                                 </thead>
@@ -33,10 +32,9 @@
                                             <td>{{ $no++ }}</td>
                                             <td class="text-center">
                                                 <img src="{{ asset('storage/pembiasaan/' . $p->image) }}" class="rounded"
-                                                    style="width: 250px; height:200px">
+                                                    style="width: 230px; height:180px">
                                             </td>
-                                            <td>{{ $p->namaKegiatan }}</td>
-                                            <td class="title">{!!Illuminate\Support\Str::of($p->deskripsi)->words(3)!!}</td>
+                                            <td>{!!Illuminate\Support\Str::of($p->namaKegiatan)->words(3)!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('pembiasaan.destroy', $p->id) }}" method="POST">
@@ -57,6 +55,7 @@
                                     @endforelse
                                 </tbody>
                             </table>
+                            <br>
                             {{ $pembiasaan->links() }}
                             </div>
                         </div>

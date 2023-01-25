@@ -31,7 +31,7 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $vm->judul }}</td>
-                                            <td class="title">{!!Illuminate\Support\Str::of($vm->deskripsi)->words(20)!!}</td>
+                                            <td class="title">{!!Illuminate\Support\Str::of($vm->deskripsi)->words(5)!!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('visimisi.destroy', $vm->id) }}" method="POST">
