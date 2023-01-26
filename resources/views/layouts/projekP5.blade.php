@@ -8,7 +8,7 @@
     <div class="container text-center">
         <div class="section-title row text-center">
             <div class="col-md-8 offset-md-2">
-                <h3>PROJEK PENGUATAN PROFIL PELAJAR PANCASILA</h3>
+                <h2><b>PROJEK PENGUATAN PROFIL PELAJAR PANCASILA<b></h2>
                 <p>UPT SD Negeri 108 Gresik</p>
             </div>
         </div><!-- end title -->
