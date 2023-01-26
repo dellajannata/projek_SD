@@ -25,6 +25,7 @@ use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
 use App\Http\Controllers\CRUDProjekP5Controller;
+use App\Http\Controllers\ProjekP5Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -44,6 +45,7 @@ Auth::routes();
 Route::redirect('/', '/beranda');
 
 Route::get('/album', [AlbumController::class, 'index']);
+Route::get('/P5', [ProjekP5Controller::class, 'index']);
 Route::get('/beranda', [TampilanBerandaController::class, 'index']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
