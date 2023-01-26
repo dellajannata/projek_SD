@@ -28,7 +28,8 @@
                             <p style="height: 60px;text-align: center; font-size:20px">{{$p5->namaKegiatan}}</p>
                         </div>
                         <div class="course-desc">
-                            <p>{!!$p5->deskripsi!!}</p>
+                            <p>{!! Illuminate\Support\Str::of($p5->deskripsi)->words(10) !!}</p>
+                            
                         </div>
                     </div>
                     <div class="course-meta-bot">
