@@ -26,6 +26,8 @@ use App\Http\Controllers\TampilanBuletinController;
 use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
+use App\Http\Controllers\CRUDProjekP5Controller;
+use App\Http\Controllers\ProjekP5Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -44,6 +46,7 @@ Auth::routes();
 Route::redirect('/', '/beranda');
 
 Route::get('/album', [AlbumController::class, 'index']);
+Route::get('/P5', [ProjekP5Controller::class, 'index']);
 Route::get('/beranda', [TampilanBerandaController::class, 'index']);
 Route::get('/guru', [TampilanGuruController::class, 'index']);
 Route::get('/kelas', [KelasController::class, 'index']);
@@ -68,6 +71,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     
     //pembiasaan
     Route::resource('pembiasaan', PembiasaanController::class);
+
+     //projek p5
+     Route::resource('projekP5', CRUDProjekP5Controller::class);
 
     //visimisi
     Route::resource('visimisi', VisimisiController::class);
@@ -106,6 +112,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 Route::get('detailinformasi/{id}', [TampilanBerandaController::class, 'detail']);
 Route::get('detailLomba/{id}', [TampilanBerandaController::class, 'detailLomba']);
 Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPembiasaan']);
+
+//detail p5
+Route::get('detailP5/{id}', [ProjekP5Controller::class, 'detail']);
 
 // DETAIL INFORMASI
 Route::get('detailTentang/{id}', [TentangController::class, 'detailTentang']);

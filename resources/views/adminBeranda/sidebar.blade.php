@@ -41,6 +41,12 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ url('projekP5') }}">
+                        <span class="menu-title">Projek P5</span>
+                        <i class="mdi mdi-home-modern menu-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#kelas" aria-expanded="false"
                         aria-controls="kelas">
                         <span class="menu-title">Jadwal Pelajaran</span>

@@ -27,6 +27,7 @@
                      <li class="nav-item"><a class="nav-link" href="{{url('/beranda')}}">Beranda</a></li>
                      <li class="nav-item"><a class="nav-link" href="{{url('/buletin')}}">E-Buletin</a></li>
                      <li class="nav-item"><a class="nav-link" href="{{url('/tentang')}}">Tentang Kami</a></li>
+                     <li class="nav-item"><a class="nav-link" href="{{url('/P5')}}">Projek P5</a></li>
                      <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Kelas
                          </a>
