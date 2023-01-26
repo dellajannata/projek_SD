@@ -19,6 +19,7 @@
         <div class="row ">
             @foreach ($projekP5 as $p5)
             <div class="col-lg-4 col-md-6 col-12">
+                <a href="{{ url('detailP5') }}/{{ $p5->id }}">
                 <div class="course-item">
                     <div class="image-blog">
                         <img src="{{ asset('storage/projekP5/' . $p5->image) }}" style="width:620px;height:230px;" alt="" class="img-fluid">

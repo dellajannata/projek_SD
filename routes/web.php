@@ -109,5 +109,8 @@ Route::get('detailinformasi/{id}', [TampilanBerandaController::class, 'detail'])
 Route::get('detailLomba/{id}', [TampilanBerandaController::class, 'detailLomba']);
 Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPembiasaan']);
 
+//detail p5
+Route::get('detailP5/{id}', [ProjekP5Controller::class, 'detail']);
+
 // DETAIL INFORMASI
 Route::get('detailTentang/{id}', [TentangController::class, 'detailTentang']);

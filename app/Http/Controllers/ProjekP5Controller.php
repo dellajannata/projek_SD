@@ -27,4 +27,10 @@ class ProjekP5Controller extends Controller
         $projekP5 = projekP5::orderBy('id', 'asc')->paginate(9);
         return view('layouts.projekP5', compact('projekP5'));
     }
+
+    public function detail(Request $request,$id)
+    {
+        $detailP5 = projekP5::where('id', $id)->orderBy('id', 'asc')->paginate(1);
+        return view('layouts.detailP5', compact('detailP5'));
+    }
 }
