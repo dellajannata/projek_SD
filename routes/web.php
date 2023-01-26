@@ -24,6 +24,7 @@ use App\Http\Controllers\TampilanBerandaController;
 use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
+use App\Http\Controllers\CRUDProjekP5Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -65,6 +66,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     
     //pembiasaan
     Route::resource('pembiasaan', PembiasaanController::class);
+
+     //projek p5
+     Route::resource('projekP5', CRUDProjekP5Controller::class);
 
     //visimisi
     Route::resource('visimisi', VisimisiController::class);
