@@ -8,6 +8,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ url('crudbuletin') }}">
+                        <span class="menu-title">E-Buletin</span>
+                        <i class="mdi mdi-home-modern menu-icon"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="{{ url('crudalbum') }}">
                         <span class="menu-title">Album</span>
                         <i class="mdi mdi-folder-image menu-icon"></i>

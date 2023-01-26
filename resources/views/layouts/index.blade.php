@@ -19,7 +19,7 @@
                                     <div class="col-md-12 col-sm-12 text-right">
                                         <div class="big-tagline">
                                             <h2><strong>UPT SD Negeri </strong> 108 Gresik</h2>
-                                            <p class="lead">Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten
+                                            <p class="lead">Jl. Desa, Kedungsekar, Kec. Benjeng, Kabupaten
                                                 Gresik, Jawa Timur 61172</p>
                                             <a href="{{ url('tentang') }}" class="hover-btn-new"><span>Selengkapnya</span></a>
                                         </div>
@@ -38,7 +38,7 @@
                                         <div class="big-tagline">
                                             <h2 data-animation="animated zoomInRight">UPT SD Negeri <strong>108
                                                     Gresik</strong></h2>
-                                            <p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok,
+                                            <p class="lead" data-animation="animated fadeInLeft">Jl. Desa, 
                                                 Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@
                                         <div class="big-tagline">
                                             <h2 data-animation="animated zoomInRight"><strong>UPT SD Negeri</strong> 108
                                                 Gresik</h2>
-                                            <p class="lead" data-animation="animated fadeInLeft">Jl. raya desa, Klampok,
+                                            <p class="lead" data-animation="animated fadeInLeft">Jl. Desa,
                                                 Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
                                         </div>
                                     </div>
@@ -86,7 +86,6 @@
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
                         <h3>INFORMASI</h3>
-                        {{-- <p class="lead">Salah satu satuan pendidikan dengan jenjang SD di Kedungsekar, Kec. Benjeng, Kab. Gresik, Jawa Timur. Yang berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.</p> --}}
                     </div>
                 </div><!-- end title -->
 

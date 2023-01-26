@@ -47,7 +47,7 @@
                     <ul class="footer-links">
                         <li><a href="mailto:sdnegeri108gresik@gmail.com">sdnegeri108gresik@gmail.com</a></li>
                         <li><a href="{{ url('beranda') }}">sdn108gresik.sch.id</a></li>
-                        <li>Jl. raya desa, Klampok, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</li>
+                        <li>Jl. Desa, Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</li>
                         <li>+62 877-8900-4672</li>
                     </ul><!-- end links -->
                 </div><!-- end clearfix -->

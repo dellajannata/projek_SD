@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminBerandaController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\BuletinController;
 use App\Http\Controllers\CRUDAlbumController;
 use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
@@ -21,12 +22,12 @@ use App\Http\Controllers\TentangKamiController;
 use App\Http\Controllers\TentangController;
 use App\Http\Controllers\InformasiController;
 use App\Http\Controllers\TampilanBerandaController;
+use App\Http\Controllers\TampilanBuletinController;
 use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +56,8 @@ Route::get('/dataKelas', [KelasController::class, 'dataKelas']);
 Route::get('/kontak', [KontakController::class, 'index']);
 Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
+Route::get('/buletin', [TampilanBuletinController::class, 'index']);
+Route::get('detailbuletin/{id}', [TampilanBuletinController::class, 'detailbuletin']);
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     //adminBeranda
@@ -76,7 +79,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('informasisd', InformasiController::class);
     Route::resource('informasiLomba', InformasiLombaController::class);
 
-    
+    //BULETIN
+    Route::resource('crudbuletin', BuletinController::class);    
 
     //TENTANGKAMI
     Route::resource('tentangkami', TentangKamiController::class);
@@ -105,3 +109,4 @@ Route::get('detailPembiasaan/{id}', [TampilanBerandaController::class, 'detailPe
 
 // DETAIL INFORMASI
 Route::get('detailTentang/{id}', [TentangController::class, 'detailTentang']);
+
