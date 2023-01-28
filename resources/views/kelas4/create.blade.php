@@ -78,6 +78,17 @@
                                     </div>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Keterangan</label>
+                                <input type="text" class="form-control @error('ket') is-invalid @enderror" name="ket" value="{{ old('ket') }}" placeholder="Masukkan Keterangan">
+                            
+                                <!-- error message untuk title -->
+                                @error('ket')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
 
                             <button type="submit" class="btn btn-md btn-success">SIMPAN</button>
                             <a class="btn btn-md btn-primary" href="{{ route('crudkelas4.index') }}" class="">KEMBALI</a>

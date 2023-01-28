@@ -37,6 +37,7 @@ class CRUDKelas2Controller extends Controller
             'jm_akhir' => $request->jm_akhir,
             'hari' => $request->hari,
             'guru_id' => $request->guru_id,
+            'ket' => $request->ket,
         ]);
 
         if ($kelas2) {
@@ -75,6 +76,7 @@ class CRUDKelas2Controller extends Controller
             'jm_akhir' => $request->jm_akhir,
             'hari' => $request->hari,
             'guru_id' => $request->guru_id,
+            'ket' => $request->ket,
         ]);
         
         if ($kelas2) {

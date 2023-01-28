@@ -16,7 +16,8 @@ class WaliKelas extends Model
     protected $fillable = [
         'guru_id', 
         'kelas',
-        'jmlh_siswa',
+        'jmlh_siswa_lk',
+        'jmlh_siswa_pr',
     ];
 
     public function guru(){

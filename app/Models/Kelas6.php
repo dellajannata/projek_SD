@@ -16,5 +16,6 @@ class Kelas6 extends Model
         'jm_mulai',
         'jm_akhir',
         'hari',
+        'ket',
     ];
 }

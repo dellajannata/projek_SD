@@ -18,6 +18,8 @@
                     <div class="col-md-12">
                         <div class="card border-0 shadow rounded">
                             <div class="card-body">
+                                <h5>Jumlah Siswa Laki - Laki : {{ $jmlSiswa1 }}</h5>
+                                <h5>Jumlah Siswa Perempuan : {{ $jmlSiswa2 }}</h5>
                                 <div class="table-responsive">
                                     <table class="table table-striped table-hover">
                                         <thead class="table-primary">
@@ -27,6 +29,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -38,6 +41,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -68,6 +72,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -79,6 +84,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -109,6 +115,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -120,6 +127,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -150,6 +158,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -161,6 +170,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -191,6 +201,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -202,6 +213,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -232,6 +244,7 @@
                                                 <th scope="col">Mata Pelajaran</th>
                                                 <th scope="col">Jam Mulai</th>
                                                 <th scope="col">Jam Berakhir</th>
+                                                <th scope="col">Keterangan</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -243,6 +256,7 @@
                                                     <td>{{ $k->mapel }}</td>
                                                     <td>{{ $k->jm_mulai }}</td>
                                                     <td>{{ $k->jm_akhir }}</td>
+                                                    <td>{{ $k->ket }}</td>
                                                 </tr>
                                             @empty
                                                 <div class="alert alert-danger">
@@ -261,4 +275,4 @@
             </div>
         </div>
     </div>
-    @endsection
+@endsection

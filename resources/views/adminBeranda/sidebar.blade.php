@@ -65,6 +65,24 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#ekstra" aria-expanded="false"
+                        aria-controls="ekstra">
+                        <span class="menu-title">Jadwal Ekstrakurikuler</span>
+                        <i class="menu-arrow"></i>
+                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
+                    </a>
+                    <div class="collapse" id="ekstra">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra1"> Kelas 1 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra2"> Kelas 2 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra3"> Kelas 3 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra4"> Kelas 4 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra5"> Kelas 5 </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="crudekstra6"> Kelas 6 </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ url('saranaPrasarana') }}">
                         <span class="menu-title">Sarana Prasarana</span>
                         <i class="mdi mdi-home-modern menu-icon"></i>

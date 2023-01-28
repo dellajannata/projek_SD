@@ -8,70 +8,83 @@ use App\Models\Kelas3;
 use App\Models\Kelas4;
 use App\Models\Kelas5;
 use App\Models\Kelas6;
+use App\Models\WaliKelas;
 use Illuminate\Http\Request;
 
 class KelasController extends Controller
 {
     public function index()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 1')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 1')->sum('jmlh_siswa_pr');
         $kelas = Kelas::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelasSelasa = Kelas::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelasRabu = Kelas::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelasKamis = Kelas::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelasJumat = Kelas::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelasSabtu = Kelas::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas', compact('kelas','kelasSelasa','kelasRabu','kelasKamis','kelasJumat','kelasSabtu'));
+        return view('layouts.kelas', compact('kelas','kelasSelasa','kelasRabu','kelasKamis','kelasJumat','kelasSabtu','jmlSiswa1','jmlSiswa2'));
     }
     public function index2()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 2')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 2')->sum('jmlh_siswa_pr');
         $kelas2 = Kelas2::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelas2Selasa = Kelas2::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelas2Rabu = Kelas2::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelas2Kamis = Kelas2::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas2Jumat = Kelas2::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas2Sabtu = Kelas2::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas2', compact('kelas2','kelas2Selasa','kelas2Rabu','kelas2Kamis','kelas2Jumat','kelas2Sabtu'));
+        return view('layouts.kelas2', compact('kelas2','kelas2Selasa','kelas2Rabu','kelas2Kamis','kelas2Jumat','kelas2Sabtu','jmlSiswa1','jmlSiswa2'));
 
     }
     public function index3()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 3')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 3')->sum('jmlh_siswa_pr');
         $kelas3 = Kelas3::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelas3Selasa = Kelas3::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelas3Rabu = Kelas3::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelas3Kamis = Kelas3::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas3Jumat = Kelas3::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas3Sabtu = Kelas3::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas3', compact('kelas3','kelas3Selasa','kelas3Rabu','kelas3Kamis','kelas3Jumat','kelas3Sabtu'));
+        return view('layouts.kelas3', compact('kelas3','kelas3Selasa','kelas3Rabu','kelas3Kamis','kelas3Jumat','kelas3Sabtu','jmlSiswa1','jmlSiswa2'));
     }
     public function index4()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 4')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 4')->sum('jmlh_siswa_pr');
         $kelas4 = Kelas4::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelas4Selasa = Kelas4::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelas4Rabu = Kelas4::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelas4Kamis = Kelas4::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas4Jumat = Kelas4::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas4Sabtu = Kelas4::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas4', compact('kelas4','kelas4Selasa','kelas4Rabu','kelas4Kamis','kelas4Jumat','kelas4Sabtu'));
+        return view('layouts.kelas4', compact('kelas4','kelas4Selasa','kelas4Rabu','kelas4Kamis','kelas4Jumat','kelas4Sabtu','jmlSiswa1','jmlSiswa2'));
     }
     public function index5()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 5')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 5')->sum('jmlh_siswa_pr');
         $kelas5 = Kelas5::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelas5Selasa = Kelas5::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelas5Rabu = Kelas5::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelas5Kamis = Kelas5::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas5Jumat = Kelas5::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas5Sabtu = Kelas5::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas5', compact('kelas5','kelas5Selasa','kelas5Rabu','kelas5Kamis','kelas5Jumat','kelas5Sabtu'));
+        return view('layouts.kelas5', compact('kelas5','kelas5Selasa','kelas5Rabu','kelas5Kamis','kelas5Jumat','kelas5Sabtu','jmlSiswa1','jmlSiswa2'));
     }
     public function index6()
     {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 6')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 6')->sum('jmlh_siswa_pr');
         $kelas6 = Kelas6::where('hari','Senin')->orderBy('id', 'asc')->paginate(10);
         $kelas6Selasa = Kelas6::where('hari','Selasa')->orderBy('id', 'asc')->paginate(10);
         $kelas6Rabu = Kelas6::where('hari','Rabu')->orderBy('id', 'asc')->paginate(10);
         $kelas6Kamis = Kelas6::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas6Jumat = Kelas6::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas6Sabtu = Kelas6::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu'));
+        return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu','jmlSiswa1','jmlSiswa2'));
     }
     
 }
