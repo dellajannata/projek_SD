@@ -32,7 +32,7 @@
                             <h4 class="font-weight-normal mb-3">Jumlah Siswa
                         </a><i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                         </h4>
-                        <h2 class="mb-5">{{ $jmlSiswa }}</h2>
+                        <h2 class="mb-5">{{ $jmlhSiswa }}</h2>
                         {{-- @foreach($wk as $kategoris)
                         @php $arrayjumlah = array(); @endphp
                         @foreach($kategoris->informasi->where('jmlh_siswa',1) as $jumlah)

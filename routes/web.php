@@ -14,6 +14,12 @@ use App\Http\Controllers\CRUDKelas3Controller;
 use App\Http\Controllers\CRUDKelas4Controller;
 use App\Http\Controllers\CRUDKelas5Controller;
 use App\Http\Controllers\CRUDKelas6Controller;
+use App\Http\Controllers\CRUDEkstra1Controller;
+use App\Http\Controllers\CRUDEkstra2Controller;
+use App\Http\Controllers\CRUDEkstra3Controller;
+use App\Http\Controllers\CRUDEkstra4Controller;
+use App\Http\Controllers\CRUDEkstra5Controller;
+use App\Http\Controllers\CRUDEkstra6Controller;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\pembiasaanController;
@@ -98,6 +104,14 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('crudkelas4', CRUDKelas4Controller::class);
     Route::resource('crudkelas5', CRUDKelas5Controller::class);
     Route::resource('crudkelas6', CRUDKelas6Controller::class);
+
+    //adminEkstra
+    Route::resource('crudekstra1', CRUDEkstra1Controller::class);
+    Route::resource('crudekstra2', CRUDEkstra2Controller::class);
+    Route::resource('crudekstra3', CRUDEkstra3Controller::class);
+    Route::resource('crudekstra4', CRUDEkstra4Controller::class);
+    Route::resource('crudekstra5', CRUDEkstra5Controller::class);
+    Route::resource('crudekstra6', CRUDEkstra6Controller::class);
 
     //ALBUM
     Route::resource('crudalbum', CRUDAlbumController::class);

@@ -43,12 +43,24 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bold">Jumlah Siswa</label>
-                                <input type="number" value="{{ $wk->jmlh_siswa }}"
-                                    class="form-control @error('jmlh_siswa') is-invalid @enderror" name="jmlh_siswa">
+                                <label class="font-weight-bold">Jumlah Siswa LK</label>
+                                <input type="number" value="{{ $wk->jmlh_siswa_lk }}"
+                                    class="form-control @error('jmlh_siswa_lk') is-invalid @enderror" name="jmlh_siswa_lk">
 
                                 <!-- error message untuk title -->
-                                @error('jmlh_siswa')
+                                @error('jmlh_siswa_lk')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Jumlah Siswa PR</label>
+                                <input type="number" value="{{ $wk->jmlh_siswa_pr }}"
+                                    class="form-control @error('jmlh_siswa_pr') is-invalid @enderror" name="jmlh_siswa_pr">
+
+                                <!-- error message untuk title -->
+                                @error('jmlh_siswa_pr')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

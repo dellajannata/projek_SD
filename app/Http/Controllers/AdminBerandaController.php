@@ -24,10 +24,12 @@ class AdminBerandaController extends Controller
     public function index()
     {
         $guru = Guru::all()->count();
-        $jmlSiswa = WaliKelas::all()->sum('jmlh_siswa');
+        $jmlSiswa1 = WaliKelas::all()->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::all()->sum('jmlh_siswa_pr');
+        $jmlhSiswa = $jmlSiswa1 + $jmlSiswa2;
         $informasi = Informasi::all()->count();
         $informasi2 = informasiLomba::all()->count();
         $jumlah = $informasi + $informasi2;
-        return view('adminBeranda.index', compact('guru', 'jumlah', 'jmlSiswa'));
+        return view('adminBeranda.index', compact('guru', 'jumlah', 'jmlhSiswa'));
     }
 }

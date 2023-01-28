@@ -14,6 +14,7 @@
         </div><!-- end title -->
 
     </div>
+    
     <div class="container">
         <hr class="invis">
         <div class="row ">
@@ -24,13 +25,12 @@
                     <div class="image-blog">
                         <img src="{{ asset('storage/projekP5/' . $p5->image) }}" style="width:620px;height:230px;" alt="" class="img-fluid">
                     </div>
-                    <div class="course-br">
-                        <div class="course-title h-75">
-                            <p style="height: 60px;text-align: center; font-size:20px">{{$p5->namaKegiatan}}</p>
+                    <div class="course-br" >
+                        <div class="course-title"style="height: 25px;">
+                            <p style="text-align: center; font-size:20px">{{$p5->namaKegiatan}}</p>
                         </div>
-                        <div class="course-desc">
-                            <p>{!! Illuminate\Support\Str::of($p5->deskripsi)->words(10) !!}</p>
-                            
+                        <div class="course-desc" style="height: 50px;">
+                            <p >{!! Illuminate\Support\Str::of($p5->deskripsi)->words(5) !!}</p>
                         </div>
                     </div>
                     <div class="course-meta-bot">

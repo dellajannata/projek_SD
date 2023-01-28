@@ -33,7 +33,9 @@ class CRUDWaliKelasController extends Controller
         $wk = WaliKelas::create([
             'guru_id'=> $request->guru_id,
             'kelas' => $request->kelas,
-            'jmlh_siswa' => $request->jmlh_siswa,
+            'jmlh_siswa_lk' => $request->jmlh_siswa_lk,
+            'jmlh_siswa_pr' => $request->jmlh_siswa_pr,
+
         ]);
 
         if ($wk) {
@@ -81,7 +83,8 @@ class CRUDWaliKelasController extends Controller
         $wk->update([
             'guru_id'=> $request->guru_id,
             'kelas' => $request->kelas,
-            'jmlh_siswa' => $request->jmlh_siswa,
+            'jmlh_siswa_lk' => $request->jmlh_siswa_lk,
+            'jmlh_siswa_pr' => $request->jmlh_siswa_pr,
 
         ]);
         

@@ -43,12 +43,24 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label class="font-weight-bold">Jumlah Siswa</label>
-                                <input type="number" class="form-control @error('jmlh_siswa') is-invalid @enderror"
-                                    name="jmlh_siswa" value="{{ old('jmlh_siswa') }}" placeholder="Masukkan Jumlah Siswa">
+                                <label class="font-weight-bold">Jumlah Siswa LK</label>
+                                <input type="number" class="form-control @error('jmlh_siswa_lk') is-invalid @enderror"
+                                    name="jmlh_siswa_lk" value="{{ old('jmlh_siswa_lk') }}" placeholder="Masukkan Jumlah Siswa LK">
 
                                 <!-- error message untuk title -->
-                                @error('jmlh_siswa')
+                                @error('jmlh_siswa_lk')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Jumlah Siswa PR</label>
+                                <input type="number" class="form-control @error('jmlh_siswa_pr') is-invalid @enderror"
+                                    name="jmlh_siswa_pr" value="{{ old('jmlh_siswa_pr') }}" placeholder="Masukkan Jumlah Siswa PR">
+
+                                <!-- error message untuk title -->
+                                @error('jmlh_siswa_pr')
                                     <div class="alert alert-danger mt-2">
                                         {{ $message }}
                                     </div>

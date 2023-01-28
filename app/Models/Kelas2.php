@@ -16,5 +16,6 @@ class Kelas2 extends Model
         'jm_mulai',
         'jm_akhir',
         'hari',
+        'ket',
     ];
 }

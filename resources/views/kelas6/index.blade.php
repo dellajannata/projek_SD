@@ -24,6 +24,7 @@
                                         <th scope="col">Mata Pelajaran</th>
                                         <th scope="col">Jam Mulai</th>
                                         <th scope="col">Jam Berakhir</th>
+                                        <th scope="col">Keterangan</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -36,6 +37,7 @@
                                             <td>{{ $k->mapel }}</td>
                                             <td>{{ $k->jm_mulai }}</td>
                                             <td>{{ $k->jm_akhir }}</td>
+                                            <td>{{ $k->ket}}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudkelas6.destroy', $k->id) }}" method="POST">

@@ -214,7 +214,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-online"></i></span>
-                        <p class="stat_count">{{$jmlSiswa}}</p>
+                        <p class="stat_count">{{$jmlhSiswa}}</p>
                         <h3>Jumlah Siswa</h3>
                     </div><!-- end col -->
                 </div><!-- end row -->

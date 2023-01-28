@@ -19,6 +19,7 @@ class CreateKelas5 extends Migration
             $table->time('jm_mulai');
             $table->time('jm_akhir');
             $table->enum('hari',['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']);
+            $table->string('ket')->nullable();
             $table->timestamps();
         });
     }

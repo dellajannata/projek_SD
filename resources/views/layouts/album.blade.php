@@ -27,8 +27,6 @@
                         <div class="course-title h-75">
                             <p style="height: 60px;text-align: center; font-size:20px">{{$ab->judul}}</p>
                         </div>
-                        <div class="course-desc">
-                        </div>
                     </div>
                     <div class="course-meta-bot">
                         <ul>

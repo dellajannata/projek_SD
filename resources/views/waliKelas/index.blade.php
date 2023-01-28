@@ -22,7 +22,9 @@
                                         <th scope="col">No.</th>
                                         <th scope="col">Kelas</th>
                                         <th scope="col">Nama Wali Kelas</th>
-                                        <th scope="col">Jumlah Siswa</th>
+                                        <th scope="col">Jumlah Siswa LK</th>
+                                        <th scope="col">Jumlah Siswa PR</th>
+
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -33,7 +35,8 @@
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $w->guru->nama }}</td>
                                             <td>{{ $w->kelas }}</td>
-                                            <td>{{ $w->jmlh_siswa }}</td>
+                                            <td>{{ $w->jmlh_siswa_lk }}</td>
+                                            <td>{{ $w->jmlh_siswa_pr}}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudwalikelas.destroy', $w->id) }}" method="POST">
