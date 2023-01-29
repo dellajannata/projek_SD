@@ -120,7 +120,7 @@
                                                             <div class="pricing-table-features">
                                                                 <img src="{{ asset('storage/informasi/' . $i->image) }}"
                                                                     class="rounded img-fluid"
-                                                                    style="height: 200px; width: 300px;">
+                                                                    style="height: 150px; width: 400px;">
                                                             </div>
                                                             <div class="pricing-table-header grd1">
                                                                 <h3 class="title" style="height: 30px;">
