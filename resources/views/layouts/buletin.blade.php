@@ -47,4 +47,5 @@
             </div>
         </div><!-- end container -->
     </div><!-- end section -->
+</div>
     @endsection
