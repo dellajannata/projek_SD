@@ -18,11 +18,15 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 text-right">
                                         <div class="big-tagline">
-                                            <marquee width="1000" height="100"><h2><strong>Selamat Datang di UPT SD Negeri 108 Gresik </strong> Sekolah Sang Juara</h2></marquee>
+                                            <marquee width="1000" height="100">
+                                                <h2><strong>Selamat Datang di UPT SD Negeri 108 Gresik </strong> Sekolah
+                                                    Sang Juara</h2>
+                                            </marquee>
                                             <p class="lead">Jl. Desa, Kedungsekar, Kec. Benjeng, Kabupaten
                                                 Gresik, Jawa Timur 61172</p>
-                                            <a href="{{ url('tentang') }}" class="hover-btn-new"><span>Selengkapnya</span></a>
-                                            
+                                            <a href="{{ url('tentang') }}"
+                                                class="hover-btn-new"><span>Selengkapnya</span></a>
+
                                         </div>
                                     </div>
                                 </div><!-- end row -->
@@ -39,7 +43,7 @@
                                         <div class="big-tagline">
                                             <h2 data-animation="animated zoomInRight">UPT SD Negeri <strong>108
                                                     Gresik</strong></h2>
-                                            <p class="lead" data-animation="animated fadeInLeft">Jl. Desa, 
+                                            <p class="lead" data-animation="animated fadeInLeft">Jl. Desa,
                                                 Kedungsekar, Kec. Benjeng, Kabupaten Gresik, Jawa Timur 61172</p>
                                         </div>
                                     </div>
@@ -83,81 +87,117 @@
         </div>
 
         <div id="overviews" class="section wb">
-            <div class="container">
-                <div class="section-title row text-center">
-                    <div class="col-md-8 offset-md-2">
-                        <h3>INFORMASI</h3>
-                    </div>
-                </div><!-- end title -->
-
+            <div class="container page-body-wrapper">
                 <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="message-box">
-                            <ul class="nav nav-pills nav-stacked" id="myTabs">
-                                <li><a class="active" href="#tab1" data-toggle="pill">UPT SDN 108 Gresik</a></li>
-                                <li><a href="#tab2" data-toggle="pill">LOMBA</a></li>
+                    <div class="col-lg-9 blog-post-single">
+                        <div class="section-title row text-center">
+                            <div class="col-sm-12">
+                                <h3>INFORMASI</h3>
+                            </div>
+                        </div><!-- end title -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="message-box">
+                                    <ul class="nav nav-pills nav-stacked" id="myTabs">
+                                        <li><a class="active" href="#tab1" data-toggle="pill">UPT SDN 108 Gresik</a></li>
+                                        <li><a href="#tab2" data-toggle="pill">LOMBA</a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- end col -->
+                        </div>
+
+                        <hr class="invis">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade show h-auto" id="tab1">
+                                        <div class="row text-center h-auto">
+                                            @foreach ($informasisd as $i)
+                                                <div class="col-md-4">
+                                                    <a href="{{ url('detailinformasi') }}/{{ $i->id }}">
+                                                        <div class="pricing-table pricing-table-highlighted">
+                                                            <div class="pricing-table-features">
+                                                                <img src="{{ asset('storage/informasi/' . $i->image) }}"
+                                                                    class="rounded img-fluid"
+                                                                    style="height: 200px; width: 300px;">
+                                                            </div>
+                                                            <div class="pricing-table-header grd1">
+                                                                <h3 class="title" style="height: 30px;">
+                                                                    {!! Illuminate\Support\Str::of($i->deskripsi)->words(5) !!}
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            @endforeach
+                                        </div><!-- end row -->
+                                        <br><br>
+                                        <div class="d-flex justify-content-center">
+                                            {!! $informasisd->links() !!}
+
+                                        </div>
+                                    </div><!-- end pane -->
+
+                                    <div class="tab-pane fade" id="tab2">
+                                        <div class="row text-center h-auto">
+                                            @foreach ($informasiLomba as $il)
+                                                <div class="col-md-4">
+                                                    <a href="{{ url('detailLomba') }}/{{ $il->id }}">
+                                                        <div class="pricing-table pricing-table-highlighted">
+                                                            <div class="pricing-table-features">
+                                                                <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
+                                                                    class="rounded img-fluid"
+                                                                    style="height: 200px; width: 300px;">
+                                                            </div>
+                                                            <div class="pricing-table-header grd1">
+                                                                <h3 class="title" style="height: 30px;">
+                                                                    {!! Illuminate\Support\Str::of($il->deskripsi)->words(5) !!}
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            @endforeach
+                                        </div><!-- end row -->
+                                        <div class="d-flex justify-content-center">
+                                            {!! $informasiLomba->links() !!}
+                                        </div>
+                                    </div><!-- end pane -->
+                                </div><!-- end content -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div>
+
+
+                    <div class="col-lg-3 col-6 right-single">
+                        <div class="widget-categories">
+                            <h3 class="widget-title">Informasi Link</h3>
+                            <ul>
+                                <li><a href="{{ url('https://ppdbsd.dispendik-gresik.net/jadwal') }}">PPDB SDN 108
+                                        Gresik</a></li>
+                                <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="dropdown-a"
+                                        data-toggle="dropdown">Kelas
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                        <a class="dropdown-item" href="{{ url('/kelas') }}">Kelas 1</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas2') }}">Kelas 2</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas3') }}">Kelas 3</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas4') }}">Kelas 4</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas5') }}">Kelas 5</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas6') }}">Kelas 6</a>
+                                    </div>
+                                </li>
+                                <li><a href="{{ url('/sarana') }}">Sarana Prasarana</a></li>
+                                <li><a href="{{ url('/guru') }}">Guru</a></li>
+                                <li><a href="{{ url('/album') }}">Album</a></li>
+                                <li><a href="{{ url('/kontak') }}">Kontak</a></li>
                             </ul>
                         </div>
-                    </div><!-- end col -->
+                    </div>
                 </div>
-
-                <hr class="invis">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="tab-content">
-                            <div class="tab-pane active fade show h-auto" id="tab1">
-                                <div class="row text-center h-auto">
-                                    @foreach ($informasisd as $i)
-                                        <div class="col-md-4">
-                                            <a href="{{ url('detailinformasi') }}/{{ $i->id }}">
-                                                <div class="pricing-table pricing-table-highlighted">
-                                                    <div class="pricing-table-features">
-                                                        <img src="{{ asset('storage/informasi/' . $i->image) }}"
-                                                            class="rounded img-fluid" style="height: 200px; width: 300px;">
-                                                    </div>
-                                                    <div class="pricing-table-header grd1">
-                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($i->deskripsi)->words(5) !!}
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    @endforeach
-                                </div><!-- end row -->
-                                <br><br>
-                                <div class="d-flex justify-content-center">
-                                    {!! $informasisd->links() !!}
-
-                                </div>
-                            </div><!-- end pane -->
-
-                            <div class="tab-pane fade" id="tab2">
-                                <div class="row text-center h-auto">
-                                    @foreach ($informasiLomba as $il)
-                                        <div class="col-md-4">
-                                            <a href="{{ url('detailLomba') }}/{{ $il->id }}">
-                                                <div class="pricing-table pricing-table-highlighted">
-                                                    <div class="pricing-table-features">
-                                                        <img src="{{ asset('storage/informasiLomba/' . $il->image) }}"
-                                                            class="rounded img-fluid"
-                                                            style="height: 200px; width: 300px;">
-                                                    </div>
-                                                    <div class="pricing-table-header grd1">
-                                                        <h3 class="title" style="height: 30px;">{!! Illuminate\Support\Str::of($il->deskripsi)->words(5) !!}
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    @endforeach
-                                </div><!-- end row -->
-                                <div class="d-flex justify-content-center">
-                                    {!! $informasiLomba->links() !!}
-                                </div>
-                            </div><!-- end pane -->
-                        </div><!-- end content -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
             </div>
         </div>
         <br><br><br>
@@ -208,18 +248,17 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-study"></i></span>
-                        <p class="stat_count">{{$guru}}</p>
+                        <p class="stat_count">{{ $guru }}</p>
                         <h3>Guru</h3>
                     </div><!-- end col -->
 
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
                                 class="flaticon-online"></i></span>
-                        <p class="stat_count">{{$jmlhSiswa}}</p>
+                        <p class="stat_count">{{ $jmlhSiswa }}</p>
                         <h3>Jumlah Siswa</h3>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end section -->
-        
     @endsection
