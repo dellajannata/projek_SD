@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         $users=[
             [
                 'name' => 'UPT SD Negeri 108 Gresik',
-                'email' => 'sdnegeri108gresik@gmail.com',
+                'email' => 'uptsdn108gresik@sdn108gresik.sc.id',
                 'level' => 'admin',
                 'password' =>bcrypt('Sijago108'),
             ],
