@@ -1,5 +1,3 @@
-@include('auth.login')
-
  <!-- LOADER -->
  <div id="preloader">
      <div class="loader-container">
@@ -45,10 +43,10 @@
                      <li class="nav-item"><a class="nav-link" href="{{url('/album')}}">Album</a></li>
                      <li class="nav-item"><a class="nav-link" href="{{url('/kontak')}}">Kontak</a></li>
                  </ul>
-                 <ul class="nav navbar-nav navbar-right">
+                 {{-- <ul class="nav navbar-nav navbar-right">
                      <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
                              data-target="#login"><span>Login Admin</span></a></li>
-                 </ul>
+                 </ul> --}}
              </div>
          </div>
      </nav>

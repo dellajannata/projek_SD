@@ -1,57 +1,53 @@
- <!-- Modal -->
- <form method="POST" action="{{ route('login') }}">
-     @csrf
-     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-             <div class="modal-content">
-                 <div class="modal-header tit-up">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                     <h4 class="modal-title">Login Admin</h4>
-                 </div>
-                 <div class="modal-body customer-box">
-                     <div class="tab-content">
-                         <div class="tab-pane active" id="Login">
-                             <form role="form" class="form-horizontal">
-                                 <div class="form-group">
-                                     <div class="col-sm-12">
-                                         <input class="form-control @error('email') is-invalid @enderror" name="email"
-                                             id="email" placeholder="Masukkan Email Anda" type="email">
-                                         @error('email')
-                                             <span class="invalid-feedback" role="alert">
-                                                 <strong>Maaf Email yang Anda Masukkan Salah.</strong>
-                                             </span>
-                                         @enderror
-                                     </div>
-                                 </div>
-                                 <div class="form-group">
-                                     <div class="col-sm-12">
-                                         <input class="form-control @error('password') is-invalid @enderror"
-                                             name="password" id="password" placeholder="Masukkan Password Anda"
-                                             type="password">
-                                         @error('password')
-                                             <span class="invalid-feedback" role="alert">
-                                                 <strong>Maaf Password yang Anda Masukkan Salah.</strong>
-                                             </span>
-                                         @enderror
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="col-sm-10">
-                                         <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
-                                             Submit
-                                         </button>
-                                         @if (Route::has('password.request'))
-                                             <a href="{{ route('password.request') }}" style="font-size: 16px" >
-                                                 {{ __('Lupa Kata Sandi?') }}
-                                             </a>
-                                         @endif
-                                     </div>
-                                 </div>
-                             </form>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN 108 Gresik</title>
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <form method="POST" action="{{ route('login') }}">
+                @csrf
+                <p style="text-align: center; font-size:30px">LOGIN ADMIN</p>
+                <hr>
+                <p>SDN 108 Gresik</p>
+                <hr>
+                @error('email')
+                    <span class="alert alert-success">
+                        <p style="color: red">Maaf Email atau Password yang Anda Masukkan Salah.</p>
+                    </span>
+                @enderror
+                <hr>
+                <label for="">Email</label>
+                <input class="form-control @error('email') is-invalid @enderror" name="email" id="email"
+                    placeholder="Masukkan Email Anda" type="email">
+                
+                <label for="">Password</label>
+                <input class="form-control @error('password') is-invalid @enderror" name="password" id="password"
+                    placeholder="Masukkan Password Anda" type="password">
+                <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                    Submit
+                </button>
+                <p>
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}" style="font-size: 16px">
+                            {{ __('Lupa Kata Sandi?') }}
+                        </a>
+                    @endif
+                </p>
+            </form>
+        </div>
+        <div class="right">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

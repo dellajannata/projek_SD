@@ -1,49 +1,47 @@
-@extends('layouts.main')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('layouts.content')
-<div class="container">
-    <br><br>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Atur Ulang Kata Sandi</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN 108 Gresik</title>
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
+    <link rel="stylesheet" href="login.css">
+</head>
 
-                <div class="card-body">
-                    @if (session('status'))
+<body>
+    <div class="container">
+        <div class="login">
+            <form method="POST" action="{{ url('password.email') }}">
+                @csrf
+                <p style="text-align: center; font-size:30px">RESET PASSWORD</p>
+                <hr>
+                <p>SDN 108 Gresik</p>
+                <hr>
+                @error('email')
+                    <span class="alert alert-success">
+                        <p style="color: red">Maaf Email Anda Tidak Ditemukan.</p>
+                    </span>
+                @enderror
+                @if (session('status'))
                         <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                            Kami telah mengirim email ke tautan pengaturan ulang kata sandi Anda!
                         </div>
                     @endif
-
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">Masukkan E-mail</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Submit
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+                <hr>
+                <label for="">Email</label>
+                <input class="form-control @error('email') is-invalid @enderror" name="email" id="email"
+                    placeholder="Masukkan Email Anda" type="email">
+                <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="right">
+            <img src="assets/images/logo.png" alt="">
         </div>
     </div>
-    <br><br>
-</div>
-@endsection
+</body>
+
+</html>
