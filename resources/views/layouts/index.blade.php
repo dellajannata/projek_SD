@@ -18,9 +18,9 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 text-right">
                                         <div class="big-tagline">
-                                            <marquee width="1000" height="180"><h2><strong>UPT SD Negeri </strong> 108 Gresik</h2>
+                                            <marquee width="1000" height="100"><h2><strong>Selamat Datang di UPT SD Negeri 108 Gresik </strong> Sekolah Sang Juara</h2></marquee>
                                             <p class="lead">Jl. Desa, Kedungsekar, Kec. Benjeng, Kabupaten
-                                                Gresik, Jawa Timur 61172</p></marquee>
+                                                Gresik, Jawa Timur 61172</p>
                                             <a href="{{ url('tentang') }}" class="hover-btn-new"><span>Selengkapnya</span></a>
                                             
                                         </div>
