@@ -7,7 +7,7 @@
     <div class="container">
         <div class="section-title row text-center">
             <div class="col-md-8 offset-md-2">
-                <h3>BULETIN</h3>
+                <h3>E-BULETIN</h3>
                 <p>UPT SD Negeri 108 Gresik</p>
             </div>
         </div><!-- end title -->
@@ -33,7 +33,7 @@
                             </div>
                             <div class="blog-button">
                                 <a class="hover-btn-new orange"
-                                    href="{{ url('detailbuletin') }}/{{ $bt->id }}"><span>Read More<span></a>
+                                    href="{{ url('detailbuletin') }}/{{ $bt->id }}"><span>Baca Selengkapnya<span></a>
                             </div>
                         </div>
                     </div><!-- end col -->

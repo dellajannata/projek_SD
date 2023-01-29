@@ -28,7 +28,7 @@
                         <div class="course-title"style="height: 25px;text-align: center; font-size:20px;">
                             <b>{{$p5->namaKegiatan}}</b>
                         </div>
-                        <div class="course-desc" style="height: 50px;">
+                        <div class="course-desc" style="height: 50px;text-align: center">
                             <p >{!! Illuminate\Support\Str::of($p5->deskripsi)->words(5) !!}</p>
                         </div>
                     </div>

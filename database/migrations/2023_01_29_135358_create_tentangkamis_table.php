@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBuletinsTable extends Migration
+class CreateTentangkamisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateBuletinsTable extends Migration
      */
     public function up()
     {
-        Schema::create('buletins', function (Blueprint $table) {
+        Schema::create('tentangkamis', function (Blueprint $table) {
             $table->id();
-            $table->date('tanggal');
-            $table->string('gambar');
             $table->string('judul');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
+            $table->string('gambar');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateBuletinsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('buletins');
+        Schema::dropIfExists('tentangkamis');
     }
 }

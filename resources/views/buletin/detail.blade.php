@@ -39,7 +39,7 @@
                                         </td>
                                         <td>
                                             <img src="{{ asset('storage/buletin/' . $buletin->gambar) }}"
-                                                class="rounded" style="width: 250px; height:200px">
+                                                class="rounded" style="width: 180px; height:200px">
                                         </td>
                                     </tr>
 
