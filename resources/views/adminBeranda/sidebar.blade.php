@@ -10,7 +10,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('crudbuletin') }}">
                         <span class="menu-title">E-Buletin</span>
-                        <i class="mdi mdi-home-modern menu-icon"></i>
+                        <i class="mdi mdi-book-open-page-variant menu-icon"></i>
                     </a>
                 </li>
 
