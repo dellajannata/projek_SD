@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPT SD Negeri 108 Gresik</title>
     <link rel="shortcut icon" href="{{ asset('assets/images/logo.png') }}" />
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="{{asset('login.css')}}">
 </head>
 
 <body>
     <div class="container">
         <div class="login">
-            <form method="POST" action="{{ url('password.email') }}">
+            <form method="POST" action="{{ route('password.email') }}">
                 @csrf
                 <p style="text-align: center; font-size:30px">RESET PASSWORD</p>
                 <hr>
@@ -39,7 +39,7 @@
             </form>
         </div>
         <div class="right">
-            <img src="assets/images/logo.png" alt="">
+            <img src="{{asset('assets/images/logo.png')}}" alt="">
         </div>
     </div>
 </body>
