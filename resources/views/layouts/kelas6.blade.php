@@ -18,8 +18,10 @@
                     <div class="col-md-12">
                         <div class="card border-0 shadow rounded">
                             <div class="card-body">
-                                <h5>Jumlah Siswa Laki - Laki : {{ $jmlSiswa1 }}</h5>
-                                <h5>Jumlah Siswa Perempuan : {{ $jmlSiswa2 }}</h5>
+                                <h3>Jumlah Siswa Laki - Laki : {{ $jmlSiswa1 }}</h3>
+                                <h3>Jumlah Siswa Perempuan : {{ $jmlSiswa2 }}</h3>
+                                <a class="btn btn-outline-primary" href="/ekstrakurikuler-kelas-6" role="button">Jadwal Ekstrakurikuler</a> 
+                                <br><br>    
                                 <div class="table-responsive">
                                     <table class="table table-striped table-hover">
                                         <thead class="table-primary">
@@ -54,7 +56,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -97,7 +98,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -183,7 +182,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -226,7 +224,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -269,49 +266,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-3">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card border-0 shadow rounded">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-hover">
-                                        <thead class="table-primary">
-                                            <tr>
-                                                <th scope="col">No.</th>
-                                                <th scope="col">Gambar</th>
-                                                <th scope="col">Nama Kegiatan</th>
-                                                <th scope="col">Hari</th>
-                                                <th scope="col">Jam</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php $no = 1; ?>
-                                            @forelse ($k6 as $k)
-                                                <tr>
-                                                    <td>{{ $no++ }}</td>
-                                                    <td><img src="{{ asset('storage/ekstra6/' . $k->image) }}" class="rounded"
-                                                        style="width: 230px; height:180px"></td>
-                                                    <td>{{ $k->nama }}</td>
-                                                    <td>{{ $k->hari }}</td>
-                                                    <td>{{ $k->jam }}</td>
-                                                </tr>
-                                            @empty
-                                                <div class="alert alert-danger">
-                                                    Data Ekstrakurikuler Belum Tersedia.
-                                                </div>
-                                            @endforelse
-                                        </tbody>
-                                    </table>
-                                    {{ $k6->links() }}
-                                </div>
-                            </div>
-                        </div>
-                        <br><br>
                     </div>
                 </div>
             </div>

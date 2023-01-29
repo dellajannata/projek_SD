@@ -67,6 +67,12 @@ Route::get('/tentang', [TentangController::class, 'index']);
 Route::get('/sarana', [SaranaController::class, 'index']);
 Route::get('/buletin', [TampilanBuletinController::class, 'index']);
 Route::get('detailbuletin/{id}', [TampilanBuletinController::class, 'detailbuletin']);
+Route::get('/ekstrakurikuler-kelas-1', [KelasController::class, 'ekstra1']);
+Route::get('/ekstrakurikuler-kelas-2', [KelasController::class, 'ekstra2']);
+Route::get('/ekstrakurikuler-kelas-3', [KelasController::class, 'ekstra3']);
+Route::get('/ekstrakurikuler-kelas-4', [KelasController::class, 'ekstra4']);
+Route::get('/ekstrakurikuler-kelas-5', [KelasController::class, 'ekstra5']);
+Route::get('/ekstrakurikuler-kelas-6', [KelasController::class, 'ekstra6']);
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
     //adminBeranda

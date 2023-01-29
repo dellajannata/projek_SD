@@ -98,5 +98,46 @@ class KelasController extends Controller
         $k6= Ekstra6::orderBy('id','asc')->paginate(5);
         return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu','jmlSiswa1','jmlSiswa2','k6'));
     }
-    
+    public function ekstra1()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 1')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 1')->sum('jmlh_siswa_pr');
+        $k1= Ekstra1::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra1', compact('jmlSiswa1','jmlSiswa2','k1'));
+    }
+    public function ekstra2()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 2')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 2')->sum('jmlh_siswa_pr');
+        $k2= Ekstra2::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra2', compact('jmlSiswa1','jmlSiswa2','k2'));
+    }
+    public function ekstra3()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 3')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 3')->sum('jmlh_siswa_pr');
+        $k3= Ekstra3::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra3', compact('jmlSiswa1','jmlSiswa2','k3'));
+    }
+    public function ekstra4()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 4')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 4')->sum('jmlh_siswa_pr');
+        $k4= Ekstra4::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra4', compact('jmlSiswa1','jmlSiswa2','k4'));
+    }
+    public function ekstra5()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 5')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 5')->sum('jmlh_siswa_pr');
+        $k5= Ekstra5::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra5', compact('jmlSiswa1','jmlSiswa2','k5'));
+    }
+    public function ekstra6()
+    {
+        $jmlSiswa1 = WaliKelas::where('kelas','Kelas 6')->sum('jmlh_siswa_lk');
+        $jmlSiswa2 = WaliKelas::where('kelas','Kelas 6')->sum('jmlh_siswa_pr');
+        $k6= Ekstra6::orderBy('id','asc')->paginate(5);
+        return view('layouts.ekstra6', compact('jmlSiswa1','jmlSiswa2','k6'));
+    }
 }
