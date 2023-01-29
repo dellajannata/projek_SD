@@ -8,6 +8,12 @@ use App\Models\Kelas3;
 use App\Models\Kelas4;
 use App\Models\Kelas5;
 use App\Models\Kelas6;
+use App\Models\Ekstra1;
+use App\Models\Ekstra2;
+use App\Models\Ekstra3;
+use App\Models\Ekstra4;
+use App\Models\Ekstra5;
+use App\Models\Ekstra6;
 use App\Models\WaliKelas;
 use Illuminate\Http\Request;
 
@@ -23,7 +29,8 @@ class KelasController extends Controller
         $kelasKamis = Kelas::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelasJumat = Kelas::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelasSabtu = Kelas::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas', compact('kelas','kelasSelasa','kelasRabu','kelasKamis','kelasJumat','kelasSabtu','jmlSiswa1','jmlSiswa2'));
+        $k1= Ekstra1::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas', compact('kelas','kelasSelasa','kelasRabu','kelasKamis','kelasJumat','kelasSabtu','jmlSiswa1','jmlSiswa2','k1'));
     }
     public function index2()
     {
@@ -35,7 +42,8 @@ class KelasController extends Controller
         $kelas2Kamis = Kelas2::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas2Jumat = Kelas2::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas2Sabtu = Kelas2::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas2', compact('kelas2','kelas2Selasa','kelas2Rabu','kelas2Kamis','kelas2Jumat','kelas2Sabtu','jmlSiswa1','jmlSiswa2'));
+        $k2= Ekstra2::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas2', compact('kelas2','kelas2Selasa','kelas2Rabu','kelas2Kamis','kelas2Jumat','kelas2Sabtu','jmlSiswa1','jmlSiswa2','k2'));
 
     }
     public function index3()
@@ -48,7 +56,8 @@ class KelasController extends Controller
         $kelas3Kamis = Kelas3::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas3Jumat = Kelas3::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas3Sabtu = Kelas3::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas3', compact('kelas3','kelas3Selasa','kelas3Rabu','kelas3Kamis','kelas3Jumat','kelas3Sabtu','jmlSiswa1','jmlSiswa2'));
+        $k3= Ekstra3::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas3', compact('kelas3','kelas3Selasa','kelas3Rabu','kelas3Kamis','kelas3Jumat','kelas3Sabtu','jmlSiswa1','jmlSiswa2','k3'));
     }
     public function index4()
     {
@@ -60,7 +69,8 @@ class KelasController extends Controller
         $kelas4Kamis = Kelas4::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas4Jumat = Kelas4::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas4Sabtu = Kelas4::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas4', compact('kelas4','kelas4Selasa','kelas4Rabu','kelas4Kamis','kelas4Jumat','kelas4Sabtu','jmlSiswa1','jmlSiswa2'));
+        $k4= Ekstra4::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas4', compact('kelas4','kelas4Selasa','kelas4Rabu','kelas4Kamis','kelas4Jumat','kelas4Sabtu','jmlSiswa1','jmlSiswa2','k4'));
     }
     public function index5()
     {
@@ -72,7 +82,8 @@ class KelasController extends Controller
         $kelas5Kamis = Kelas5::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas5Jumat = Kelas5::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas5Sabtu = Kelas5::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas5', compact('kelas5','kelas5Selasa','kelas5Rabu','kelas5Kamis','kelas5Jumat','kelas5Sabtu','jmlSiswa1','jmlSiswa2'));
+        $k5= Ekstra5::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas5', compact('kelas5','kelas5Selasa','kelas5Rabu','kelas5Kamis','kelas5Jumat','kelas5Sabtu','jmlSiswa1','jmlSiswa2','k5'));
     }
     public function index6()
     {
@@ -84,7 +95,8 @@ class KelasController extends Controller
         $kelas6Kamis = Kelas6::where('hari','Kamis')->orderBy('id', 'asc')->paginate(10);
         $kelas6Jumat = Kelas6::where('hari','Jumat')->orderBy('id', 'asc')->paginate(10);
         $kelas6Sabtu = Kelas6::where('hari','Sabtu')->orderBy('id', 'asc')->paginate(10);
-        return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu','jmlSiswa1','jmlSiswa2'));
+        $k6= Ekstra6::orderBy('id','asc')->paginate(5);
+        return view('layouts.kelas6', compact('kelas6','kelas6Selasa','kelas6Rabu','kelas6Kamis','kelas6Jumat','kelas6Sabtu','jmlSiswa1','jmlSiswa2','k6'));
     }
     
 }

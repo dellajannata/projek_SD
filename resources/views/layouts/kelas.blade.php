@@ -273,6 +273,48 @@
                 </div>
             </div>
         </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border-0 shadow rounded">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Gambar</th>
+                                            <th scope="col">Nama Kegiatan</th>
+                                            <th scope="col">Hari</th>
+                                            <th scope="col">Jam</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $no = 1; ?>
+                                        @forelse ($k1 as $k)
+                                            <tr>
+                                                <td>{{ $no++ }}</td>
+                                                <td><img src="{{ asset('storage/ekstra1/' . $k->image) }}" class="rounded"
+                                                    style="width: 230px; height:180px"></td>
+                                                <td>{{ $k->nama }}</td>
+                                                <td>{{ $k->hari }}</td>
+                                                <td>{{ $k->jam }}</td>
+                                            </tr>
+                                        @empty
+                                            <div class="alert alert-danger">
+                                                Data Ekstrakurikuler Belum Tersedia.
+                                            </div>
+                                        @endforelse
+                                    </tbody>
+                                </table>
+                                {{ $k1->links() }}
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     @endsection
