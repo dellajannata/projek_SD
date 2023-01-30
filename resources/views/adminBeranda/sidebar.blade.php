@@ -37,6 +37,7 @@
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="{{ url('informasisd') }}"> SDN 108 Gresik </a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{ url('informasiLomba') }}"> Lomba </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('InformasiLink') }}"> Link Terkait </a></li>
                         </ul>
                     </div>
                 </li>

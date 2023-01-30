@@ -33,6 +33,7 @@ use App\Http\Controllers\InformasiLombaController;
 use App\Http\Controllers\VisimisiController;
 use App\Http\Controllers\SaranaPrasaranaController;
 use App\Http\Controllers\CRUDProjekP5Controller;
+use App\Http\Controllers\CRUDInformasiLinkController;
 use App\Http\Controllers\ProjekP5Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -47,6 +48,7 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
 
 Route::redirect('/', '/beranda');
@@ -80,15 +82,18 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     //adminGuru
     Route::resource('crudguru', CRUDGuruController::class);
-    
+
     //pembiasaan
     Route::resource('pembiasaan', PembiasaanController::class);
 
-     //projek p5
-     Route::resource('projekP5', CRUDProjekP5Controller::class);
+    //projek p5
+    Route::resource('projekP5', CRUDProjekP5Controller::class);
 
     //visimisi
     Route::resource('visimisi', VisimisiController::class);
+
+    //informasi Link
+    Route::resource('InformasiLink', CRUDInformasiLinkController::class);
 
     //saranaprasarana
     Route::resource('saranaPrasarana', SaranaPrasaranaController::class);
@@ -98,7 +103,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('informasiLomba', InformasiLombaController::class);
 
     //BULETIN
-    Route::resource('crudbuletin', BuletinController::class);    
+    Route::resource('crudbuletin', BuletinController::class);
 
     //TENTANGKAMI
     Route::resource('tentangkami', TentangKamiController::class);
@@ -124,7 +129,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     //adminWaliKelas
     Route::resource('crudwalikelas', CRUDWaliKelasController::class);
- 
+
     //semua route dalam grup ini hanya bisa diakses oleh admin
 });
 
@@ -138,4 +143,3 @@ Route::get('detailP5/{id}', [ProjekP5Controller::class, 'detail']);
 
 // DETAIL INFORMASI
 Route::get('detailTentang/{id}', [TentangController::class, 'detailTentang']);
-
