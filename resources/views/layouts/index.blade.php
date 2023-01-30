@@ -168,20 +168,39 @@
                             </div><!-- end col -->
                         </div><!-- end row -->
                     </div>
-
-
                     <div class="col-lg-3 col-6 right-single">
                         <div class="widget-categories">
-                            <h3 class="widget-title">Informasi Link</h3>
+                            <h3 class="widget-title">INFORMASI LINK</h3>
+                            <ul class="footer-links">
+                                <li><a href="{{ url('tentang') }}">TENTANG KAMI</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">KELAS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                        <a class="dropdown-item" href="{{ url('/kelas') }}">Kelas 1</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas2') }}">Kelas 2</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas3') }}">Kelas 3</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas4') }}">Kelas 4</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas5') }}">Kelas 5</a>
+                                        <a class="dropdown-item" href="{{ url('/kelas6') }}">Kelas 6</a>
+                                    </div>
+                                </li>
+                                <li><a href="{{ url('sarana') }}">SARANA PRASARANA</a></li>
+                                <li><a href="{{ url('guru') }}">GURU</a></li>
+                                <li><a href="{{ url('album') }}">ALBUM</a></li>
+                                <li><a href="{{ url('kontak') }}">KONTAK</a></li>
+                            </ul><!-- end links -->  
+                            <br>      
                             <ul>
+                                <h3 class="widget-title">LINK TERKAIT</h3>
                                 @foreach ($InformasiLink as $ilink)
                                 <li>{!! $ilink->keterangan !!}</li>
                                 @endforeach
                             </ul>
                         </div>
-                        <br><br>
+                        <br>
                         <div class="widget-categories">
-                            <h3 class="widget-title">Statistik Pengunjung</h3>
+                            <h3 class="widget-title">STATISTIK PENGUNJUNG</h3>
                             <ul>
                                 @foreach ($InformasiLink as $ilink)
                                 <li>{!! $ilink->keterangan !!}</li>

@@ -13,7 +13,7 @@
             </div><!-- end title -->
             <div class="row">
                 @foreach ($buletin as $bt)
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-12">
                         <a href="{{ url('detailbuletin') }}/{{ $bt->id }}">
                             <div class="blog-item">
 
