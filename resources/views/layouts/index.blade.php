@@ -179,6 +179,15 @@
                                 @endforeach
                             </ul>
                         </div>
+                        <br><br>
+                        <div class="widget-categories">
+                            <h3 class="widget-title">Statistik Pengunjung</h3>
+                            <ul>
+                                @foreach ($InformasiLink as $ilink)
+                                <li>{!! $ilink->keterangan !!}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
