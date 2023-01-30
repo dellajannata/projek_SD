@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Informasi;
 use App\Models\informasiLomba;
+use App\Models\informasiLink;
 use App\Models\Pembiasaan;
 use App\Models\Guru;
 use App\Models\WaliKelas;
@@ -15,14 +16,15 @@ class TampilanBerandaController extends Controller
     {
         $informasisd = Informasi::orderBy('id', 'asc')->paginate(12);
         $informasiLomba = InformasiLomba::orderBy('id', 'asc')->paginate(12);
+        $InformasiLink = InformasiLink::orderBy('id', 'asc')->paginate(12);
         $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(9);
         $guru = Guru::all()->count();
         $jmlSiswa1 = WaliKelas::all()->sum('jmlh_siswa_lk');
         $jmlSiswa2 = WaliKelas::all()->sum('jmlh_siswa_pr');
         $jmlhSiswa = $jmlSiswa1 + $jmlSiswa2;
-        return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan','guru','jmlhSiswa'));
+        return view('layouts.index', compact('informasisd', 'informasiLomba','InformasiLink', 'pembiasaan','guru','jmlhSiswa'));
         $pembiasaan = Pembiasaan::orderBy('id', 'asc')->paginate(12);
-        return view('layouts.index', compact('informasisd', 'informasiLomba', 'pembiasaan'));
+        return view('layouts.index', compact('informasisd', 'informasiLomba', 'InformasiLink', 'pembiasaan'));
     }
 
     public function detail(Request $request,$id)

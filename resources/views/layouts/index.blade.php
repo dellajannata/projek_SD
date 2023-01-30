@@ -174,26 +174,9 @@
                         <div class="widget-categories">
                             <h3 class="widget-title">Informasi Link</h3>
                             <ul>
-                                <li><a href="{{ url('https://ppdbsd.dispendik-gresik.net/jadwal') }}">PPDB SDN 108
-                                        Gresik</a></li>
-                                <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="#" id="dropdown-a"
-                                        data-toggle="dropdown">Kelas
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                        <a class="dropdown-item" href="{{ url('/kelas') }}">Kelas 1</a>
-                                        <a class="dropdown-item" href="{{ url('/kelas2') }}">Kelas 2</a>
-                                        <a class="dropdown-item" href="{{ url('/kelas3') }}">Kelas 3</a>
-                                        <a class="dropdown-item" href="{{ url('/kelas4') }}">Kelas 4</a>
-                                        <a class="dropdown-item" href="{{ url('/kelas5') }}">Kelas 5</a>
-                                        <a class="dropdown-item" href="{{ url('/kelas6') }}">Kelas 6</a>
-                                    </div>
-                                </li>
-                                <li><a href="{{ url('/sarana') }}">Sarana Prasarana</a></li>
-                                <li><a href="{{ url('/guru') }}">Guru</a></li>
-                                <li><a href="{{ url('/album') }}">Album</a></li>
-                                <li><a href="{{ url('/kontak') }}">Kontak</a></li>
+                                @foreach ($InformasiLink as $ilink)
+                                <li>{!! $ilink->keterangan !!}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
