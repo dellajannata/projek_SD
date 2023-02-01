@@ -13,12 +13,19 @@
                         <i class="mdi mdi-book-open-page-variant menu-icon"></i>
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('crudalbum') }}">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#album" aria-expanded="false"
+                        aria-controls="album">
                         <span class="menu-title">Album</span>
+                        <i class="menu-arrow"></i>
                         <i class="mdi mdi-folder-image menu-icon"></i>
                     </a>
+                    <div class="collapse" id="album">
+                        <ul class="nav flex-column sub-menu">
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('crudalbum') }}"> Foto </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('crudalbumvideo') }}"> Video </a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('crudguru') }}">

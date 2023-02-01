@@ -5,6 +5,7 @@ use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\BuletinController;
 use App\Http\Controllers\CRUDAlbumController;
+use App\Http\Controllers\CRUDAlbumVideoController;
 use App\Http\Controllers\TampilanGuruController;
 use App\Http\Controllers\CRUDGuruController;
 use App\Http\Controllers\CRUDWaliKelasController;
@@ -126,6 +127,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
     //ALBUM
     Route::resource('crudalbum', CRUDAlbumController::class);
+
+    //ALBUMVIDEO
+    Route::resource('crudalbumvideo', CRUDAlbumVideoController::class);
 
     //adminWaliKelas
     Route::resource('crudwalikelas', CRUDWaliKelasController::class);

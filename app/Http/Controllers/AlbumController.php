@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Album;
+use App\Models\AlbumVideo;
 use Illuminate\Http\Request;
 
 class AlbumController extends Controller
@@ -25,6 +26,8 @@ class AlbumController extends Controller
     public function index()
     {
         $album = Album::orderBy('id', 'asc')->paginate(9);
-        return view('layouts.album', compact('album'));
+        $albumvideo = AlbumVideo::orderBy('id', 'asc')->paginate(9);
+        return view('layouts.album', compact('album','albumvideo'));
     }
+    
 }
