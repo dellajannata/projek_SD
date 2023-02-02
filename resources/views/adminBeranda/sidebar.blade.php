@@ -22,7 +22,7 @@
                     </a>
                     <div class="collapse" id="album">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('crudalbum') }}"> Foto </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('crudalbumfoto') }}"> Foto </a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{ url('crudalbumvideo') }}"> Video </a></li>
                         </ul>
                     </div>

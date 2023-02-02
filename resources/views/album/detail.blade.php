@@ -52,7 +52,7 @@
                             </table>
                             </div>
                             <br>
-                            <a class="btn btn-MD btn-primary" href="{{ route('crudalbum.index') }}" class="">KEMBALI</a>
+                            <a class="btn btn-MD btn-primary" href="{{ route('crudalbumfoto.index') }}" class="">KEMBALI</a>
                         </div>
                 </div>
             </div>

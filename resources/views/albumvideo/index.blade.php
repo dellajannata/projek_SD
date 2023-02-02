@@ -31,10 +31,10 @@
                                         @forelse ($albumvideo as $ab)
                                             <tr>
                                                 <td>{{ $no++ }}</td>
-                                                <td class="text-center">
-                                                    <video controls>
-                                                        <source src="{{ asset('storage/albumvideo/' . $ab->video) }}"
-                                                            style="width:70px; height:40px" type="video/webm" />
+                                                <td>
+                                                    <video controls src="{{ asset('storage/albumvideo/' . $ab->video) }}"
+                                                        style="width:220px; height:170px" type="video/webm">
+                                                      
                                                     </video>
                                                 </td>
                                                 <td>{!! Illuminate\Support\Str::of($ab->judul)->words(3) !!}</td>

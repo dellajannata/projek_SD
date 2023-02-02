@@ -8,7 +8,7 @@
                 <div class="col-md-12">
                     <div class="card border-0 shadow rounded">
                         <div class="card-body">
-                            <a href="{{ route('crudalbum.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
+                            <a href="{{ route('crudalbumfoto.create') }}" class="btn btn-sm btn-md btn-success mb-3">TAMBAH
                             </a>
                             @if ($message = Session::get('success'))
                                 <div class="alert alert-success">
@@ -33,16 +33,16 @@
                                                 <td>{{ $no++ }}</td>
                                                 <td class="text-center">
                                                     <img src="{{ asset('storage/album/' . $ab->image) }}" class="rounded"
-                                                        style="width: 250px; height:200px">
+                                                        style="width: 180px; height:130px">
                                                 </td>
                                                 <td>{!! Illuminate\Support\Str::of($ab->judul)->words(3) !!}</td>
                                                 <td>{{ $ab->tanggal }}</td>
                                                 <td class="text-center">
                                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                                        action="{{ route('crudalbum.destroy', $ab->id) }}" method="POST">
-                                                        <a href="{{ route('crudalbum.edit', $ab->id) }}"
+                                                        action="{{ route('crudalbumfoto.destroy', $ab->id) }}" method="POST">
+                                                        <a href="{{ route('crudalbumfoto.edit', $ab->id) }}"
                                                             class="btn btn-sm btn-warning">EDIT</a>
-                                                        <a href="{{ route('crudalbum.show', $ab->id) }}"
+                                                        <a href="{{ route('crudalbumfoto.show', $ab->id) }}"
                                                             class="btn btn-sm btn-info">DETAILS</a>
                                                         @csrf
                                                         @method('DELETE')

@@ -43,10 +43,10 @@ class CRUDAlbumController extends Controller
 
         if ($album) {
             //redirect dengan pesan sukses
-            return redirect()->route('crudalbum.index')->with(['success' => 'Data Berhasil Disimpan!']);
+            return redirect()->route('crudalbumfoto.index')->with(['success' => 'Data Berhasil Disimpan!']);
         } else {
             //redirect dengan pesan error
-            return redirect()->route('crudalbum.index')->with(['error' => 'Data Gagal Disimpan!']);
+            return redirect()->route('crudalbumfoto.index')->with(['error' => 'Data Gagal Disimpan!']);
         }
     }
 
@@ -76,6 +76,7 @@ class CRUDAlbumController extends Controller
 
             $album->update([
                 'judul'     => $request->judul,
+                'tanggal' => $request->tanggal,
             ]);
         } else {
 
@@ -91,10 +92,10 @@ class CRUDAlbumController extends Controller
         }
         if ($album) {
             //redirect dengan pesan sukses
-            return redirect()->route('crudalbum.index')->with(['success' => 'Data Berhasil Diupdate!']);
+            return redirect()->route('crudalbumfoto.index')->with(['success' => 'Data Berhasil Diupdate!']);
         } else {
             //redirect dengan pesan error
-            return redirect()->route('crudalbum.index')->with(['error' => 'Data Gagal Diupdate!']);
+            return redirect()->route('crudalbumfoto.index')->with(['error' => 'Data Gagal Diupdate!']);
         }
     }
 
@@ -105,10 +106,10 @@ class CRUDAlbumController extends Controller
 
         if ($album) {
             //redirect dengan pesan sukses
-            return redirect()->route('crudalbum.index')->with(['success' => 'Data Berhasil Dihapus!']);
+            return redirect()->route('crudalbumfoto.index')->with(['success' => 'Data Berhasil Dihapus!']);
         } else {
             //redirect dengan pesan error
-            return redirect()->route('crudalbum.index')->with(['error' => 'Data Gagal Dihapus!']);
+            return redirect()->route('crudalbumfoto.index')->with(['error' => 'Data Gagal Dihapus!']);
         }
     }
 }

@@ -21,7 +21,6 @@
                                         <th scope="col">Tanggal</th>
                                         <th scope="col">Gambar</th>
                                         <th scope="col">Judul</th>
-                                        <th scope="col">Deskripsi</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -36,7 +35,6 @@
                                                     style="width: 180px; height:230px" >
                                             </td>
                                             <td>{{ $bt->judul }}</td>
-                                            <td>{!! Illuminate\Support\Str::of($bt->deskripsi)->words(3) !!}</td>
                                             <td class="text-center">
                                                 <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                                     action="{{ route('crudbuletin.destroy', $bt->id) }}" method="POST">

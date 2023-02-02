@@ -21,7 +21,7 @@
                                     <tr>
                                         <th scope="col">No.</th>
                                         <th scope="col">JUDUL</th>
-                                        <th scope="col">KETERANGAN</th>
+                                        <th scope="col">LINK TERKAIT</th>
                                         <th scope="col">AKSI</th>
                                     </tr>
                                 </thead>

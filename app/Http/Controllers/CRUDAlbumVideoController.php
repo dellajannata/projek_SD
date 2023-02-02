@@ -76,6 +76,7 @@ class CRUDAlbumVideoController extends Controller
 
             $albumvideo->update([
                 'judul'     => $request->judul,
+                'tanggal' => $request->tanggal,
             ]);
         } else {
 

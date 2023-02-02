@@ -19,7 +19,7 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('crudalbum.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('crudalbumfoto.store') }}" method="POST" enctype="multipart/form-data">
                         
                             @csrf
 
@@ -60,7 +60,7 @@
                             </div>
 
                             <button type="submit" class="btn btn-md btn-success">SIMPAN</button>
-                            <a class="btn btn-md btn-primary" href="{{ route('crudalbum.index') }}" class="">KEMBALI</a>
+                            <a class="btn btn-md btn-primary" href="{{ route('crudalbumfoto.index') }}" class="">KEMBALI</a>
 
                         </form> 
                     </div>

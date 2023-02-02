@@ -199,14 +199,14 @@
                             </ul>
                         </div>
                         <br>
-                        <div class="widget-categories">
+                        {{-- <div class="widget-categories">
                             <h3 class="widget-title">STATISTIK PENGUNJUNG</h3>
                             <ul>
                                 @foreach ($InformasiLink as $ilink)
                                 <li>{!! $ilink->keterangan !!}</li>
                                 @endforeach
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -126,7 +126,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('crudekstra6', CRUDEkstra6Controller::class);
 
     //ALBUM
-    Route::resource('crudalbum', CRUDAlbumController::class);
+    Route::resource('crudalbumfoto', CRUDAlbumController::class);
 
     //ALBUMVIDEO
     Route::resource('crudalbumvideo', CRUDAlbumVideoController::class);

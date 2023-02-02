@@ -14,9 +14,9 @@
             </div><!-- end title -->
 
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="message-box">
-                        <ul class="nav nav-pills nav-stacked" id="myTabs">
+                        <ul class="nav nav-pills nav-stacked " id="myTabs">
                             <li><a class="active" href="#tab1" data-toggle="pill">Album Foto</a></li>
                             <li><a href="#tab2" data-toggle="pill">Album Video</a></li>
                         </ul>
@@ -63,9 +63,8 @@
                                     <div class="col-lg-4 col-md-6 col-12">
                                         <div class="course-item">
                                             <div class="image-blog">
-                                                <video controls>
-                                                    <source src="{{ asset('storage/albumvideo/' . $ab->video) }}"
-                                                        style="width:120px;height:80px;" type="video/webm" />
+                                                <video controls src="{{ asset('storage/albumvideo/' . $ab->video) }}"
+                                                    style="width:340px;height:220px;" type="video/webm">
                                                 </video>
                                             </div>
                                             <div class="course-br">
